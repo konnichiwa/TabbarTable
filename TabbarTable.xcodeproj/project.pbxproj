@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F23E879173BCB28005C3288 /* EmployeeCellLeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F23E878173BCB28005C3288 /* EmployeeCellLeftCell.m */; };
+		0F23E87C173BCB42005C3288 /* EmployeeCellRight.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F23E87B173BCB42005C3288 /* EmployeeCellRight.m */; };
+		0F23E87E173BCB5C005C3288 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F23E87D173BCB5C005C3288 /* CustomCell.xib */; };
+		0F23E885173BDEEB005C3288 /* messagePlaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F23E87F173BDEEA005C3288 /* messagePlaceholder.png */; };
+		0F23E886173BDEEB005C3288 /* placeholderPuchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F23E880173BDEEA005C3288 /* placeholderPuchImage.png */; };
+		0F23E887173BDEEB005C3288 /* punchBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F23E881173BDEEA005C3288 /* punchBtn.png */; };
+		0F23E888173BDEEB005C3288 /* messagePlaceholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F23E882173BDEEA005C3288 /* messagePlaceholder@2x.png */; };
+		0F23E889173BDEEB005C3288 /* placeholderPuchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F23E883173BDEEA005C3288 /* placeholderPuchImage@2x.png */; };
+		0F23E88A173BDEEB005C3288 /* punchBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F23E884173BDEEB005C3288 /* punchBtn@2x.png */; };
+		0F23E893173BE641005C3288 /* TBScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F23E891173BE641005C3288 /* TBScheduleViewController.m */; };
+		0F23E894173BE641005C3288 /* TBScheduleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F23E892173BE641005C3288 /* TBScheduleViewController.xib */; };
+		0F23E89D173BE9ED005C3288 /* schedulecell.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F23E895173BE9E8005C3288 /* schedulecell.png */; };
+		0F23E89E173BE9ED005C3288 /* scheduleEmployeeBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F23E896173BE9E9005C3288 /* scheduleEmployeeBtn.png */; };
+		0F23E89F173BE9ED005C3288 /* schueduleIndicator.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F23E897173BE9E9005C3288 /* schueduleIndicator.png */; };
+		0F23E8A0173BE9ED005C3288 /* schedulecell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F23E898173BE9EA005C3288 /* schedulecell@2x.png */; };
+		0F23E8A1173BE9ED005C3288 /* scheduleEmployeeBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F23E899173BE9EA005C3288 /* scheduleEmployeeBtn@2x.png */; };
+		0F23E8A2173BE9ED005C3288 /* schueduleIndicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F23E89A173BE9EB005C3288 /* schueduleIndicator@2x.png */; };
+		0F23E8A3173BE9ED005C3288 /* schuduleHeader.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F23E89B173BE9EB005C3288 /* schuduleHeader.png */; };
+		0F23E8A4173BE9ED005C3288 /* schuduleHeader@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F23E89C173BE9EC005C3288 /* schuduleHeader@2x.png */; };
 		0F2A55F6173A839D00AA5FDF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2A55F5173A839C00AA5FDF /* UIKit.framework */; };
 		0F2A55F8173A839D00AA5FDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2A55F7173A839D00AA5FDF /* Foundation.framework */; };
 		0F2A55FA173A839D00AA5FDF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2A55F9173A839D00AA5FDF /* CoreGraphics.framework */; };
@@ -73,9 +92,38 @@
 		0F9469C6173AC450005A6AC5 /* bgCellRightEmployee.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F9469C2173AC44D005A6AC5 /* bgCellRightEmployee.png */; };
 		0F9469C7173AC450005A6AC5 /* bgCellLeftEmployee@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F9469C3173AC44E005A6AC5 /* bgCellLeftEmployee@2x.png */; };
 		0F9469C8173AC450005A6AC5 /* bgCellRightEmployee@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F9469C4173AC44F005A6AC5 /* bgCellRightEmployee@2x.png */; };
+		0FCCE768173BF67600CA1966 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FCCE767173BF67600CA1966 /* QuartzCore.framework */; };
+		0FCCE781173C1B6700CA1966 /* bgPopupimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCCE77B173C1B6700CA1966 /* bgPopupimage.png */; };
+		0FCCE782173C1B6700CA1966 /* bgPopupimage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCCE77C173C1B6700CA1966 /* bgPopupimage@2x.png */; };
+		0FCCE783173C1B6700CA1966 /* closeImageBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCCE77D173C1B6700CA1966 /* closeImageBtn.png */; };
+		0FCCE784173C1B6700CA1966 /* testimagePopup.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCCE77E173C1B6700CA1966 /* testimagePopup.png */; };
+		0FCCE785173C1B6700CA1966 /* closeImageBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCCE77F173C1B6700CA1966 /* closeImageBtn@2x.png */; };
+		0FCCE786173C1B6700CA1966 /* testimagePopup@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCCE780173C1B6700CA1966 /* testimagePopup@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F23E877173BCB28005C3288 /* EmployeeCellLeftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeCellLeftCell.h; sourceTree = "<group>"; };
+		0F23E878173BCB28005C3288 /* EmployeeCellLeftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeCellLeftCell.m; sourceTree = "<group>"; };
+		0F23E87A173BCB42005C3288 /* EmployeeCellRight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeCellRight.h; sourceTree = "<group>"; };
+		0F23E87B173BCB42005C3288 /* EmployeeCellRight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeCellRight.m; sourceTree = "<group>"; };
+		0F23E87D173BCB5C005C3288 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		0F23E87F173BDEEA005C3288 /* messagePlaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = messagePlaceholder.png; sourceTree = "<group>"; };
+		0F23E880173BDEEA005C3288 /* placeholderPuchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholderPuchImage.png; sourceTree = "<group>"; };
+		0F23E881173BDEEA005C3288 /* punchBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = punchBtn.png; sourceTree = "<group>"; };
+		0F23E882173BDEEA005C3288 /* messagePlaceholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "messagePlaceholder@2x.png"; sourceTree = "<group>"; };
+		0F23E883173BDEEA005C3288 /* placeholderPuchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholderPuchImage@2x.png"; sourceTree = "<group>"; };
+		0F23E884173BDEEB005C3288 /* punchBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "punchBtn@2x.png"; sourceTree = "<group>"; };
+		0F23E890173BE641005C3288 /* TBScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBScheduleViewController.h; sourceTree = "<group>"; };
+		0F23E891173BE641005C3288 /* TBScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBScheduleViewController.m; sourceTree = "<group>"; };
+		0F23E892173BE641005C3288 /* TBScheduleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TBScheduleViewController.xib; sourceTree = "<group>"; };
+		0F23E895173BE9E8005C3288 /* schedulecell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = schedulecell.png; sourceTree = "<group>"; };
+		0F23E896173BE9E9005C3288 /* scheduleEmployeeBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scheduleEmployeeBtn.png; sourceTree = "<group>"; };
+		0F23E897173BE9E9005C3288 /* schueduleIndicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = schueduleIndicator.png; sourceTree = "<group>"; };
+		0F23E898173BE9EA005C3288 /* schedulecell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "schedulecell@2x.png"; sourceTree = "<group>"; };
+		0F23E899173BE9EA005C3288 /* scheduleEmployeeBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scheduleEmployeeBtn@2x.png"; sourceTree = "<group>"; };
+		0F23E89A173BE9EB005C3288 /* schueduleIndicator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "schueduleIndicator@2x.png"; sourceTree = "<group>"; };
+		0F23E89B173BE9EB005C3288 /* schuduleHeader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = schuduleHeader.png; sourceTree = "<group>"; };
+		0F23E89C173BE9EC005C3288 /* schuduleHeader@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "schuduleHeader@2x.png"; sourceTree = "<group>"; };
 		0F2A55F1173A839C00AA5FDF /* TabbarTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabbarTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F2A55F5173A839C00AA5FDF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0F2A55F7173A839D00AA5FDF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -153,6 +201,13 @@
 		0F9469C2173AC44D005A6AC5 /* bgCellRightEmployee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgCellRightEmployee.png; sourceTree = "<group>"; };
 		0F9469C3173AC44E005A6AC5 /* bgCellLeftEmployee@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgCellLeftEmployee@2x.png"; sourceTree = "<group>"; };
 		0F9469C4173AC44F005A6AC5 /* bgCellRightEmployee@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgCellRightEmployee@2x.png"; sourceTree = "<group>"; };
+		0FCCE767173BF67600CA1966 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0FCCE77B173C1B6700CA1966 /* bgPopupimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgPopupimage.png; sourceTree = "<group>"; };
+		0FCCE77C173C1B6700CA1966 /* bgPopupimage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgPopupimage@2x.png"; sourceTree = "<group>"; };
+		0FCCE77D173C1B6700CA1966 /* closeImageBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = closeImageBtn.png; sourceTree = "<group>"; };
+		0FCCE77E173C1B6700CA1966 /* testimagePopup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testimagePopup.png; sourceTree = "<group>"; };
+		0FCCE77F173C1B6700CA1966 /* closeImageBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "closeImageBtn@2x.png"; sourceTree = "<group>"; };
+		0FCCE780173C1B6700CA1966 /* testimagePopup@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testimagePopup@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +215,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FCCE768173BF67600CA1966 /* QuartzCore.framework in Frameworks */,
 				0F2A55F6173A839D00AA5FDF /* UIKit.framework in Frameworks */,
 				0F2A55F8173A839D00AA5FDF /* Foundation.framework in Frameworks */,
 				0F2A55FA173A839D00AA5FDF /* CoreGraphics.framework in Frameworks */,
@@ -169,9 +225,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F23E875173BCAE3005C3288 /* OtherView */ = {
+			isa = PBXGroup;
+			children = (
+				0F23E877173BCB28005C3288 /* EmployeeCellLeftCell.h */,
+				0F23E878173BCB28005C3288 /* EmployeeCellLeftCell.m */,
+				0F23E87A173BCB42005C3288 /* EmployeeCellRight.h */,
+				0F23E87B173BCB42005C3288 /* EmployeeCellRight.m */,
+				0F23E87D173BCB5C005C3288 /* CustomCell.xib */,
+			);
+			path = OtherView;
+			sourceTree = "<group>";
+		};
 		0F2A55E6173A839C00AA5FDF = {
 			isa = PBXGroup;
 			children = (
+				0FCCE767173BF67600CA1966 /* QuartzCore.framework */,
 				0F2A568C173AA19D00AA5FDF /* Default-Landscape~ipad.png */,
 				0F2A55FB173A839D00AA5FDF /* TabbarTable */,
 				0F2A55F4173A839C00AA5FDF /* Frameworks */,
@@ -220,6 +289,7 @@
 		0F2A561C173A85E800AA5FDF /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				0F23E875173BCAE3005C3288 /* OtherView */,
 				0F2A561D173A85E800AA5FDF /* AppDelegate */,
 				0F2A5629173A85E800AA5FDF /* Viewcontroller */,
 				0F2A5620173A85E800AA5FDF /* Resource */,
@@ -327,6 +397,9 @@
 				0F2A5673173A9BDB00AA5FDF /* TBEmployee.h */,
 				0F2A5674173A9BDB00AA5FDF /* TBEmployee.m */,
 				0F2A5675173A9BDB00AA5FDF /* TBEmployee.xib */,
+				0F23E890173BE641005C3288 /* TBScheduleViewController.h */,
+				0F23E891173BE641005C3288 /* TBScheduleViewController.m */,
+				0F23E892173BE641005C3288 /* TBScheduleViewController.xib */,
 			);
 			path = Employee;
 			sourceTree = "<group>";
@@ -374,6 +447,26 @@
 		0F9469A4173ABBC1005A6AC5 /* Employee */ = {
 			isa = PBXGroup;
 			children = (
+				0FCCE77B173C1B6700CA1966 /* bgPopupimage.png */,
+				0FCCE77C173C1B6700CA1966 /* bgPopupimage@2x.png */,
+				0FCCE77D173C1B6700CA1966 /* closeImageBtn.png */,
+				0FCCE77E173C1B6700CA1966 /* testimagePopup.png */,
+				0FCCE77F173C1B6700CA1966 /* closeImageBtn@2x.png */,
+				0FCCE780173C1B6700CA1966 /* testimagePopup@2x.png */,
+				0F23E895173BE9E8005C3288 /* schedulecell.png */,
+				0F23E896173BE9E9005C3288 /* scheduleEmployeeBtn.png */,
+				0F23E897173BE9E9005C3288 /* schueduleIndicator.png */,
+				0F23E898173BE9EA005C3288 /* schedulecell@2x.png */,
+				0F23E899173BE9EA005C3288 /* scheduleEmployeeBtn@2x.png */,
+				0F23E89A173BE9EB005C3288 /* schueduleIndicator@2x.png */,
+				0F23E89B173BE9EB005C3288 /* schuduleHeader.png */,
+				0F23E89C173BE9EC005C3288 /* schuduleHeader@2x.png */,
+				0F23E87F173BDEEA005C3288 /* messagePlaceholder.png */,
+				0F23E880173BDEEA005C3288 /* placeholderPuchImage.png */,
+				0F23E881173BDEEA005C3288 /* punchBtn.png */,
+				0F23E882173BDEEA005C3288 /* messagePlaceholder@2x.png */,
+				0F23E883173BDEEA005C3288 /* placeholderPuchImage@2x.png */,
+				0F23E884173BDEEB005C3288 /* punchBtn@2x.png */,
 				0F9469C1173AC44C005A6AC5 /* bgCellLeftEmployee.png */,
 				0F9469C2173AC44D005A6AC5 /* bgCellRightEmployee.png */,
 				0F9469C3173AC44E005A6AC5 /* bgCellLeftEmployee@2x.png */,
@@ -502,6 +595,28 @@
 				0F9469C6173AC450005A6AC5 /* bgCellRightEmployee.png in Resources */,
 				0F9469C7173AC450005A6AC5 /* bgCellLeftEmployee@2x.png in Resources */,
 				0F9469C8173AC450005A6AC5 /* bgCellRightEmployee@2x.png in Resources */,
+				0F23E87E173BCB5C005C3288 /* CustomCell.xib in Resources */,
+				0F23E885173BDEEB005C3288 /* messagePlaceholder.png in Resources */,
+				0F23E886173BDEEB005C3288 /* placeholderPuchImage.png in Resources */,
+				0F23E887173BDEEB005C3288 /* punchBtn.png in Resources */,
+				0F23E888173BDEEB005C3288 /* messagePlaceholder@2x.png in Resources */,
+				0F23E889173BDEEB005C3288 /* placeholderPuchImage@2x.png in Resources */,
+				0F23E88A173BDEEB005C3288 /* punchBtn@2x.png in Resources */,
+				0F23E894173BE641005C3288 /* TBScheduleViewController.xib in Resources */,
+				0F23E89D173BE9ED005C3288 /* schedulecell.png in Resources */,
+				0F23E89E173BE9ED005C3288 /* scheduleEmployeeBtn.png in Resources */,
+				0F23E89F173BE9ED005C3288 /* schueduleIndicator.png in Resources */,
+				0F23E8A0173BE9ED005C3288 /* schedulecell@2x.png in Resources */,
+				0F23E8A1173BE9ED005C3288 /* scheduleEmployeeBtn@2x.png in Resources */,
+				0F23E8A2173BE9ED005C3288 /* schueduleIndicator@2x.png in Resources */,
+				0F23E8A3173BE9ED005C3288 /* schuduleHeader.png in Resources */,
+				0F23E8A4173BE9ED005C3288 /* schuduleHeader@2x.png in Resources */,
+				0FCCE781173C1B6700CA1966 /* bgPopupimage.png in Resources */,
+				0FCCE782173C1B6700CA1966 /* bgPopupimage@2x.png in Resources */,
+				0FCCE783173C1B6700CA1966 /* closeImageBtn.png in Resources */,
+				0FCCE784173C1B6700CA1966 /* testimagePopup.png in Resources */,
+				0FCCE785173C1B6700CA1966 /* closeImageBtn@2x.png in Resources */,
+				0FCCE786173C1B6700CA1966 /* testimagePopup@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,6 +636,9 @@
 				0F2A5680173A9C3100AA5FDF /* TBNewCheck.m in Sources */,
 				0F2A5685173A9C4800AA5FDF /* TBPrint.m in Sources */,
 				0F2A568A173A9CA000AA5FDF /* TBReport.m in Sources */,
+				0F23E879173BCB28005C3288 /* EmployeeCellLeftCell.m in Sources */,
+				0F23E87C173BCB42005C3288 /* EmployeeCellRight.m in Sources */,
+				0F23E893173BE641005C3288 /* TBScheduleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

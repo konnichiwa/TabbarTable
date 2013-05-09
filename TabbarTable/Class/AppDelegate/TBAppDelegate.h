@@ -25,5 +25,5 @@
 @property(strong,nonatomic) UINavigationController *ncReport;
 @property(strong,nonatomic) UINavigationController *ncPrint;
 @property(strong,nonatomic) UINavigationController *ncNewcheck;
-
++ (TBAppDelegate *)shareAppDelegate;
 @end

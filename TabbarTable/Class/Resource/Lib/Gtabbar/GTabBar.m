@@ -33,11 +33,11 @@
 - (BOOL)shouldAutorotate {
 
     
-    return NO;
+    return YES;
 }
 
 -(NSInteger)supportedInterfaceOrientations{
-    return UIInterfaceOrientationMaskPortrait;
+    return UIInterfaceOrientationMaskLandscape;
 }
 //we are creating a view with the same bounds as the window, so it covers the whole area.
 //also we are initializing the arrays that will hold the UIViewControllers and the TabBarItems

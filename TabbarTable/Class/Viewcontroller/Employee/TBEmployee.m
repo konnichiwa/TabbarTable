@@ -7,7 +7,9 @@
 //
 
 #import "TBEmployee.h"
-
+#import "EmployeeCellLeftCell.h"
+#import "EmployeeCellRight.h"
+#import "TBAppDelegate.h"
 @interface TBEmployee ()
 
 @end
@@ -26,6 +28,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    overlayerView=[[UIView alloc] initWithFrame:self.view.frame];
+    overlayerView.backgroundColor=[UIColor blackColor];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -49,35 +53,38 @@
 }
 - (UITableViewCell*)tableView:(UITableView *)aTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (aTableView.tag==1) {
-        static NSString *CellIdentifier = @"Cell";
-        UITableViewCell *cell = [aTableView dequeueReusableCellWithIdentifier:CellIdentifier];
-        
-        // Configure the cell...
-        if (cell == nil) {
-            cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        static NSString *indentifier = @"EmployeeCellLeft";
+        EmployeeCellLeftCell *cell = (EmployeeCellLeftCell *)[aTableView dequeueReusableCellWithIdentifier: indentifier];
+        //cell = nil;
+        if (cell == nil)  {
+            NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"CustomCell"
+                                                         owner:self options:nil] ;
+            for (id oneObject in nib)
+                if ([oneObject isKindOfClass:[EmployeeCellLeftCell class]])
+                    cell = (EmployeeCellLeftCell *)oneObject;
         }
+        cell.puchBtn1.tag=indexPath.row;
+        cell.puchBtn2.tag=indexPath.row;
+        [cell.puchBtn1 addTarget:self action:@selector(punch1Press:) forControlEvents:UIControlEventTouchUpInside];
+        [cell.puchBtn2 addTarget:self action:@selector(punch2Press:) forControlEvents:UIControlEventTouchUpInside];
         cell.backgroundView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bgCellLeftEmployee.png"]];
-        UILabel *datetext=[[UILabel alloc] initWithFrame:CGRectMake(0, 0, 150 , 48)];
-        datetext.text=@"Fri Jan 8";
-        datetext.font=[UIFont systemFontOfSize:15];
-        datetext.textColor=[UIColor darkGrayColor];
-        datetext.backgroundColor=[UIColor clearColor];
-        datetext.textAlignment=NSTextAlignmentCenter;
-        [cell addSubview:datetext];
-        [datetext release];
         //add dot right of animal name
         return cell;
     }else{
-        static NSString *CellIdentifier = @"Cell";
-        UITableViewCell *cell = [aTableView dequeueReusableCellWithIdentifier:CellIdentifier];
-        
-        // Configure the cell...
-        if (cell == nil) {
-            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        static NSString *indentifier = @"EmployeeCellRight";
+        EmployeeCellRight *cell = (EmployeeCellRight *)[aTableView dequeueReusableCellWithIdentifier: indentifier];
+        //cell = nil;
+        if (cell == nil)  {
+            NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"CustomCell"
+                                                         owner:self options:nil] ;
+            for (id oneObject in nib)
+                if ([oneObject isKindOfClass:[EmployeeCellRight class]])
+                    cell = (EmployeeCellRight *)oneObject;
         }
                 cell.backgroundView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bgCellRightEmployee.png"]];
         //add dot right of animal name
         return cell;
+
     }
 
 }
@@ -90,17 +97,63 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self showPopupTocenterWithView:_popupImage fromPoint:CGPointZero];
 }
 
 
 - (void)dealloc {
     [_leftTableView release];
     [_rightTableView release];
+    [_popupImage release];
     [super dealloc];
 }
 - (void)viewDidUnload {
     [self setLeftTableView:nil];
     [self setRightTableView:nil];
+    [self setPopupImage:nil];
     [super viewDidUnload];
+}
+#pragma mark- action
+- (IBAction)closePopupBtn:(id)sender {
+}
+
+- (IBAction)schedulePress:(id)sender {
+    TBScheduleViewController *aTBScheduleViewController=[[[TBScheduleViewController alloc] initWithNibName:@"TBScheduleViewController" bundle:nil] autorelease];
+    [self.navigationController pushViewController:aTBScheduleViewController animated:YES];
+}
+
+- (IBAction)newMessPress:(id)sender {
+}
+-(void)punch1Press:(id)sender{
+    NSLog(@"self frame:%@ sender frame:%@",NSStringFromCGRect(self.view.frame),NSStringFromCGRect([sender frame]));
+    CGRect frame =   [sender convertRect:[sender frame] toView:_leftTableView];
+    [self showPopupTocenterWithView:_popupImage fromPoint:frame.origin];
+        NSLog(@"self frame:%@ sender frame:%@",NSStringFromCGRect(self.view.frame),NSStringFromCGRect(frame));
+}
+-(void)punch2Press:(id)sender{
+
+    CGRect frame =   [sender convertRect:[sender frame] toView:self.view];
+    [self showPopupTocenterWithView:_popupImage fromPoint:frame.origin];
+}
+-(void)showPopupTocenterWithView:(UIView*)myView fromPoint:(CGPoint)point{
+    CGRect frame=CGRectMake(1024/2.0-WIDTHPOPUP/2.0, 768/2.0-HIGHTPOPUP/2.0, WIDTHPOPUP, HIGHTPOPUP);
+    myView.alpha=0;
+    myView.frame=CGRectMake(point.x, point.y, 0, 0);
+    [[TBAppDelegate shareAppDelegate].tabbarView.view addSubview:overlayerView];
+    overlayerView.alpha=0;
+    overlayerView.frame=CGRectMake(0, 0, 1024, 768);
+    [[TBAppDelegate shareAppDelegate].tabbarView.view addSubview:myView];
+    [UIView animateWithDuration:0.7
+                          delay:0.1
+                        options: UIViewAnimationCurveEaseOut
+                     animations:^{
+                         myView.frame=frame;
+                         myView.alpha=1;
+                         overlayerView.alpha=0.7;
+                     }
+                     completion:^(BOOL finished){
+                         
+                     }];
+
 }
 @end
