@@ -1,5 +1,5 @@
 //
-//  TBViewController.h
+//  TBPrint.h
 //  TabbarTable
 //
 //  Created by luan on 5/8/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TBViewController : UIViewController
+@interface TBPrint : UIViewController
 
 @end
