@@ -11,7 +11,10 @@
 #import "EmployeeCellRight.h"
 #import "TBAppDelegate.h"
 @interface TBEmployee ()
+{
+    CGPoint backPoint;
 
+}
 @end
 
 @implementation TBEmployee
@@ -97,7 +100,6 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    [self showPopupTocenterWithView:_popupImage fromPoint:CGPointZero];
 }
 
 
@@ -115,6 +117,7 @@
 }
 #pragma mark- action
 - (IBAction)closePopupBtn:(id)sender {
+    [self hidePopupTocenterWithView:_popupImage fromPoint:backPoint];
 }
 
 - (IBAction)schedulePress:(id)sender {
@@ -125,35 +128,51 @@
 - (IBAction)newMessPress:(id)sender {
 }
 -(void)punch1Press:(id)sender{
-    NSLog(@"self frame:%@ sender frame:%@",NSStringFromCGRect(self.view.frame),NSStringFromCGRect([sender frame]));
-    CGRect frame =   [sender convertRect:[sender frame] toView:_leftTableView];
-    [self showPopupTocenterWithView:_popupImage fromPoint:frame.origin];
-        NSLog(@"self frame:%@ sender frame:%@",NSStringFromCGRect(self.view.frame),NSStringFromCGRect(frame));
+    CGPoint frame =   [[sender superview] convertPoint:[sender center] toView:self.view];
+    backPoint=frame;
+    [self showPopupTocenterWithView:_popupImage fromPoint:frame];
 }
 -(void)punch2Press:(id)sender{
 
-    CGRect frame =   [sender convertRect:[sender frame] toView:self.view];
-    [self showPopupTocenterWithView:_popupImage fromPoint:frame.origin];
+    CGPoint frame =   [[sender superview] convertPoint:[sender center] toView:self.view];
+    backPoint=frame;
+    [self showPopupTocenterWithView:_popupImage fromPoint:frame];
 }
+#pragma mark-show hide punch image
 -(void)showPopupTocenterWithView:(UIView*)myView fromPoint:(CGPoint)point{
+    myView=_popupImage;
     CGRect frame=CGRectMake(1024/2.0-WIDTHPOPUP/2.0, 768/2.0-HIGHTPOPUP/2.0, WIDTHPOPUP, HIGHTPOPUP);
-    myView.alpha=0;
     myView.frame=CGRectMake(point.x, point.y, 0, 0);
     [[TBAppDelegate shareAppDelegate].tabbarView.view addSubview:overlayerView];
     overlayerView.alpha=0;
     overlayerView.frame=CGRectMake(0, 0, 1024, 768);
     [[TBAppDelegate shareAppDelegate].tabbarView.view addSubview:myView];
-    [UIView animateWithDuration:0.7
+    [UIView animateWithDuration:0.5
                           delay:0.1
                         options: UIViewAnimationCurveEaseOut
                      animations:^{
                          myView.frame=frame;
-                         myView.alpha=1;
                          overlayerView.alpha=0.7;
                      }
                      completion:^(BOOL finished){
                          
                      }];
 
+}
+-(void)hidePopupTocenterWithView:(UIView*)myView fromPoint:(CGPoint)point{
+    CGRect frame=CGRectZero;
+    frame.origin=point;
+    [UIView animateWithDuration:0.5
+                          delay:0.1
+                        options: UIViewAnimationCurveEaseOut
+                     animations:^{
+                         myView.frame=frame;
+                         overlayerView.alpha=0;
+                     }
+                     completion:^(BOOL finished){
+                         [myView removeFromSuperview];
+                         [overlayerView removeFromSuperview];
+                     }];
+    
 }
 @end
