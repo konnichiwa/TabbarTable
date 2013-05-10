@@ -31,8 +31,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"bgApp.png"]];
     overlayerView=[[UIView alloc] initWithFrame:self.view.frame];
     overlayerView.backgroundColor=[UIColor blackColor];
+    [self setupMessBox];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -40,6 +42,31 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+#pragma mark - setup messagebox
+-(void)setupMessBox{
+    _textView.contentInset = UIEdgeInsetsMake(0, 5, 0, 5);
+    
+	_textView.minNumberOfLines = 1;
+	_textView.maxNumberOfLines = 5;
+	_textView.returnKeyType = UIReturnKeyGo; //just as an example
+	_textView.font = [UIFont systemFontOfSize:15.0f];
+	_textView.delegate = (id)self;
+    _textView.internalTextView.scrollIndicatorInsets = UIEdgeInsetsMake(5, 0, 5, 0);
+    _textView.internalTextView.backgroundColor=[UIColor clearColor];
+    _textView.backgroundColor = [UIColor clearColor];
+    
+    UIImage *rawEntryBackground = [UIImage imageNamed:@"MessageEntryBackground.png"];
+    UIImage *entryBackground = [rawEntryBackground stretchableImageWithLeftCapWidth:20 topCapHeight:13];
+    _bgmsgBox.image=entryBackground;
+    _bgmsgBox.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+//
+    UIImage *rawBackground = [UIImage imageNamed:@"MessageEntryInputField.png"];
+    UIImage *background = [rawBackground stretchableImageWithLeftCapWidth:10 topCapHeight:18];
+     _textEntryMsgbox.image=background;
+    _textEntryMsgbox.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+
+    _textView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
 }
 #pragma mark
 #pragma table delegate
@@ -107,13 +134,40 @@
     [_leftTableView release];
     [_rightTableView release];
     [_popupImage release];
+    [_textView release];
+    [_messageView release];
+    [_scrollviewToAjd release];
+    [_bgmsgBox release];
+    [_contentMsgBox release];
+    [_textEntryMsgbox release];
     [super dealloc];
 }
 - (void)viewDidUnload {
     [self setLeftTableView:nil];
     [self setRightTableView:nil];
     [self setPopupImage:nil];
+    [self setTextView:nil];
+    [self setMessageView:nil];
+    [self setScrollviewToAjd:nil];
+    [self setBgmsgBox:nil];
+    [self setContentMsgBox:nil];
+    [self setTextEntryMsgbox:nil];
     [super viewDidUnload];
+}
+- (void)growingTextViewDidBeginEditing:(HPGrowingTextView *)growingTextView{
+    [(TPKeyboardAvoidingScrollView*)_scrollviewToAjd adjustOffsetToIdealIfNeeded];
+}
+- (void)growingTextViewDidEndEditing:(HPGrowingTextView *)growingTextView{
+    
+    
+}
+- (void)growingTextView:(HPGrowingTextView *)growingTextView willChangeHeight:(float)height
+{
+    float diff = (growingTextView.frame.size.height - height);
+	CGRect r = _messageView.frame;
+    r.size.height -= diff;
+    r.origin.y += diff;
+	_messageView.frame = r;
 }
 #pragma mark- action
 - (IBAction)closePopupBtn:(id)sender {
@@ -142,9 +196,11 @@
 -(void)showPopupTocenterWithView:(UIView*)myView fromPoint:(CGPoint)point{
     myView=_popupImage;
     CGRect frame=CGRectMake(1024/2.0-WIDTHPOPUP/2.0, 768/2.0-HIGHTPOPUP/2.0, WIDTHPOPUP, HIGHTPOPUP);
-    myView.frame=CGRectMake(point.x, point.y, 0, 0);
+    myView.frame=CGRectMake(0, 0, 0, 0);
+    myView.center=point;
     [[TBAppDelegate shareAppDelegate].tabbarView.view addSubview:overlayerView];
     overlayerView.alpha=0;
+    myView.alpha=0;
     overlayerView.frame=CGRectMake(0, 0, 1024, 768);
     [[TBAppDelegate shareAppDelegate].tabbarView.view addSubview:myView];
     [UIView animateWithDuration:0.5
@@ -153,6 +209,7 @@
                      animations:^{
                          myView.frame=frame;
                          overlayerView.alpha=0.7;
+                         myView.alpha=1;
                      }
                      completion:^(BOOL finished){
                          
@@ -168,6 +225,7 @@
                      animations:^{
                          myView.frame=frame;
                          overlayerView.alpha=0;
+                         myView.alpha=0;
                      }
                      completion:^(BOOL finished){
                          [myView removeFromSuperview];

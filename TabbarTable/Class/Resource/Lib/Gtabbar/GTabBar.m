@@ -43,7 +43,7 @@
 //also we are initializing the arrays that will hold the UIViewControllers and the TabBarItems
 - (id)initWithTabViewControllers:(NSMutableArray *)tbControllers tabItems:(NSMutableArray *)tbItems initialTab:(int)iTab WithBackground:(UIImage*)imageBacground{
 	if ((self = [super init])) {
-
+        self.view.backgroundColor=[UIColor blackColor];
 		self.view.frame = CGRectMake(0, 0, 1024, 768);
                 NSLog(@"frame :%@",NSStringFromCGRect(self.view.frame));
 		initTab = iTab;
