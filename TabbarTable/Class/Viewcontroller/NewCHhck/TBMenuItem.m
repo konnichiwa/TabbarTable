@@ -8,6 +8,7 @@
 
 #import "TBMenuItem.h"
 #import "TBOderItemCell.h"
+#import "TBCheckOderCell.h"
 @interface TBMenuItem ()
 {
     BOOL checkbox1[200];
@@ -29,6 +30,7 @@
     [self setSearchBar:nil];
     [self setTableListItem1:nil];
     [self setTableListItem2:nil];
+    [self setGridListItem:nil];
     [super viewDidUnload];
 }
 - (void)viewDidLoad
@@ -45,7 +47,57 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+#pragma mark-gridview delegate
+- (CGFloat) gridView:(UIGridView *)grid widthForColumnAt:(int)columnIndex
+{
+	return 122;
+}
+
+- (CGFloat) gridView:(UIGridView *)grid heightForRowAt:(int)rowIndex
+{
+	return 161;
+}
+
+- (NSInteger) numberOfColumnsOfGridView:(UIGridView *) grid
+{
+	return 5;
+}
+
+
+- (NSInteger) numberOfCellsOfGridView:(UIGridView *) grid
+{
+	return 19;
+}
+
+- (UIGridViewCell *) gridView:(UIGridView *)grid cellForRowAt:(int)rowIndex AndColumnAt:(int)columnIndex
+{
+	TBCheckOderCell *cell = (TBCheckOderCell *)[grid dequeueReusableCell];
+    //cell = nil;
+    if (cell == nil)  {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"CustomCell"
+                                                     owner:self options:nil] ;
+        for (id oneObject in nib)
+            if ([oneObject isKindOfClass:[TBCheckOderCell class]])
+                cell = (TBCheckOderCell *)oneObject;
+    }
+    [cell.btnItem addTarget:self action:@selector(ItemPress:) forControlEvents:UIControlEventTouchUpInside];
+    cell.btnItem.tag=rowIndex*5+columnIndex+1;
+    [cell .btnItem setImage:[UIImage imageNamed:[NSString stringWithFormat:@"item%d",rowIndex*5+columnIndex+1]] forState:UIControlStateNormal];
+    cell.nameItem.text=[NSString stringWithFormat:@"Item %d",rowIndex*5+columnIndex+1];
+	return cell;
+}
+
+- (void) gridView:(UIGridView *)grid didSelectRowAt:(int)rowIndex AndColumnAt:(int)colIndex
+{
+	NSLog(@"%d, %d clicked", rowIndex, colIndex);
+}
+-(void)ItemPress:(id)sender{
+    NSLog(@"tag:%d",[sender tag]);
+    TBMenuItem *aTBMenuItem=[[[TBMenuItem alloc] initWithNibName:@"TBMenuItem" bundle:nil] autorelease];
+    [self.navigationController pushViewController:aTBMenuItem animated:YES];
+}
 #pragma mark- table delegate
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 15;
@@ -107,6 +159,7 @@
     [_searchBar release];
     [_tableListItem1 release];
     [_tableListItem2 release];
+    [_gridListItem release];
     [super dealloc];
 }
 
