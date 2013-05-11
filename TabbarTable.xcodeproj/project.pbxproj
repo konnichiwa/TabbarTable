@@ -69,6 +69,7 @@
 		0F13B89B173E2E040056D1AB /* bgheaderTableModify@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F13B892173E2E030056D1AB /* bgheaderTableModify@2x.png */; };
 		0F13B89C173E2E040056D1AB /* btnAlphabel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F13B893173E2E030056D1AB /* btnAlphabel@2x.png */; };
 		0F13B89D173E2E040056D1AB /* btnGray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F13B894173E2E030056D1AB /* btnGray@2x.png */; };
+		0F13B8A2173E34AA0056D1AB /* TBModifyMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F13B8A1173E34AA0056D1AB /* TBModifyMenuCell.m */; };
 		0F23E879173BCB28005C3288 /* EmployeeCellLeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F23E878173BCB28005C3288 /* EmployeeCellLeftCell.m */; };
 		0F23E87C173BCB42005C3288 /* EmployeeCellRight.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F23E87B173BCB42005C3288 /* EmployeeCellRight.m */; };
 		0F23E87E173BCB5C005C3288 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F23E87D173BCB5C005C3288 /* CustomCell.xib */; };
@@ -294,6 +295,8 @@
 		0F13B892173E2E030056D1AB /* bgheaderTableModify@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgheaderTableModify@2x.png"; sourceTree = "<group>"; };
 		0F13B893173E2E030056D1AB /* btnAlphabel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnAlphabel@2x.png"; sourceTree = "<group>"; };
 		0F13B894173E2E030056D1AB /* btnGray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnGray@2x.png"; sourceTree = "<group>"; };
+		0F13B8A0173E34AA0056D1AB /* TBModifyMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBModifyMenuCell.h; sourceTree = "<group>"; };
+		0F13B8A1173E34AA0056D1AB /* TBModifyMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBModifyMenuCell.m; sourceTree = "<group>"; };
 		0F23E877173BCB28005C3288 /* EmployeeCellLeftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeCellLeftCell.h; sourceTree = "<group>"; };
 		0F23E878173BCB28005C3288 /* EmployeeCellLeftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeCellLeftCell.m; sourceTree = "<group>"; };
 		0F23E87A173BCB42005C3288 /* EmployeeCellRight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeCellRight.h; sourceTree = "<group>"; };
@@ -557,6 +560,8 @@
 		0F13B89F173E33430056D1AB /* CellForModifyMenu */ = {
 			isa = PBXGroup;
 			children = (
+				0F13B8A0173E34AA0056D1AB /* TBModifyMenuCell.h */,
+				0F13B8A1173E34AA0056D1AB /* TBModifyMenuCell.m */,
 			);
 			path = CellForModifyMenu;
 			sourceTree = "<group>";
@@ -1221,6 +1226,7 @@
 				0FE1CDD6173E04830089BB2F /* TBOderItemCell.m in Sources */,
 				0F13B829173E12230056D1AB /* TBMenuItem.m in Sources */,
 				0F13B88A173E2A1F0056D1AB /* TBModifyMenu.m in Sources */,
+				0F13B8A2173E34AA0056D1AB /* TBModifyMenuCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
