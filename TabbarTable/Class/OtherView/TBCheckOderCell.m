@@ -28,4 +28,9 @@
 }
 */
 
+- (void)dealloc {
+    [_btnItem release];
+    [_nameItem release];
+    [super dealloc];
+}
 @end

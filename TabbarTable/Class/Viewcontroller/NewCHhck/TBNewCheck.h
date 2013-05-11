@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "UIGridView.h"
 @interface TBNewCheck : UIViewController
 
+@property (retain, nonatomic) IBOutlet UISearchBar *searchBar;
+@property (retain, nonatomic) IBOutlet UIGridView *uitableview1;
+@property (retain, nonatomic) IBOutlet UITableView *tableOderList;
 @end

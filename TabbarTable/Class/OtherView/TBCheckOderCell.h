@@ -9,5 +9,7 @@
 #import "UIGridViewCell.h"
 
 @interface TBCheckOderCell : UIGridViewCell
+@property (retain, nonatomic) IBOutlet UIButton *btnItem;
+@property (retain, nonatomic) IBOutlet UILabel *nameItem;
 
 @end

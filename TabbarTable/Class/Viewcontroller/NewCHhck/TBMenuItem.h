@@ -10,4 +10,8 @@
 
 @interface TBMenuItem : UIViewController
 
+@property (retain, nonatomic) IBOutlet UISearchBar *searchBar;
+@property (retain, nonatomic) IBOutlet UITableView *tableListItem1;
+@property (retain, nonatomic) IBOutlet UITableView *tableListItem2;
+- (IBAction)backPress:(id)sender;
 @end

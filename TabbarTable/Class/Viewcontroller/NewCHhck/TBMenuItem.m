@@ -7,9 +7,12 @@
 //
 
 #import "TBMenuItem.h"
-
+#import "TBOderItemCell.h"
 @interface TBMenuItem ()
-
+{
+    BOOL checkbox1[200];
+    BOOL checkbox2[200];
+}
 @end
 
 @implementation TBMenuItem
@@ -22,9 +25,17 @@
     }
     return self;
 }
-
+- (void)viewDidUnload {
+    [self setSearchBar:nil];
+    [self setTableListItem1:nil];
+    [self setTableListItem2:nil];
+    [super viewDidUnload];
+}
 - (void)viewDidLoad
 {
+    _searchBar.backgroundColor=[UIColor clearColor];
+    [[_searchBar.subviews objectAtIndex:0] removeFromSuperview];
+
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
@@ -34,5 +45,72 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+#pragma mark- table delegate
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 15;
+}
+- (UITableViewCell*)tableView:(UITableView *)aTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *indentifier = @"TBOderItemCell";
+    TBOderItemCell *cell = (TBOderItemCell *)[aTableView dequeueReusableCellWithIdentifier: indentifier];
+    //cell = nil;
+    if (cell == nil)  {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"CustomCell"
+                                                     owner:self options:nil] ;
+        for (id oneObject in nib){
+            if ([oneObject isKindOfClass:[TBOderItemCell class]])
+                cell = (TBOderItemCell *)oneObject;
+        }
+    }
+    if (aTableView==_tableListItem1) {
+        [cell.btnTick addTarget:self action:@selector(tickPress1:) forControlEvents:UIControlEventTouchUpInside];
+        cell.btnTick.tag=indexPath.row;
+        if (checkbox1[indexPath.row]) {
+            [cell.btnTick setImage:[UIImage imageNamed:@"tickOder.png"] forState:UIControlStateNormal];
+        }else{
+            [cell.btnTick setImage:[UIImage imageNamed:@"untickOder.png"] forState:UIControlStateNormal];
+        }
+    }
+    if (aTableView==_tableListItem2) {
+        [cell.btnTick addTarget:self action:@selector(tickPress2:) forControlEvents:UIControlEventTouchUpInside];
+        cell.btnTick.tag=indexPath.row;
+        if (checkbox2[indexPath.row]) {
+            [cell.btnTick setImage:[UIImage imageNamed:@"tickOder.png"] forState:UIControlStateNormal];
+        }else{
+            [cell.btnTick setImage:[UIImage imageNamed:@"untickOder.png"] forState:UIControlStateNormal];
+        }
+    }
+    
+    return cell;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 28;
+}
+#pragma mark
+#pragma selected table
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+#pragma mark-action
+-(void)tickPress1:(id)sender{
+    checkbox1[[sender tag]]=checkbox1[[sender tag]]==YES?NO:YES;
+    [_tableListItem1 reloadData];
+}
+-(void)tickPress2:(id)sender{
+    checkbox2[[sender tag]]=checkbox2[[sender tag]]==YES?NO:YES;
+    [_tableListItem2 reloadData];
+}
+
+- (void)dealloc {
+    [_searchBar release];
+    [_tableListItem1 release];
+    [_tableListItem2 release];
+    [super dealloc];
+}
+
+- (IBAction)backPress:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
 @end

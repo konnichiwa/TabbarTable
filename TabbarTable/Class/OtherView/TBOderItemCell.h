@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface TBOderItemCell : UITableViewCell
+@property (retain, nonatomic) IBOutlet UIButton *btnTick;
 
 @end
