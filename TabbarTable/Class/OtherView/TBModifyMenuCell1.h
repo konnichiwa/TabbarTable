@@ -1,5 +1,5 @@
 //
-//  TBModifyMenuCell.h
+//  TBModifyMenuCell1.h
 //  TabbarTable
 //
 //  Created by luan on 5/11/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TBModifyMenuCell : UITableViewCell
+@interface TBModifyMenuCell1 : UITableViewCell
 
 @end

@@ -1,14 +1,14 @@
 //
-//  TBModifyMenuCell.m
+//  TBModifyMenuCell1.m
 //  TabbarTable
 //
 //  Created by luan on 5/11/13.
 //  Copyright (c) 2013 Luan. All rights reserved.
 //
 
-#import "TBModifyMenuCell.h"
+#import "TBModifyMenuCell1.h"
 
-@implementation TBModifyMenuCell
+@implementation TBModifyMenuCell1
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

@@ -58,8 +58,6 @@
 		0F13B881173E22190056D1AB /* item1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F13B85C173E22190056D1AB /* item1@2x.png */; };
 		0F13B885173E29F30056D1AB /* bgModifyMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F13B883173E29F30056D1AB /* bgModifyMenu.png */; };
 		0F13B886173E29F30056D1AB /* bgModifyMenu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F13B884173E29F30056D1AB /* bgModifyMenu@2x.png */; };
-		0F13B88A173E2A1F0056D1AB /* TBModifyMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F13B888173E2A1F0056D1AB /* TBModifyMenu.m */; };
-		0F13B88B173E2A1F0056D1AB /* TBModifyMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F13B889173E2A1F0056D1AB /* TBModifyMenu.xib */; };
 		0F13B895173E2E040056D1AB /* bgcellTableModify.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F13B88C173E2E020056D1AB /* bgcellTableModify.png */; };
 		0F13B896173E2E040056D1AB /* bgheaderTableModify.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F13B88D173E2E030056D1AB /* bgheaderTableModify.png */; };
 		0F13B897173E2E040056D1AB /* bgtextBoxgrayModify.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F13B88E173E2E030056D1AB /* bgtextBoxgrayModify.png */; };
@@ -69,7 +67,11 @@
 		0F13B89B173E2E040056D1AB /* bgheaderTableModify@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F13B892173E2E030056D1AB /* bgheaderTableModify@2x.png */; };
 		0F13B89C173E2E040056D1AB /* btnAlphabel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F13B893173E2E030056D1AB /* btnAlphabel@2x.png */; };
 		0F13B89D173E2E040056D1AB /* btnGray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F13B894173E2E030056D1AB /* btnGray@2x.png */; };
-		0F13B8A2173E34AA0056D1AB /* TBModifyMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F13B8A1173E34AA0056D1AB /* TBModifyMenuCell.m */; };
+		0F13B8A5173E35790056D1AB /* TBModifyMenuCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F13B8A4173E35790056D1AB /* TBModifyMenuCell1.m */; };
+		0F13B8A7173E35C60056D1AB /* TBModifyMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F13B8A6173E35C60056D1AB /* TBModifyMenuCell.xib */; };
+		0F13B8AA173E38540056D1AB /* TBManageModifyMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F13B8A9173E38540056D1AB /* TBManageModifyMenu.m */; };
+		0F13B8AE173E39D60056D1AB /* TBModifyMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F13B8AC173E39D50056D1AB /* TBModifyMenu.m */; };
+		0F13B8AF173E39D60056D1AB /* TBModifyMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F13B8AD173E39D50056D1AB /* TBModifyMenu.xib */; };
 		0F23E879173BCB28005C3288 /* EmployeeCellLeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F23E878173BCB28005C3288 /* EmployeeCellLeftCell.m */; };
 		0F23E87C173BCB42005C3288 /* EmployeeCellRight.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F23E87B173BCB42005C3288 /* EmployeeCellRight.m */; };
 		0F23E87E173BCB5C005C3288 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F23E87D173BCB5C005C3288 /* CustomCell.xib */; };
@@ -283,9 +285,6 @@
 		0F13B85C173E22190056D1AB /* item1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item1@2x.png"; sourceTree = "<group>"; };
 		0F13B883173E29F30056D1AB /* bgModifyMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgModifyMenu.png; sourceTree = "<group>"; };
 		0F13B884173E29F30056D1AB /* bgModifyMenu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgModifyMenu@2x.png"; sourceTree = "<group>"; };
-		0F13B887173E2A1F0056D1AB /* TBModifyMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBModifyMenu.h; sourceTree = "<group>"; };
-		0F13B888173E2A1F0056D1AB /* TBModifyMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBModifyMenu.m; sourceTree = "<group>"; };
-		0F13B889173E2A1F0056D1AB /* TBModifyMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TBModifyMenu.xib; sourceTree = "<group>"; };
 		0F13B88C173E2E020056D1AB /* bgcellTableModify.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgcellTableModify.png; sourceTree = "<group>"; };
 		0F13B88D173E2E030056D1AB /* bgheaderTableModify.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgheaderTableModify.png; sourceTree = "<group>"; };
 		0F13B88E173E2E030056D1AB /* bgtextBoxgrayModify.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgtextBoxgrayModify.png; sourceTree = "<group>"; };
@@ -295,8 +294,14 @@
 		0F13B892173E2E030056D1AB /* bgheaderTableModify@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgheaderTableModify@2x.png"; sourceTree = "<group>"; };
 		0F13B893173E2E030056D1AB /* btnAlphabel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnAlphabel@2x.png"; sourceTree = "<group>"; };
 		0F13B894173E2E030056D1AB /* btnGray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnGray@2x.png"; sourceTree = "<group>"; };
-		0F13B8A0173E34AA0056D1AB /* TBModifyMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBModifyMenuCell.h; sourceTree = "<group>"; };
-		0F13B8A1173E34AA0056D1AB /* TBModifyMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBModifyMenuCell.m; sourceTree = "<group>"; };
+		0F13B8A3173E35790056D1AB /* TBModifyMenuCell1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBModifyMenuCell1.h; path = TabbarTable/Class/OtherView/TBModifyMenuCell1.h; sourceTree = SOURCE_ROOT; };
+		0F13B8A4173E35790056D1AB /* TBModifyMenuCell1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBModifyMenuCell1.m; path = TabbarTable/Class/OtherView/TBModifyMenuCell1.m; sourceTree = SOURCE_ROOT; };
+		0F13B8A6173E35C60056D1AB /* TBModifyMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TBModifyMenuCell.xib; path = TabbarTable/Class/OtherView/TBModifyMenuCell.xib; sourceTree = SOURCE_ROOT; };
+		0F13B8A8173E38540056D1AB /* TBManageModifyMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBManageModifyMenu.h; path = TabbarTable/Class/OtherView/TBManageModifyMenu.h; sourceTree = SOURCE_ROOT; };
+		0F13B8A9173E38540056D1AB /* TBManageModifyMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBManageModifyMenu.m; path = TabbarTable/Class/OtherView/TBManageModifyMenu.m; sourceTree = SOURCE_ROOT; };
+		0F13B8AB173E39D50056D1AB /* TBModifyMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBModifyMenu.h; sourceTree = "<group>"; };
+		0F13B8AC173E39D50056D1AB /* TBModifyMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBModifyMenu.m; sourceTree = "<group>"; };
+		0F13B8AD173E39D50056D1AB /* TBModifyMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TBModifyMenu.xib; sourceTree = "<group>"; };
 		0F23E877173BCB28005C3288 /* EmployeeCellLeftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeCellLeftCell.h; sourceTree = "<group>"; };
 		0F23E878173BCB28005C3288 /* EmployeeCellLeftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeCellLeftCell.m; sourceTree = "<group>"; };
 		0F23E87A173BCB42005C3288 /* EmployeeCellRight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeCellRight.h; sourceTree = "<group>"; };
@@ -560,8 +565,11 @@
 		0F13B89F173E33430056D1AB /* CellForModifyMenu */ = {
 			isa = PBXGroup;
 			children = (
-				0F13B8A0173E34AA0056D1AB /* TBModifyMenuCell.h */,
-				0F13B8A1173E34AA0056D1AB /* TBModifyMenuCell.m */,
+				0F13B8A3173E35790056D1AB /* TBModifyMenuCell1.h */,
+				0F13B8A4173E35790056D1AB /* TBModifyMenuCell1.m */,
+				0F13B8A6173E35C60056D1AB /* TBModifyMenuCell.xib */,
+				0F13B8A8173E38540056D1AB /* TBManageModifyMenu.h */,
+				0F13B8A9173E38540056D1AB /* TBManageModifyMenu.m */,
 			);
 			path = CellForModifyMenu;
 			sourceTree = "<group>";
@@ -750,9 +758,6 @@
 				0F23E890173BE641005C3288 /* TBScheduleViewController.h */,
 				0F23E891173BE641005C3288 /* TBScheduleViewController.m */,
 				0F23E892173BE641005C3288 /* TBScheduleViewController.xib */,
-				0F13B887173E2A1F0056D1AB /* TBModifyMenu.h */,
-				0F13B888173E2A1F0056D1AB /* TBModifyMenu.m */,
-				0F13B889173E2A1F0056D1AB /* TBModifyMenu.xib */,
 			);
 			path = Employee;
 			sourceTree = "<group>";
@@ -770,6 +775,9 @@
 		0F2A566B173A9B7500AA5FDF /* NewCHhck */ = {
 			isa = PBXGroup;
 			children = (
+				0F13B8AB173E39D50056D1AB /* TBModifyMenu.h */,
+				0F13B8AC173E39D50056D1AB /* TBModifyMenu.m */,
+				0F13B8AD173E39D50056D1AB /* TBModifyMenu.xib */,
 				0F2A567D173A9C3100AA5FDF /* TBNewCheck.h */,
 				0F2A567E173A9C3100AA5FDF /* TBNewCheck.m */,
 				0F2A567F173A9C3100AA5FDF /* TBNewCheck.xib */,
@@ -1184,7 +1192,6 @@
 				0F13B881173E22190056D1AB /* item1@2x.png in Resources */,
 				0F13B885173E29F30056D1AB /* bgModifyMenu.png in Resources */,
 				0F13B886173E29F30056D1AB /* bgModifyMenu@2x.png in Resources */,
-				0F13B88B173E2A1F0056D1AB /* TBModifyMenu.xib in Resources */,
 				0F13B895173E2E040056D1AB /* bgcellTableModify.png in Resources */,
 				0F13B896173E2E040056D1AB /* bgheaderTableModify.png in Resources */,
 				0F13B897173E2E040056D1AB /* bgtextBoxgrayModify.png in Resources */,
@@ -1194,6 +1201,8 @@
 				0F13B89B173E2E040056D1AB /* bgheaderTableModify@2x.png in Resources */,
 				0F13B89C173E2E040056D1AB /* btnAlphabel@2x.png in Resources */,
 				0F13B89D173E2E040056D1AB /* btnGray@2x.png in Resources */,
+				0F13B8A7173E35C60056D1AB /* TBModifyMenuCell.xib in Resources */,
+				0F13B8AF173E39D60056D1AB /* TBModifyMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1225,8 +1234,9 @@
 				0F71B7F4173DEB6900F90A49 /* TBCheckOderCell.m in Sources */,
 				0FE1CDD6173E04830089BB2F /* TBOderItemCell.m in Sources */,
 				0F13B829173E12230056D1AB /* TBMenuItem.m in Sources */,
-				0F13B88A173E2A1F0056D1AB /* TBModifyMenu.m in Sources */,
-				0F13B8A2173E34AA0056D1AB /* TBModifyMenuCell.m in Sources */,
+				0F13B8A5173E35790056D1AB /* TBModifyMenuCell1.m in Sources */,
+				0F13B8AA173E38540056D1AB /* TBManageModifyMenu.m in Sources */,
+				0F13B8AE173E39D60056D1AB /* TBModifyMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

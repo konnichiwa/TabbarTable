@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface TBModifyMenu : UIViewController
+@property (retain, nonatomic) IBOutlet UITableView *tableView;
 
 @end

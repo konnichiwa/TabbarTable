@@ -10,6 +10,8 @@
 #import "TBCheckOderCell.h"
 #import "TBOderItemCell.h"
 #import "TBMenuItem.h"
+#import "TBModifyMenu.h"
+#import "TBAppDelegate.h"
 @interface TBNewCheck ()
 {
     NSMutableArray *listItem;
@@ -27,7 +29,9 @@
     }
     return self;
 }
-
+-  (void)handleSingleTap:(UITapGestureRecognizer*)tap {
+    
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -129,6 +133,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self gotoModifyMenu];
 }
 #pragma mark-action
 -(void)tickPress:(id)sender{
@@ -148,5 +153,24 @@
     [self setTableOderList:nil];
     [super viewDidUnload];
 }
+-(void)gotoModifyMenu{
+    TBModifyMenu *aTBModifyMenu=[[[TBModifyMenu alloc] initWithNibName:@"TBModifyMenu" bundle:nil] autorelease];
+    [[TBAppDelegate shareAppDelegate].window addSubview:aTBModifyMenu.view];
+    aTBModifyMenu.view.frame=CGRectMake(0, 0, 1024, 768);
+    aTBModifyMenu.view.alpha=0;
+    [UIView animateWithDuration:0.5
+                          delay:0.1
+                        options: UIViewAnimationCurveEaseOut
+                     animations:^{
+                             aTBModifyMenu.view.alpha=1;
+                     }
+                     completion:^(BOOL finished){
+                         
+                     }];
+    
 
+}
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+}
 @end
