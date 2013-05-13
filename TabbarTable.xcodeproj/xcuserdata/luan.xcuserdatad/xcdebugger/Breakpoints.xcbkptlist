@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "TabbarTable/Class/Viewcontroller/NewCHhck/TBNewCheck.m"
-         timestampString = "390109107.491719"
+         timestampString = "390138255.009507"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "35"
-         endingLineNumber = "35"
+         startingLineNumber = "36"
+         endingLineNumber = "36"
          landmarkName = "-handleSingleTap:"
          landmarkType = "5">
       </FileBreakpoint>

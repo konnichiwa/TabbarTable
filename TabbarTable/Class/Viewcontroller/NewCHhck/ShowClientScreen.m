@@ -44,7 +44,6 @@
 - (UITableViewCell*)tableView:(UITableView *)aTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [aTableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
     // Configure the cell...
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
@@ -64,6 +63,9 @@
 }
 #pragma mark
 #pragma selected table
+- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
+    
+}
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
@@ -81,5 +83,14 @@
     [super viewDidUnload];
 }
 - (IBAction)submitPress:(id)sender {
+    [UIView animateWithDuration:0.5
+                          delay:0.1
+                        options: UIViewAnimationCurveEaseOut
+                     animations:^{
+                         self.view.alpha=0;
+                     }
+                     completion:^(BOOL finished){
+                         [self.view removeFromSuperview];
+                     }];
 }
 @end

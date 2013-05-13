@@ -1,28 +1,22 @@
 //
-//  TBNewCheck.m
+//  Payment.m
 //  TabbarTable
 //
-//  Created by luan on 5/8/13.
+//  Created by luan on 5/13/13.
 //  Copyright (c) 2013 Luan. All rights reserved.
 //
 
-#import "TBNewCheck.h"
-#import "TBCheckOderCell.h"
-#import "TBOderItemCell.h"
-#import "TBMenuItem.h"
-#import "TBModifyMenu.h"
-#import "TBAppDelegate.h"
-#import "TBEmployee.h"
-#import "ShowClientScreen.h"
 #import "Payment.h"
-@interface TBNewCheck ()
+#import "TBOderItemCell.h"
+#import "TBCheckOderCell.h"
+@interface Payment ()
 {
-    NSMutableArray *listItem;
     BOOL checkbox[500];
+        NSMutableArray *listItem;
 }
 @end
 
-@implementation TBNewCheck
+@implementation Payment
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,17 +26,12 @@
     }
     return self;
 }
--  (void)handleSingleTap:(UITapGestureRecognizer*)tap {
-    
-}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _searchBar.backgroundColor=[UIColor clearColor];
-    [[_searchBar.subviews objectAtIndex:0] removeFromSuperview];
-    _uitableview1.uiGridViewDelegate=(id)self;
-    listItem=[[NSMutableArray alloc] initWithObjects:@"Beer",@"Coffee",@"Dessert",@"Drinks",@"Entrée",@"Appetizer",@"Kid’s Menu",@"Liquors",@"Salads",@"Sandwiches",@"Sides",@"Soups",@"Wine",nil];
     // Do any additional setup after loading the view from its nib.
+    listItem=[[NSMutableArray alloc] initWithObjects:@"Beer",@"Coffee",@"Dessert",@"Drinks",@"Entrée",@"Appetizer",@"Kid’s Menu",@"Liquors",@"Salads",@"Sandwiches",@"Sides",@"Soups",@"Wine",nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -51,6 +40,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)dealloc {
+    [_tableOderList release];
+    [_uitableview1 release];
+    [super dealloc];
+}
+- (void)viewDidUnload {
+    [self setTableOderList:nil];
+    [self setUitableview1:nil];
+    [super viewDidUnload];
+}
 #pragma mark-gridview delegate
 - (CGFloat) gridView:(UIGridView *)grid widthForColumnAt:(int)columnIndex
 {
@@ -64,7 +63,7 @@
 
 - (NSInteger) numberOfColumnsOfGridView:(UIGridView *) grid
 {
-	return 5;
+	return 2;
 }
 
 
@@ -96,9 +95,6 @@
 	NSLog(@"%d, %d clicked", rowIndex, colIndex);
 }
 -(void)ItemPress:(id)sender{
-    NSLog(@"tag:%d",[sender tag]);
-    TBMenuItem *aTBMenuItem=[[[TBMenuItem alloc] initWithNibName:@"TBMenuItem" bundle:nil] autorelease];
-    [self.navigationController pushViewController:aTBMenuItem animated:YES];
 }
 #pragma mark- table delegate
 
@@ -125,7 +121,7 @@
         [cell.btnTick setImage:[UIImage imageNamed:@"untickOder.png"] forState:UIControlStateNormal];
     }
     
-        return cell;
+    return cell;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -136,71 +132,6 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    [self gotoModifyMenu];
-}
-#pragma mark-action
--(void)tickPress:(id)sender{
-    checkbox[[sender tag]]=checkbox[[sender tag]]==YES?NO:YES;
-    [_tableOderList reloadData];
-}
-- (IBAction)showClientPress:(id)sender {
-    [self gotoClientScreen];
 }
 
-- (IBAction)paymentPress:(id)sender {
-    Payment *aPayment=[[Payment alloc] initWithNibName:@"Payment" bundle:nil];
-    [self.navigationController pushViewController:aPayment animated:YES];
-    [aPayment release];
-}
-
--(void)gotoModifyMenu{
-    TBModifyMenu *aTBModifyMenu=[[TBModifyMenu alloc] initWithNibName:@"TBModifyMenu" bundle:nil];
-    [[TBAppDelegate shareAppDelegate].tabbarView.view addSubview:aTBModifyMenu.view];
-    [aTBModifyMenu.view setNeedsDisplay];
-    aTBModifyMenu.view.frame=CGRectMake(0, 0, 1024, 768);
-    aTBModifyMenu.view.alpha=0;
-    [UIView animateWithDuration:0.5
-                          delay:0.1
-                        options: UIViewAnimationCurveEaseOut
-                     animations:^{
-                             aTBModifyMenu.view.alpha=1;
-                     }
-                     completion:^(BOOL finished){
-                         
-                     }];
-    
-
-}
--(void)gotoClientScreen{
-    ShowClientScreen *aTBModifyMenu=[[ShowClientScreen alloc] initWithNibName:@"ShowClientScreen" bundle:nil];
-    [[TBAppDelegate shareAppDelegate].tabbarView.view addSubview:aTBModifyMenu.view];
-    [aTBModifyMenu.view setNeedsDisplay];
-    aTBModifyMenu.view.frame=CGRectMake(0, 0, 1024, 768);
-    aTBModifyMenu.view.alpha=0;
-    [UIView animateWithDuration:0.5
-                          delay:0.1
-                        options: UIViewAnimationCurveEaseOut
-                     animations:^{
-                         aTBModifyMenu.view.alpha=1;
-                     }
-                     completion:^(BOOL finished){
-                         
-                     }];
-    
-    
-}
-#pragma mark-dealloc
-- (void)dealloc {
-    [_searchBar release];
-    [_uitableview1 release];
-    [listItem release];
-    [_tableOderList release];
-    [super dealloc];
-}
-- (void)viewDidUnload {
-    [self setSearchBar:nil];
-    [self setUitableview1:nil];
-    [self setTableOderList:nil];
-    [super viewDidUnload];
-}
 @end

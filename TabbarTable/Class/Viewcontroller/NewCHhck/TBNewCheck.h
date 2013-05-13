@@ -14,4 +14,5 @@
 @property (retain, nonatomic) IBOutlet UIGridView *uitableview1;
 @property (retain, nonatomic) IBOutlet UITableView *tableOderList;
 - (IBAction)showClientPress:(id)sender;
+- (IBAction)paymentPress:(id)sender;
 @end
