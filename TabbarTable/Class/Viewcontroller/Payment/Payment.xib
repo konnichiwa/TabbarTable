@@ -847,7 +847,7 @@
 							<object class="IBUIImageView" id="913635205">
 								<reference key="NSNextResponder" ref="437459730"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{0, 20}, {373, 568}}</string>
+								<string key="NSFrame">{{1, 20}, {372, 603}}</string>
 								<reference key="NSSuperview" ref="437459730"/>
 								<reference key="NSNextKeyView" ref="1016363017"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -999,7 +999,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{2, 33}, {368, 36}}</string>
 								<reference key="NSSuperview" ref="437459730"/>
-								<reference key="NSNextKeyView" ref="695702483"/>
+								<reference key="NSNextKeyView" ref="61750121"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -1328,6 +1328,26 @@
 									<string key="NSResourceName">linePayment.png</string>
 								</object>
 							</object>
+							<object class="IBUIButton" id="61750121">
+								<reference key="NSNextResponder" ref="437459730"/>
+								<int key="NSvFlags">292</int>
+								<string key="NSFrame">{{4, 33}, {365, 36}}</string>
+								<reference key="NSSuperview" ref="437459730"/>
+								<reference key="NSNextKeyView" ref="695702483"/>
+								<string key="NSReuseIdentifierKey">_NS:9</string>
+								<bool key="IBUIOpaque">NO</bool>
+								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+								<int key="IBUIContentHorizontalAlignment">0</int>
+								<int key="IBUIContentVerticalAlignment">0</int>
+								<reference key="IBUIHighlightedTitleColor" ref="685267386"/>
+								<object class="NSColor" key="IBUINormalTitleColor">
+									<int key="NSColorSpace">1</int>
+									<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
+								</object>
+								<reference key="IBUINormalTitleShadowColor" ref="836700892"/>
+								<reference key="IBUIFontDescription" ref="1047852757"/>
+								<reference key="IBUIFont" ref="76664311"/>
+							</object>
 						</array>
 						<string key="NSFrame">{{263, 78}, {373, 608}}</string>
 						<reference key="NSSuperview" ref="543874212"/>
@@ -1387,6 +1407,14 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">cashView</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="437459730"/>
+					</object>
+					<int key="connectionID">225</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">dataSource</string>
 						<reference key="source" ref="475390005"/>
 						<reference key="destination" ref="841351856"/>
@@ -1408,6 +1436,15 @@
 						<reference key="destination" ref="841351856"/>
 					</object>
 					<int key="connectionID">222</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">typePayment:</string>
+						<reference key="source" ref="61750121"/>
+						<reference key="destination" ref="841351856"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">224</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -1694,7 +1731,6 @@
 							<reference ref="578023904"/>
 							<reference ref="583691475"/>
 							<reference ref="150944493"/>
-							<reference ref="913635205"/>
 							<reference ref="695702483"/>
 							<reference ref="1016363017"/>
 							<reference ref="169635596"/>
@@ -1712,6 +1748,8 @@
 							<reference ref="848188787"/>
 							<reference ref="662048367"/>
 							<reference ref="87973554"/>
+							<reference ref="913635205"/>
+							<reference ref="61750121"/>
 						</array>
 						<reference key="parent" ref="543874212"/>
 					</object>
@@ -1845,6 +1883,11 @@
 						<reference key="object" ref="87973554"/>
 						<reference key="parent" ref="437459730"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">223</int>
+						<reference key="object" ref="61750121"/>
+						<reference key="parent" ref="437459730"/>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -1894,6 +1937,7 @@
 				<string key="216.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="217.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="22.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="223.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="23.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="24.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="25.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -1923,7 +1967,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">222</int>
+			<int key="maxID">225</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>

@@ -251,6 +251,7 @@
 		0FC680181741010B001FD6DB /* btnSubmitPayment@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC680141741010A001FD6DB /* btnSubmitPayment@2x.png */; };
 		0FC680191741010B001FD6DB /* linePayment@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC680151741010B001FD6DB /* linePayment@2x.png */; };
 		0FC6801A174103AD001FD6DB /* Payment.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F95ABB41740DFC200A878EF /* Payment.m */; };
+		0FC6802017412D58001FD6DB /* ColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC6801F17412D58001FD6DB /* ColorPickerViewController.m */; };
 		0FCCE768173BF67600CA1966 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FCCE767173BF67600CA1966 /* QuartzCore.framework */; };
 		0FCCE781173C1B6700CA1966 /* bgPopupimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCCE77B173C1B6700CA1966 /* bgPopupimage.png */; };
 		0FCCE782173C1B6700CA1966 /* bgPopupimage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCCE77C173C1B6700CA1966 /* bgPopupimage@2x.png */; };
@@ -544,6 +545,8 @@
 		0FC6801317410109001FD6DB /* linePayment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linePayment.png; sourceTree = "<group>"; };
 		0FC680141741010A001FD6DB /* btnSubmitPayment@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnSubmitPayment@2x.png"; sourceTree = "<group>"; };
 		0FC680151741010B001FD6DB /* linePayment@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "linePayment@2x.png"; sourceTree = "<group>"; };
+		0FC6801E17412D58001FD6DB /* ColorPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorPickerViewController.h; sourceTree = "<group>"; };
+		0FC6801F17412D58001FD6DB /* ColorPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorPickerViewController.m; sourceTree = "<group>"; };
 		0FCCE767173BF67600CA1966 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0FCCE77B173C1B6700CA1966 /* bgPopupimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgPopupimage.png; sourceTree = "<group>"; };
 		0FCCE77C173C1B6700CA1966 /* bgPopupimage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgPopupimage@2x.png"; sourceTree = "<group>"; };
@@ -910,6 +913,8 @@
 		0F50F2E6173D2632007C41E2 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				0FC6801E17412D58001FD6DB /* ColorPickerViewController.h */,
+				0FC6801F17412D58001FD6DB /* ColorPickerViewController.m */,
 				0F71B7B0173DE5E300F90A49 /* UIGridView */,
 				0F50F2EE173D28EC007C41E2 /* TPKeyboardAvoidingScrollView.h */,
 				0F50F2EF173D28EC007C41E2 /* TPKeyboardAvoidingScrollView.m */,
@@ -1413,6 +1418,7 @@
 				0F95AB991740839500A878EF /* TBModifyMenuCell5.m in Sources */,
 				0F95ABA117408F2C00A878EF /* ShowClientScreen.m in Sources */,
 				0FC6801A174103AD001FD6DB /* Payment.m in Sources */,
+				0FC6802017412D58001FD6DB /* ColorPickerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

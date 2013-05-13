@@ -43,17 +43,19 @@
 - (void)dealloc {
     [_tableOderList release];
     [_uitableview1 release];
+    [_cashView release];
     [super dealloc];
 }
 - (void)viewDidUnload {
     [self setTableOderList:nil];
     [self setUitableview1:nil];
+    [self setCashView:nil];
     [super viewDidUnload];
 }
 #pragma mark-gridview delegate
 - (CGFloat) gridView:(UIGridView *)grid widthForColumnAt:(int)columnIndex
 {
-	return 122;
+	return 128;
 }
 
 - (CGFloat) gridView:(UIGridView *)grid heightForRowAt:(int)rowIndex
@@ -84,9 +86,9 @@
                 cell = (TBCheckOderCell *)oneObject;
     }
     [cell.btnItem addTarget:self action:@selector(ItemPress:) forControlEvents:UIControlEventTouchUpInside];
-    cell.btnItem.tag=rowIndex*5+columnIndex+1;
-    [cell .btnItem setImage:[UIImage imageNamed:[NSString stringWithFormat:@"oderItem%@",[listItem objectAtIndex:rowIndex*5+columnIndex]]] forState:UIControlStateNormal];
-    cell.nameItem.text=[listItem objectAtIndex:rowIndex*5+columnIndex];
+    cell.btnItem.tag=rowIndex*2+columnIndex+1;
+    [cell .btnItem setImage:[UIImage imageNamed:[NSString stringWithFormat:@"oderItem%@",[listItem objectAtIndex:rowIndex*2+columnIndex]]] forState:UIControlStateNormal];
+    cell.nameItem.text=[listItem objectAtIndex:rowIndex*2+columnIndex];
 	return cell;
 }
 
@@ -134,4 +136,16 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
+- (IBAction)typePayment:(id)sender {
+//    ColorPickerViewController *aColorPickerViewController=[[ColorPickerViewController alloc] initWithStyle:UITableViewStylePlain];
+//    aColorPickerViewController.colorNames=[[NSMutableArray alloc] initWithObjects:@"1",@"2",@"3",nil];
+//
+//  UIPopoverController  *colorPickerPopover = [[UIPopoverController alloc] initWithContentViewController:aColorPickerViewController];
+//    [colorPickerPopover presentPopoverFromRect:[sender frame] inView:_cashView permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
+//        [aColorPickerViewController.tableView reloadData];
+    [[ColorPickerViewController alloc] showPoppoWitharray:[[NSMutableArray alloc] initWithObjects:@"1",@"2",@"3",nil] inRect:[sender frame] inView:_cashView withPopoverArrow:UIPopoverArrowDirectionUp withDelegate:(id)self WithTag:3];
+}
+-(void)selectedAtIndex:(int)index withTag:(int)tag{
+    NSLog(@"index:%d andTag:%d",index,tag);
+}
 @end

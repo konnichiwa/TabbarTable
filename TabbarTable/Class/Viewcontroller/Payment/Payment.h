@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "UIGridView.h"
+#import "ColorPickerViewController.h"
 @interface Payment : UIViewController
 
 @property (retain, nonatomic) IBOutlet UITableView *tableOderList;
 @property (retain, nonatomic) IBOutlet UIGridView *uitableview1;
+@property (retain, nonatomic) IBOutlet UIView *cashView;
+- (IBAction)typePayment:(id)sender;
+
 @end
