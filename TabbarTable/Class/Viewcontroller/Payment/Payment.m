@@ -143,7 +143,7 @@
 //  UIPopoverController  *colorPickerPopover = [[UIPopoverController alloc] initWithContentViewController:aColorPickerViewController];
 //    [colorPickerPopover presentPopoverFromRect:[sender frame] inView:_cashView permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
 //        [aColorPickerViewController.tableView reloadData];
-    [[ColorPickerViewController alloc] showPoppoWitharray:[[NSMutableArray alloc] initWithObjects:@"1",@"2",@"3",nil] inRect:[sender frame] inView:_cashView withPopoverArrow:UIPopoverArrowDirectionUp withDelegate:(id)self WithTag:3];
+    [[ColorPickerViewController alloc] showPoppoWitharray:[[NSMutableArray alloc] initWithObjects:@"Cash",@"Expense Tab",@"Surcharge",@"Debit",@"Adjustment",@"Credit Card",nil] inRect:[sender frame] inView:_cashView withPopoverArrow:UIPopoverArrowDirectionUp withDelegate:(id)self WithTag:3];
 }
 -(void)selectedAtIndex:(int)index withTag:(int)tag{
     NSLog(@"index:%d andTag:%d",index,tag);

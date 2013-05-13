@@ -20,34 +20,12 @@
         //Initialize the array
         //Set up the array of colors.
         colorNames=[[NSMutableArray alloc] init];
-        [colorNames addObject:@"Red"];
-        [colorNames addObject:@"Green"];
-        [colorNames addObject:@"Blue"];
-        
+//        [colorNames addObject:@"Red"];
+//        [colorNames addObject:@"Green"];
+//        [colorNames addObject:@"Blue"];
+//        
         //Make row selections persist.
-        self.clearsSelectionOnViewWillAppear = NO;
-        
-        //Calculate how tall the view should be by multiplying the individual row height
-        //by the total number of rows.
-        NSInteger rowsCount = [colorNames count];
-        NSInteger singleRowHeight = [self.tableView.delegate tableView:self.tableView heightForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
-        NSInteger totalRowsHeight = rowsCount * singleRowHeight;
-        
-        //Calculate how wide the view should be by finding how wide each string is expected to be
-        CGFloat largestLabelWidth = 0;
-        for (NSString *colorName in colorNames) {
-            //Checks size of text using the default font for UITableViewCell's textLabel. 
-            CGSize labelSize = [colorName sizeWithFont:[UIFont boldSystemFontOfSize:20.0f]];
-            if (labelSize.width > largestLabelWidth) {
-                largestLabelWidth = labelSize.width;
-            }
-        }
-        
-        //Add a little padding to the width
-        CGFloat popoverWidth = largestLabelWidth + 100;
-        
-        //Set the property to tell the popover container how big this view will be.
-        self.contentSizeForViewInPopover = CGSizeMake(popoverWidth, totalRowsHeight);
+
     }
     
     return self;
@@ -104,8 +82,34 @@
 }
 - (void)showPoppoWitharray:(NSArray*)array inRect:(CGRect)rect inView:(UIView*)view withPopoverArrow:(UIPopoverArrowDirection)popoverArrow withDelegate:(id)dele WithTag:(int)tag{
     [self initWithStyle:UITableViewStylePlain];
+    
     self.delegate=dele;
     self.colorNames=[NSMutableArray arrayWithArray:array];
+    self.clearsSelectionOnViewWillAppear = NO;
+    
+    //Calculate how tall the view should be by multiplying the individual row height
+    //by the total number of rows.
+    NSInteger rowsCount = [colorNames count];
+    NSInteger singleRowHeight = [self.tableView.delegate tableView:self.tableView heightForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+    NSInteger totalRowsHeight = rowsCount * singleRowHeight;
+    
+    //Calculate how wide the view should be by finding how wide each string is expected to be
+    CGFloat largestLabelWidth = 0;
+    for (NSString *colorName in colorNames) {
+        //Checks size of text using the default font for UITableViewCell's textLabel.
+        CGSize labelSize = [colorName sizeWithFont:[UIFont boldSystemFontOfSize:20.0f]];
+        if (labelSize.width > largestLabelWidth) {
+            largestLabelWidth = labelSize.width;
+        }
+    }
+    
+    //Add a little padding to the width
+    CGFloat popoverWidth = largestLabelWidth + 100;
+    
+    //Set the property to tell the popover container how big this view will be.
+    self.contentSizeForViewInPopover = CGSizeMake(popoverWidth, totalRowsHeight);
+    
+    
     colorPickerPopover = [[UIPopoverController alloc] initWithContentViewController:self];
     [colorPickerPopover presentPopoverFromRect:rect   inView:view permittedArrowDirections:popoverArrow animated:YES];
     self.view.tag=tag;
