@@ -8,90 +8,12 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "TabbarTable/Class/Viewcontroller/NewCHhck/TBNewCheck.m"
-         timestampString = "389957687.150186"
+         timestampString = "390109107.491719"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "174"
-         endingLineNumber = "174"
-         landmarkName = "-touchesBegan:withEvent:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "TabbarTable/Class/Viewcontroller/NewCHhck/TBModifyMenu.m"
-         timestampString = "389958660.224436"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "106"
-         endingLineNumber = "106"
+         startingLineNumber = "35"
+         endingLineNumber = "35"
          landmarkName = "-handleSingleTap:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "TabbarTable/Class/Viewcontroller/NewCHhck/TBModifyMenu.m"
-         timestampString = "389958660.224436"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "94"
-         endingLineNumber = "94"
-         landmarkName = "-touchesBegan:withEvent:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "TabbarTable/Class/Viewcontroller/NewCHhck/TBNewCheck.m"
-         timestampString = "389956979.840133"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "33"
-         endingLineNumber = "33"
-         landmarkName = "-handleSingleTap:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "TabbarTable/Class/Viewcontroller/NewCHhck/TBModifyMenu.m"
-         timestampString = "389958650.85371"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "29"
-         endingLineNumber = "29"
-         landmarkName = "-shouldAutorotateToInterfaceOrientation:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "TabbarTable/Class/Viewcontroller/NewCHhck/TBModifyMenu.m"
-         timestampString = "389958651.858287"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "33"
-         endingLineNumber = "33"
-         landmarkName = "-shouldAutorotate"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "TabbarTable/Class/Viewcontroller/NewCHhck/TBModifyMenu.m"
-         timestampString = "389958653.066612"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "38"
-         endingLineNumber = "38"
-         landmarkName = "-supportedInterfaceOrientations"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

@@ -13,4 +13,5 @@
 @property (retain, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (retain, nonatomic) IBOutlet UIGridView *uitableview1;
 @property (retain, nonatomic) IBOutlet UITableView *tableOderList;
+- (IBAction)showClientPress:(id)sender;
 @end

@@ -31,6 +31,7 @@
     // Override point for customization after application launch.
     [self setupTabbarDidLogin];
     self.window.rootViewController=self.tabbarView;
+    self.window.autoresizesSubviews=YES;
     [self.window makeKeyAndVisible];
     return YES;
 }

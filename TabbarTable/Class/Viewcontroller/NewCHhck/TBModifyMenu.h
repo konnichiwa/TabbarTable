@@ -10,5 +10,8 @@
 
 @interface TBModifyMenu : UIViewController
 @property (retain, nonatomic) IBOutlet UITableView *tableView;
+@property (retain, nonatomic) IBOutlet UISearchBar *searchBar;
 
+- (IBAction)cancelPress:(id)sender;
+- (IBAction)donePress:(id)sender;
 @end

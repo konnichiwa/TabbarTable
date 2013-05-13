@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ShowClientScreen : UIViewController
-
+@property (retain, nonatomic) IBOutlet UISearchBar *searchBar;
+@property (retain, nonatomic) IBOutlet UITableView *tableView;
+- (IBAction)submitPress:(id)sender;
 @end
