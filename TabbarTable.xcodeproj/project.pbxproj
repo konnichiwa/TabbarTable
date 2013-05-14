@@ -252,6 +252,7 @@
 		0FC680191741010B001FD6DB /* linePayment@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC680151741010B001FD6DB /* linePayment@2x.png */; };
 		0FC6801A174103AD001FD6DB /* Payment.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F95ABB41740DFC200A878EF /* Payment.m */; };
 		0FC6802017412D58001FD6DB /* ColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC6801F17412D58001FD6DB /* ColorPickerViewController.m */; };
+		0FC6802417414E9A001FD6DB /* TBCashPayment.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC6802317414E9A001FD6DB /* TBCashPayment.m */; };
 		0FCCE768173BF67600CA1966 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FCCE767173BF67600CA1966 /* QuartzCore.framework */; };
 		0FCCE781173C1B6700CA1966 /* bgPopupimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCCE77B173C1B6700CA1966 /* bgPopupimage.png */; };
 		0FCCE782173C1B6700CA1966 /* bgPopupimage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCCE77C173C1B6700CA1966 /* bgPopupimage@2x.png */; };
@@ -547,6 +548,8 @@
 		0FC680151741010B001FD6DB /* linePayment@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "linePayment@2x.png"; sourceTree = "<group>"; };
 		0FC6801E17412D58001FD6DB /* ColorPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorPickerViewController.h; sourceTree = "<group>"; };
 		0FC6801F17412D58001FD6DB /* ColorPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorPickerViewController.m; sourceTree = "<group>"; };
+		0FC6802217414E9A001FD6DB /* TBCashPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCashPayment.h; sourceTree = "<group>"; };
+		0FC6802317414E9A001FD6DB /* TBCashPayment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBCashPayment.m; sourceTree = "<group>"; };
 		0FCCE767173BF67600CA1966 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0FCCE77B173C1B6700CA1966 /* bgPopupimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgPopupimage.png; sourceTree = "<group>"; };
 		0FCCE77C173C1B6700CA1966 /* bgPopupimage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgPopupimage@2x.png"; sourceTree = "<group>"; };
@@ -673,6 +676,7 @@
 		0F23E875173BCAE3005C3288 /* OtherView */ = {
 			isa = PBXGroup;
 			children = (
+				0FC6802117414E67001FD6DB /* PaymentType */,
 				0F13B89F173E33430056D1AB /* CellForModifyMenu */,
 				0F23E877173BCB28005C3288 /* EmployeeCellLeftCell.h */,
 				0F23E878173BCB28005C3288 /* EmployeeCellLeftCell.m */,
@@ -1102,6 +1106,15 @@
 			path = Payment;
 			sourceTree = "<group>";
 		};
+		0FC6802117414E67001FD6DB /* PaymentType */ = {
+			isa = PBXGroup;
+			children = (
+				0FC6802217414E9A001FD6DB /* TBCashPayment.h */,
+				0FC6802317414E9A001FD6DB /* TBCashPayment.m */,
+			);
+			path = PaymentType;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1419,6 +1432,7 @@
 				0F95ABA117408F2C00A878EF /* ShowClientScreen.m in Sources */,
 				0FC6801A174103AD001FD6DB /* Payment.m in Sources */,
 				0FC6802017412D58001FD6DB /* ColorPickerViewController.m in Sources */,
+				0FC6802417414E9A001FD6DB /* TBCashPayment.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
