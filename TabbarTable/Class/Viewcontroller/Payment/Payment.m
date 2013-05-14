@@ -44,12 +44,22 @@
     [_tableOderList release];
     [_uitableview1 release];
     [_cashView release];
+    [_expenseTABView release];
+    [_surchargeView release];
+    [_debitCardView release];
+    [_adjustmentView release];
+    [_creditCardView release];
     [super dealloc];
 }
 - (void)viewDidUnload {
     [self setTableOderList:nil];
     [self setUitableview1:nil];
     [self setCashView:nil];
+    [self setExpenseTABView:nil];
+    [self setSurchargeView:nil];
+    [self setDebitCardView:nil];
+    [self setAdjustmentView:nil];
+    [self setCreditCardView:nil];
     [super viewDidUnload];
 }
 #pragma mark-gridview delegate
@@ -137,15 +147,46 @@
 }
 
 - (IBAction)typePayment:(id)sender {
-//    ColorPickerViewController *aColorPickerViewController=[[ColorPickerViewController alloc] initWithStyle:UITableViewStylePlain];
-//    aColorPickerViewController.colorNames=[[NSMutableArray alloc] initWithObjects:@"1",@"2",@"3",nil];
-//
-//  UIPopoverController  *colorPickerPopover = [[UIPopoverController alloc] initWithContentViewController:aColorPickerViewController];
-//    [colorPickerPopover presentPopoverFromRect:[sender frame] inView:_cashView permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
-//        [aColorPickerViewController.tableView reloadData];
-    [[ColorPickerViewController alloc] showPoppoWitharray:[[NSMutableArray alloc] initWithObjects:@"Cash",@"Expense Tab",@"Surcharge",@"Debit",@"Adjustment",@"Credit Card",nil] inRect:[sender frame] inView:_cashView withPopoverArrow:UIPopoverArrowDirectionUp withDelegate:(id)self WithTag:3];
+    [[ColorPickerViewController alloc] showPoppoWitharray:[[NSMutableArray alloc] initWithObjects:@"Cash",@"Expense Tab",@"Surcharge",@"Debit",@"Adjustment",@"Credit Card",nil] inRect:[sender frame] inView:self.view withPopoverArrow:UIPopoverArrowDirectionUp withDelegate:(id)self WithTag:3];
+}
+-(void)tickPress:(id)sender{
+    checkbox[[sender tag]]=checkbox[[sender tag]]==YES?NO:YES;
+    [_tableOderList reloadData];
 }
 -(void)selectedAtIndex:(int)index withTag:(int)tag{
-    NSLog(@"index:%d andTag:%d",index,tag);
+    if (tag==3) {
+        [self hideAllPayment];
+        switch (index) {
+            case 0:
+                _cashView.hidden=NO;
+                break;
+            case 1:
+                _expenseTABView.hidden=NO;
+                break;
+            case 2:
+                _surchargeView.hidden=NO;
+                break;
+            case 3:
+                _debitCardView.hidden=NO;
+                break;
+            case 4:
+                _adjustmentView.hidden=NO;
+                break;
+            case 5:
+                _creditCardView.hidden=NO;
+                break;
+                
+            default:
+                break;
+        }
+    }
+}
+-(void)hideAllPayment{
+    _cashView.hidden=YES;
+    _adjustmentView.hidden=YES;
+    _expenseTABView.hidden=YES;
+    _surchargeView.hidden=YES;
+    _debitCardView.hidden=YES;
+    _creditCardView.hidden=YES;
 }
 @end

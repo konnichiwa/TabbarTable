@@ -141,6 +141,12 @@
 		0F50F2EB173D267B007C41E2 /* HPGrowingTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F50F2E8173D267B007C41E2 /* HPGrowingTextView.m */; };
 		0F50F2EC173D267B007C41E2 /* HPTextViewInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F50F2EA173D267B007C41E2 /* HPTextViewInternal.m */; };
 		0F50F2F0173D28ED007C41E2 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F50F2EF173D28EC007C41E2 /* TPKeyboardAvoidingScrollView.m */; };
+		0F619BDB17427E9500E01F92 /* btnPlaymentGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F619BD917427E9500E01F92 /* btnPlaymentGreen.png */; };
+		0F619BDC17427E9500E01F92 /* btnPlaymentGreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F619BDA17427E9500E01F92 /* btnPlaymentGreen@2x.png */; };
+		0F619BDF1742854900E01F92 /* bgTextBoxLagre.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F619BDD1742854600E01F92 /* bgTextBoxLagre.png */; };
+		0F619BE01742854900E01F92 /* bgTextBoxLagre@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F619BDE1742854800E01F92 /* bgTextBoxLagre@2x.png */; };
+		0F619BE3174289A700E01F92 /* bgoptionSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F619BE1174289A200E01F92 /* bgoptionSmall.png */; };
+		0F619BE4174289A700E01F92 /* bgoptionSmall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F619BE2174289A500E01F92 /* bgoptionSmall@2x.png */; };
 		0F71B78B173DDAFB00F90A49 /* btnBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F71B783173DDAFB00F90A49 /* btnBlue.png */; };
 		0F71B78C173DDAFB00F90A49 /* btnGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F71B784173DDAFB00F90A49 /* btnGreen.png */; };
 		0F71B78D173DDAFB00F90A49 /* checkBgSelectItem.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F71B785173DDAFB00F90A49 /* checkBgSelectItem.png */; };
@@ -425,6 +431,12 @@
 		0F50F2EA173D267B007C41E2 /* HPTextViewInternal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPTextViewInternal.m; sourceTree = "<group>"; };
 		0F50F2EE173D28EC007C41E2 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
 		0F50F2EF173D28EC007C41E2 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		0F619BD917427E9500E01F92 /* btnPlaymentGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnPlaymentGreen.png; sourceTree = "<group>"; };
+		0F619BDA17427E9500E01F92 /* btnPlaymentGreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnPlaymentGreen@2x.png"; sourceTree = "<group>"; };
+		0F619BDD1742854600E01F92 /* bgTextBoxLagre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgTextBoxLagre.png; sourceTree = "<group>"; };
+		0F619BDE1742854800E01F92 /* bgTextBoxLagre@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgTextBoxLagre@2x.png"; sourceTree = "<group>"; };
+		0F619BE1174289A200E01F92 /* bgoptionSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgoptionSmall.png; sourceTree = "<group>"; };
+		0F619BE2174289A500E01F92 /* bgoptionSmall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgoptionSmall@2x.png"; sourceTree = "<group>"; };
 		0F71B783173DDAFB00F90A49 /* btnBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnBlue.png; sourceTree = "<group>"; };
 		0F71B784173DDAFB00F90A49 /* btnGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnGreen.png; sourceTree = "<group>"; };
 		0F71B785173DDAFB00F90A49 /* checkBgSelectItem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkBgSelectItem.png; sourceTree = "<group>"; };
@@ -1088,6 +1100,12 @@
 		0F95ABB81740E48A00A878EF /* Payment */ = {
 			isa = PBXGroup;
 			children = (
+				0F619BE1174289A200E01F92 /* bgoptionSmall.png */,
+				0F619BE2174289A500E01F92 /* bgoptionSmall@2x.png */,
+				0F619BDD1742854600E01F92 /* bgTextBoxLagre.png */,
+				0F619BDE1742854800E01F92 /* bgTextBoxLagre@2x.png */,
+				0F619BD917427E9500E01F92 /* btnPlaymentGreen.png */,
+				0F619BDA17427E9500E01F92 /* btnPlaymentGreen@2x.png */,
 				0FC6801217410107001FD6DB /* btnSubmitPayment.png */,
 				0FC6801317410109001FD6DB /* linePayment.png */,
 				0FC680141741010A001FD6DB /* btnSubmitPayment@2x.png */,
@@ -1391,6 +1409,12 @@
 				0FC680171741010B001FD6DB /* linePayment.png in Resources */,
 				0FC680181741010B001FD6DB /* btnSubmitPayment@2x.png in Resources */,
 				0FC680191741010B001FD6DB /* linePayment@2x.png in Resources */,
+				0F619BDB17427E9500E01F92 /* btnPlaymentGreen.png in Resources */,
+				0F619BDC17427E9500E01F92 /* btnPlaymentGreen@2x.png in Resources */,
+				0F619BDF1742854900E01F92 /* bgTextBoxLagre.png in Resources */,
+				0F619BE01742854900E01F92 /* bgTextBoxLagre@2x.png in Resources */,
+				0F619BE3174289A700E01F92 /* bgoptionSmall.png in Resources */,
+				0F619BE4174289A700E01F92 /* bgoptionSmall@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
