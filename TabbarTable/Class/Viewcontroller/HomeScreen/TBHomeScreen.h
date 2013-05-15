@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "TKDragView.h"
 @interface TBHomeScreen : UIViewController
-
+{
+    NSMutableArray *arrDragFrame;
+}
+@property (retain, nonatomic) IBOutletCollection(UIView) NSArray *goodFrame;
 @end
