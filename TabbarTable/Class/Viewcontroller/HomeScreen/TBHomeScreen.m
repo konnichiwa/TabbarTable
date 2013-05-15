@@ -39,7 +39,7 @@
                                                      andDelegate:(id)self];
         dragView.canDragMultipleDragViewsAtOnce = NO;
         dragView.canUseSameEndFrameManyTimes = NO;
-        dragView.canSwapToStartPosition=NO;
+//        dragView.canSwapToStartPosition=NO;
                [self.view addSubview:dragView];
     }
     // Do any additional setup after loading the view from its nib.

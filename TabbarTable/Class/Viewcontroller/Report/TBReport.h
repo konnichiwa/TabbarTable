@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface TBReport : UIViewController
+@property (retain, nonatomic) IBOutlet UISearchBar *searchBar;
 
 @end

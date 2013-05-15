@@ -21,5 +21,6 @@
 @property (retain, nonatomic) IBOutlet UIView *creditCardView;
 
 - (IBAction)typePayment:(id)sender;
+- (IBAction)backPress:(id)sender;
 
 @end

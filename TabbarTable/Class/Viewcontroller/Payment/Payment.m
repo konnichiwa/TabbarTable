@@ -149,6 +149,10 @@
 - (IBAction)typePayment:(id)sender {
     [[ColorPickerViewController alloc] showPoppoWitharray:[[NSMutableArray alloc] initWithObjects:@"Cash",@"Expense Tab",@"Surcharge",@"Debit",@"Adjustment",@"Credit Card",nil] inRect:[sender frame] inView:self.view withPopoverArrow:UIPopoverArrowDirectionUp withDelegate:(id)self WithTag:3];
 }
+
+- (IBAction)backPress:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
 -(void)tickPress:(id)sender{
     checkbox[[sender tag]]=checkbox[[sender tag]]==YES?NO:YES;
     [_tableOderList reloadData];

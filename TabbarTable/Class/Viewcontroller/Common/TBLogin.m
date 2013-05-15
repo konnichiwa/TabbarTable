@@ -1,18 +1,18 @@
 //
-//  TBReport.m
+//  TBLogin.m
 //  TabbarTable
 //
-//  Created by luan on 5/8/13.
+//  Created by luan on 5/16/13.
 //  Copyright (c) 2013 Luan. All rights reserved.
 //
 
-#import "TBReport.h"
+#import "TBLogin.h"
 
-@interface TBReport ()
+@interface TBLogin ()
 
 @end
 
-@implementation TBReport
+@implementation TBLogin
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,9 +26,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _searchBar.backgroundColor=[UIColor clearColor];
-    [[_searchBar.subviews objectAtIndex:0] removeFromSuperview];
-
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -38,12 +35,4 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)dealloc {
-    [_searchBar release];
-    [super dealloc];
-}
-- (void)viewDidUnload {
-    [self setSearchBar:nil];
-    [super viewDidUnload];
-}
 @end
