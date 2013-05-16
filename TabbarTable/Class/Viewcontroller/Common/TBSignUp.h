@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface TBSignUp : UIViewController
+- (IBAction)backPress:(id)sender;
+@property (retain, nonatomic) IBOutlet UIButton *signUppress;
+- (IBAction)signUpPress:(id)sender;
+- (IBAction)chooseCountryPress:(id)sender;
+- (IBAction)chooseBusinessTypePress:(id)sender;
 
 @end

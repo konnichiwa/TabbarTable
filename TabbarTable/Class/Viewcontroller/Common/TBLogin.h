@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TPKeyboardAvoidingScrollView.h"
+@interface TBLogin : UIViewController<UITextFieldDelegate>
 
-@interface TBLogin : UIViewController
-
+@property (retain, nonatomic) IBOutlet TPKeyboardAvoidingScrollView *scrollView;
+- (IBAction)loginPress:(id)sender;
+- (IBAction)signUpPress:(id)sender;
 @end

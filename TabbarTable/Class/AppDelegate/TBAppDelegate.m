@@ -14,6 +14,7 @@
 @synthesize ncHomeScreen;
 @synthesize ncPrint;
 @synthesize ncNewcheck;
+@synthesize aTBLogin;
 - (void)dealloc
 {
     [_window release];
@@ -30,9 +31,13 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     [self setupTabbarDidLogin];
-    self.window.rootViewController=self.tabbarView;
+    aTBLogin=[[TBLogin alloc] initWithNibName:@"TBLogin" bundle:nil];
+    UINavigationController *ncroot=[[UINavigationController alloc] initWithRootViewController:aTBLogin];
+    ncroot.navigationBarHidden=YES;
+    self.window.rootViewController=ncroot;
     self.window.autoresizesSubviews=YES;
     [self.window makeKeyAndVisible];
+    [TPKeyboardAvoidingScrollView class];
     return YES;
 }
 

@@ -13,6 +13,7 @@
 #import "TBNewCheck.h"
 #import "TBPrint.h"
 #import "TBReport.h"
+#import "TBLogin.h"
 @class TBViewController;
 @class GTabBar;
 @interface TBAppDelegate : UIResponder <UIApplicationDelegate>
@@ -25,5 +26,6 @@
 @property(strong,nonatomic) UINavigationController *ncReport;
 @property(strong,nonatomic) UINavigationController *ncPrint;
 @property(strong,nonatomic) UINavigationController *ncNewcheck;
+@property(strong,nonatomic) TBLogin *aTBLogin;
 + (TBAppDelegate *)shareAppDelegate;
 @end

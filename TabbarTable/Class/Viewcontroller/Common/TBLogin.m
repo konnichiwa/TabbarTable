@@ -7,7 +7,8 @@
 //
 
 #import "TBLogin.h"
-
+#import "TBAppDelegate.h"
+#import "TBSignUp.h"
 @interface TBLogin ()
 
 @end
@@ -26,6 +27,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    _scrollView.contentSize=CGSizeMake(1024, 768);
+        self.view.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"bgApp.png"]];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -35,4 +38,40 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)dealloc {
+    [_scrollView release];
+    [super dealloc];
+}
+- (void)viewDidUnload {
+    [self setScrollView:nil];
+    [super viewDidUnload];
+}
+- (void)textFieldDidBeginEditing:(UITextField *)textField{
+}
+-(void)textFieldDidEndEditing:(UITextField *)textField{
+
+    
+}
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
+}
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft || interfaceOrientation == UIInterfaceOrientationLandscapeRight);
+}
+- (BOOL)shouldAutorotate {
+    return YES;
+}
+
+-(NSInteger)supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskLandscape;
+}
+- (IBAction)loginPress:(id)sender {
+    [self presentModalViewController:[TBAppDelegate shareAppDelegate].tabbarView animated:YES];
+}
+
+- (IBAction)signUpPress:(id)sender {
+    TBSignUp *aTBSignUp=[[TBSignUp alloc] initWithNibName:@"TBSignUp" bundle:nil];
+    [self.navigationController pushViewController:aTBSignUp animated:YES];
+}
 @end

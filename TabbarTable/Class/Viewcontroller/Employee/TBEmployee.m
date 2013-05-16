@@ -155,7 +155,6 @@
     [super viewDidUnload];
 }
 - (void)growingTextViewDidBeginEditing:(HPGrowingTextView *)growingTextView{
-    [(TPKeyboardAvoidingScrollView*)_scrollviewToAjd adjustOffsetToIdealIfNeeded];
 }
 - (void)growingTextViewDidEndEditing:(HPGrowingTextView *)growingTextView{
     

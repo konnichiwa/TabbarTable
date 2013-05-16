@@ -137,7 +137,6 @@
 		0F50F2E5173D23CE007C41E2 /* MessageEntryBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F50F2DF173D23CE007C41E2 /* MessageEntryBackground@2x.png */; };
 		0F50F2EB173D267B007C41E2 /* HPGrowingTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F50F2E8173D267B007C41E2 /* HPGrowingTextView.m */; };
 		0F50F2EC173D267B007C41E2 /* HPTextViewInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F50F2EA173D267B007C41E2 /* HPTextViewInternal.m */; };
-		0F50F2F0173D28ED007C41E2 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F50F2EF173D28EC007C41E2 /* TPKeyboardAvoidingScrollView.m */; };
 		0F619BDB17427E9500E01F92 /* btnPlaymentGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F619BD917427E9500E01F92 /* btnPlaymentGreen.png */; };
 		0F619BDC17427E9500E01F92 /* btnPlaymentGreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F619BDA17427E9500E01F92 /* btnPlaymentGreen@2x.png */; };
 		0F619BDF1742854900E01F92 /* bgTextBoxLagre.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F619BDD1742854600E01F92 /* bgTextBoxLagre.png */; };
@@ -206,6 +205,18 @@
 		0F71B7ED173DE97E00F90A49 /* oderItemDessert@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F71B7D3173DE97E00F90A49 /* oderItemDessert@2x.png */; };
 		0F71B7EE173DE97E00F90A49 /* oderItemDrinks@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F71B7D4173DE97E00F90A49 /* oderItemDrinks@2x.png */; };
 		0F71B7F4173DEB6900F90A49 /* TBCheckOderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F71B7F3173DEB6900F90A49 /* TBCheckOderCell.m */; };
+		0F9140131745375300247DEC /* bgTextBoxLogin.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F91400F1745375300247DEC /* bgTextBoxLogin.png */; };
+		0F9140141745375300247DEC /* btnLogin.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F9140101745375300247DEC /* btnLogin.png */; };
+		0F9140151745375300247DEC /* bgTextBoxLogin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F9140111745375300247DEC /* bgTextBoxLogin@2x.png */; };
+		0F9140161745375300247DEC /* btnLogin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F9140121745375300247DEC /* btnLogin@2x.png */; };
+		0F9140191745396900247DEC /* bgnOptionalLogin.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F9140171745396800247DEC /* bgnOptionalLogin.png */; };
+		0F91401A1745396900247DEC /* bgnOptionalLogin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F9140181745396900247DEC /* bgnOptionalLogin@2x.png */; };
+		0F91401F174548AF00247DEC /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F91401C174548AB00247DEC /* TPKeyboardAvoidingScrollView.m */; };
+		0F914020174548AF00247DEC /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F91401E174548AE00247DEC /* TPKeyboardAvoidingTableView.m */; };
+		0F91402417454B4800247DEC /* TBSignUp.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F91402217454B4800247DEC /* TBSignUp.m */; };
+		0F91402517454B4800247DEC /* TBSignUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F91402317454B4800247DEC /* TBSignUp.xib */; };
+		0F91402C17454C7700247DEC /* bgSignUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F91402A17454C7700247DEC /* bgSignUp.png */; };
+		0F91402D17454C7700247DEC /* bgSignUp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F91402B17454C7700247DEC /* bgSignUp@2x.png */; };
 		0F9469A0173AB911005A6AC5 /* bgHeader.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F94699C173AB910005A6AC5 /* bgHeader.png */; };
 		0F9469A1173AB911005A6AC5 /* bgHeader@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F94699D173AB910005A6AC5 /* bgHeader@2x.png */; };
 		0F9469A2173AB911005A6AC5 /* bgApp.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F94699E173AB910005A6AC5 /* bgApp.png */; };
@@ -469,8 +480,6 @@
 		0F50F2E8173D267B007C41E2 /* HPGrowingTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPGrowingTextView.m; sourceTree = "<group>"; };
 		0F50F2E9173D267B007C41E2 /* HPTextViewInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPTextViewInternal.h; sourceTree = "<group>"; };
 		0F50F2EA173D267B007C41E2 /* HPTextViewInternal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPTextViewInternal.m; sourceTree = "<group>"; };
-		0F50F2EE173D28EC007C41E2 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
-		0F50F2EF173D28EC007C41E2 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
 		0F619BD917427E9500E01F92 /* btnPlaymentGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnPlaymentGreen.png; sourceTree = "<group>"; };
 		0F619BDA17427E9500E01F92 /* btnPlaymentGreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnPlaymentGreen@2x.png"; sourceTree = "<group>"; };
 		0F619BDD1742854600E01F92 /* bgTextBoxLagre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgTextBoxLagre.png; sourceTree = "<group>"; };
@@ -544,6 +553,21 @@
 		0F71B7D4173DE97E00F90A49 /* oderItemDrinks@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "oderItemDrinks@2x.png"; sourceTree = "<group>"; };
 		0F71B7F2173DEB6900F90A49 /* TBCheckOderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCheckOderCell.h; sourceTree = "<group>"; };
 		0F71B7F3173DEB6900F90A49 /* TBCheckOderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBCheckOderCell.m; sourceTree = "<group>"; };
+		0F91400F1745375300247DEC /* bgTextBoxLogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgTextBoxLogin.png; sourceTree = "<group>"; };
+		0F9140101745375300247DEC /* btnLogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnLogin.png; sourceTree = "<group>"; };
+		0F9140111745375300247DEC /* bgTextBoxLogin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgTextBoxLogin@2x.png"; sourceTree = "<group>"; };
+		0F9140121745375300247DEC /* btnLogin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnLogin@2x.png"; sourceTree = "<group>"; };
+		0F9140171745396800247DEC /* bgnOptionalLogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgnOptionalLogin.png; sourceTree = "<group>"; };
+		0F9140181745396900247DEC /* bgnOptionalLogin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgnOptionalLogin@2x.png"; sourceTree = "<group>"; };
+		0F91401B174548AA00247DEC /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		0F91401C174548AB00247DEC /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		0F91401D174548AC00247DEC /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		0F91401E174548AE00247DEC /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		0F91402117454B4800247DEC /* TBSignUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBSignUp.h; sourceTree = "<group>"; };
+		0F91402217454B4800247DEC /* TBSignUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBSignUp.m; sourceTree = "<group>"; };
+		0F91402317454B4800247DEC /* TBSignUp.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TBSignUp.xib; sourceTree = "<group>"; };
+		0F91402A17454C7700247DEC /* bgSignUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgSignUp.png; sourceTree = "<group>"; };
+		0F91402B17454C7700247DEC /* bgSignUp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgSignUp@2x.png"; sourceTree = "<group>"; };
 		0F94699C173AB910005A6AC5 /* bgHeader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgHeader.png; sourceTree = "<group>"; };
 		0F94699D173AB910005A6AC5 /* bgHeader@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgHeader@2x.png"; sourceTree = "<group>"; };
 		0F94699E173AB910005A6AC5 /* bgApp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgApp.png; sourceTree = "<group>"; };
@@ -853,6 +877,10 @@
 		0F2A561C173A85E800AA5FDF /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				0F91401B174548AA00247DEC /* TPKeyboardAvoidingScrollView.h */,
+				0F91401C174548AB00247DEC /* TPKeyboardAvoidingScrollView.m */,
+				0F91401D174548AC00247DEC /* TPKeyboardAvoidingTableView.h */,
+				0F91401E174548AE00247DEC /* TPKeyboardAvoidingTableView.m */,
 				0F50F2E6173D2632007C41E2 /* Helper */,
 				0F23E875173BCAE3005C3288 /* OtherView */,
 				0F2A561D173A85E800AA5FDF /* AppDelegate */,
@@ -1035,8 +1063,6 @@
 				0FC6801E17412D58001FD6DB /* ColorPickerViewController.h */,
 				0FC6801F17412D58001FD6DB /* ColorPickerViewController.m */,
 				0F71B7B0173DE5E300F90A49 /* UIGridView */,
-				0F50F2EE173D28EC007C41E2 /* TPKeyboardAvoidingScrollView.h */,
-				0F50F2EF173D28EC007C41E2 /* TPKeyboardAvoidingScrollView.m */,
 				0F50F2E7173D267B007C41E2 /* HPGrowingTextView.h */,
 				0F50F2E8173D267B007C41E2 /* HPGrowingTextView.m */,
 				0F50F2E9173D267B007C41E2 /* HPTextViewInternal.h */,
@@ -1048,7 +1074,15 @@
 		0F619BE51742A97900E01F92 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0F91402A17454C7700247DEC /* bgSignUp.png */,
+				0F91402B17454C7700247DEC /* bgSignUp@2x.png */,
+				0F9140171745396800247DEC /* bgnOptionalLogin.png */,
+				0F9140181745396900247DEC /* bgnOptionalLogin@2x.png */,
 				0F950E921744097E0038E0AD /* bgLogin.png */,
+				0F91400F1745375300247DEC /* bgTextBoxLogin.png */,
+				0F9140101745375300247DEC /* btnLogin.png */,
+				0F9140111745375300247DEC /* bgTextBoxLogin@2x.png */,
+				0F9140121745375300247DEC /* btnLogin@2x.png */,
 				0F950E931744097E0038E0AD /* bgLogin@2x.png */,
 				0F619BF21742B59000E01F92 /* homeAvatar1.png */,
 				0F619BF31742B59000E01F92 /* homeAvatar2.png */,
@@ -1215,6 +1249,9 @@
 				0F950E8D174409630038E0AD /* TBLogin.h */,
 				0F950E8E174409630038E0AD /* TBLogin.m */,
 				0F950E8F174409630038E0AD /* TBLogin.xib */,
+				0F91402117454B4800247DEC /* TBSignUp.h */,
+				0F91402217454B4800247DEC /* TBSignUp.m */,
+				0F91402317454B4800247DEC /* TBSignUp.xib */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1621,6 +1658,15 @@
 				0F950E91174409630038E0AD /* TBLogin.xib in Resources */,
 				0F950E941744097E0038E0AD /* bgLogin.png in Resources */,
 				0F950E951744097E0038E0AD /* bgLogin@2x.png in Resources */,
+				0F9140131745375300247DEC /* bgTextBoxLogin.png in Resources */,
+				0F9140141745375300247DEC /* btnLogin.png in Resources */,
+				0F9140151745375300247DEC /* bgTextBoxLogin@2x.png in Resources */,
+				0F9140161745375300247DEC /* btnLogin@2x.png in Resources */,
+				0F9140191745396900247DEC /* bgnOptionalLogin.png in Resources */,
+				0F91401A1745396900247DEC /* bgnOptionalLogin@2x.png in Resources */,
+				0F91402517454B4800247DEC /* TBSignUp.xib in Resources */,
+				0F91402C17454C7700247DEC /* bgSignUp.png in Resources */,
+				0F91402D17454C7700247DEC /* bgSignUp@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1645,7 +1691,6 @@
 				0F23E893173BE641005C3288 /* TBScheduleViewController.m in Sources */,
 				0F50F2EB173D267B007C41E2 /* HPGrowingTextView.m in Sources */,
 				0F50F2EC173D267B007C41E2 /* HPTextViewInternal.m in Sources */,
-				0F50F2F0173D28ED007C41E2 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				0F71B7B8173DE5E300F90A49 /* UIGridView.m in Sources */,
 				0F71B7B9173DE5E300F90A49 /* UIGridViewCell.m in Sources */,
 				0F71B7BA173DE5E300F90A49 /* UIGridViewRow.m in Sources */,
@@ -1665,6 +1710,9 @@
 				8CD262DC1743608B00BB7812 /* TBModifyMenuCell5.m in Sources */,
 				8CD26318174383E500BB7812 /* TKDragView.m in Sources */,
 				0F950E90174409630038E0AD /* TBLogin.m in Sources */,
+				0F91401F174548AF00247DEC /* TPKeyboardAvoidingScrollView.m in Sources */,
+				0F914020174548AF00247DEC /* TPKeyboardAvoidingTableView.m in Sources */,
+				0F91402417454B4800247DEC /* TBSignUp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

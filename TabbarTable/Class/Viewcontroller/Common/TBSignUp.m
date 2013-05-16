@@ -35,4 +35,23 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)backPress:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+- (void)dealloc {
+    [_signUppress release];
+    [super dealloc];
+}
+- (void)viewDidUnload {
+    [self setSignUppress:nil];
+    [super viewDidUnload];
+}
+- (IBAction)signUpPress:(id)sender {
+}
+
+- (IBAction)chooseCountryPress:(id)sender {
+}
+
+- (IBAction)chooseBusinessTypePress:(id)sender {
+}
 @end
