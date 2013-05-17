@@ -7,7 +7,7 @@
 //
 
 #import "TBHomeScreen.h"
-
+#import "TBAppDelegate.h"
 @interface TBHomeScreen ()
 
 @end
@@ -68,10 +68,15 @@
 
 - (void)dealloc {
     [_goodFrame release];
+    [_logOutPress release];
     [super dealloc];
 }
 - (void)viewDidUnload {
     [self setGoodFrame:nil];
+    [self setLogOutPress:nil];
     [super viewDidUnload];
+}
+- (IBAction)logOutPress:(id)sender {
+    [[TBAppDelegate shareAppDelegate].tabbarView dismissModalViewControllerAnimated:YES];
 }
 @end

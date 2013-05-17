@@ -297,6 +297,14 @@
 		0FE0F58D173D5EAC00E5E763 /* bgEmtry@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE0F589173D5EAC00E5E763 /* bgEmtry@2x.png */; };
 		0FE0F58E173D5EAC00E5E763 /* textEntry@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE0F58A173D5EAC00E5E763 /* textEntry@2x.png */; };
 		0FE1CDD6173E04830089BB2F /* TBOderItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE1CDD5173E04830089BB2F /* TBOderItemCell.m */; };
+		0FF65E651746699700703B81 /* UITextField+placeHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF65E641746699600703B81 /* UITextField+placeHolder.m */; };
+		0FF65E6817467AFA00703B81 /* bgCellRightEmployeeNew.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FF65E6617467AF900703B81 /* bgCellRightEmployeeNew.png */; };
+		0FF65E6917467AFA00703B81 /* bgCellRightEmployeeNew@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FF65E6717467AFA00703B81 /* bgCellRightEmployeeNew@2x.png */; };
+		0FF65E6C1746842700703B81 /* bgSMSto.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FF65E6A1746842500703B81 /* bgSMSto.png */; };
+		0FF65E6D1746842700703B81 /* bgSMSto@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FF65E6B1746842600703B81 /* bgSMSto@2x.png */; };
+		0FF65E7117469B1F00703B81 /* TBMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF65E7017469B1E00703B81 /* TBMessageCell.m */; };
+		0FF65E741746AE6B00703B81 /* btnDelCell.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FF65E721746AE6B00703B81 /* btnDelCell.png */; };
+		0FF65E751746AE6B00703B81 /* btnDelCell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FF65E731746AE6B00703B81 /* btnDelCell@2x.png */; };
 		8CD262D61743608B00BB7812 /* TBManageModifyMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD262CA1743608B00BB7812 /* TBManageModifyMenu.m */; };
 		8CD262D71743608B00BB7812 /* TBModifyMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CD262CB1743608B00BB7812 /* TBModifyMenuCell.xib */; };
 		8CD262D81743608B00BB7812 /* TBModifyMenuCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD262CD1743608B00BB7812 /* TBModifyMenuCell1.m */; };
@@ -654,6 +662,16 @@
 		0FE0F58A173D5EAC00E5E763 /* textEntry@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "textEntry@2x.png"; sourceTree = "<group>"; };
 		0FE1CDD4173E04830089BB2F /* TBOderItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBOderItemCell.h; sourceTree = "<group>"; };
 		0FE1CDD5173E04830089BB2F /* TBOderItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBOderItemCell.m; sourceTree = "<group>"; };
+		0FF65E631746699600703B81 /* UITextField+placeHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+placeHolder.h"; sourceTree = "<group>"; };
+		0FF65E641746699600703B81 /* UITextField+placeHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+placeHolder.m"; sourceTree = "<group>"; };
+		0FF65E6617467AF900703B81 /* bgCellRightEmployeeNew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgCellRightEmployeeNew.png; sourceTree = "<group>"; };
+		0FF65E6717467AFA00703B81 /* bgCellRightEmployeeNew@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgCellRightEmployeeNew@2x.png"; sourceTree = "<group>"; };
+		0FF65E6A1746842500703B81 /* bgSMSto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgSMSto.png; sourceTree = "<group>"; };
+		0FF65E6B1746842600703B81 /* bgSMSto@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgSMSto@2x.png"; sourceTree = "<group>"; };
+		0FF65E6F17469B1E00703B81 /* TBMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMessageCell.h; sourceTree = "<group>"; };
+		0FF65E7017469B1E00703B81 /* TBMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBMessageCell.m; sourceTree = "<group>"; };
+		0FF65E721746AE6B00703B81 /* btnDelCell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnDelCell.png; sourceTree = "<group>"; };
+		0FF65E731746AE6B00703B81 /* btnDelCell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnDelCell@2x.png"; sourceTree = "<group>"; };
 		8CD262C91743608B00BB7812 /* TBManageModifyMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBManageModifyMenu.h; sourceTree = "<group>"; };
 		8CD262CA1743608B00BB7812 /* TBManageModifyMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBManageModifyMenu.m; sourceTree = "<group>"; };
 		8CD262CB1743608B00BB7812 /* TBModifyMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TBModifyMenuCell.xib; sourceTree = "<group>"; };
@@ -817,6 +835,8 @@
 				0F23E87A173BCB42005C3288 /* EmployeeCellRight.h */,
 				0F23E87B173BCB42005C3288 /* EmployeeCellRight.m */,
 				0F23E87D173BCB5C005C3288 /* CustomCell.xib */,
+				0FF65E6F17469B1E00703B81 /* TBMessageCell.h */,
+				0FF65E7017469B1E00703B81 /* TBMessageCell.m */,
 				0F71B7F2173DEB6900F90A49 /* TBCheckOderCell.h */,
 				0F71B7F3173DEB6900F90A49 /* TBCheckOderCell.m */,
 				0FE1CDD4173E04830089BB2F /* TBOderItemCell.h */,
@@ -1067,6 +1087,8 @@
 				0F50F2E8173D267B007C41E2 /* HPGrowingTextView.m */,
 				0F50F2E9173D267B007C41E2 /* HPTextViewInternal.h */,
 				0F50F2EA173D267B007C41E2 /* HPTextViewInternal.m */,
+				0FF65E631746699600703B81 /* UITextField+placeHolder.h */,
+				0FF65E641746699600703B81 /* UITextField+placeHolder.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -1103,6 +1125,8 @@
 		0F71B782173DDAE300F90A49 /* CheckOder */ = {
 			isa = PBXGroup;
 			children = (
+				0FF65E721746AE6B00703B81 /* btnDelCell.png */,
+				0FF65E731746AE6B00703B81 /* btnDelCell@2x.png */,
 				0F13B82F173E17F10056D1AB /* bgAddItemList.png */,
 				0F13B830173E17F10056D1AB /* bgAddItemList@2x.png */,
 				0F13B82B173E15EB0056D1AB /* bgoderListMenuItem.png */,
@@ -1180,6 +1204,10 @@
 		0F9469A4173ABBC1005A6AC5 /* Employee */ = {
 			isa = PBXGroup;
 			children = (
+				0FF65E6A1746842500703B81 /* bgSMSto.png */,
+				0FF65E6B1746842600703B81 /* bgSMSto@2x.png */,
+				0FF65E6617467AF900703B81 /* bgCellRightEmployeeNew.png */,
+				0FF65E6717467AFA00703B81 /* bgCellRightEmployeeNew@2x.png */,
 				0FE0F587173D5EAB00E5E763 /* bgEmtry.png */,
 				0FE0F588173D5EAB00E5E763 /* textEntry.png */,
 				0FE0F589173D5EAC00E5E763 /* bgEmtry@2x.png */,
@@ -1667,6 +1695,12 @@
 				0F91402517454B4800247DEC /* TBSignUp.xib in Resources */,
 				0F91402C17454C7700247DEC /* bgSignUp.png in Resources */,
 				0F91402D17454C7700247DEC /* bgSignUp@2x.png in Resources */,
+				0FF65E6817467AFA00703B81 /* bgCellRightEmployeeNew.png in Resources */,
+				0FF65E6917467AFA00703B81 /* bgCellRightEmployeeNew@2x.png in Resources */,
+				0FF65E6C1746842700703B81 /* bgSMSto.png in Resources */,
+				0FF65E6D1746842700703B81 /* bgSMSto@2x.png in Resources */,
+				0FF65E741746AE6B00703B81 /* btnDelCell.png in Resources */,
+				0FF65E751746AE6B00703B81 /* btnDelCell@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1713,6 +1747,8 @@
 				0F91401F174548AF00247DEC /* TPKeyboardAvoidingScrollView.m in Sources */,
 				0F914020174548AF00247DEC /* TPKeyboardAvoidingTableView.m in Sources */,
 				0F91402417454B4800247DEC /* TBSignUp.m in Sources */,
+				0FF65E651746699700703B81 /* UITextField+placeHolder.m in Sources */,
+				0FF65E7117469B1F00703B81 /* TBMessageCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -46,4 +46,13 @@
     [self setSearchBar:nil];
     [super viewDidUnload];
 }
+- (IBAction)dayPress:(id)sender {
+                   [[ColorPickerViewController alloc] showPoppoWitharray:[[NSMutableArray alloc] initWithObjects:@"Test",@"Test",@"Test",nil] inRect:[sender frame] inView:self.view withPopoverArrow:UIPopoverArrowDirectionUp withDelegate:(id)self WithTag:1]; 
+}
+-(void)selectedAtIndex:(int)index withTag:(int)tag{
+    
+}
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
+    [searchBar resignFirstResponder];
+}
 @end

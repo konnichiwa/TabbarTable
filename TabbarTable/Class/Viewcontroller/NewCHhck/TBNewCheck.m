@@ -153,6 +153,16 @@
     [aPayment release];
 }
 
+- (IBAction)selectMenuPress:(id)sender {
+                [[ColorPickerViewController alloc] showPoppoWitharray:[[NSMutableArray alloc] initWithObjects:@"Test",@"Test",@"Test",nil] inRect:[sender frame] inView:self.view withPopoverArrow:UIPopoverArrowDirectionUp withDelegate:(id)self WithTag:1];
+}
+
+- (IBAction)selectGroupPress:(id)sender {
+                [[ColorPickerViewController alloc] showPoppoWitharray:[[NSMutableArray alloc] initWithObjects:@"Test",@"Test",@"Test",nil] inRect:[sender frame] inView:self.view withPopoverArrow:UIPopoverArrowDirectionUp withDelegate:(id)self WithTag:2];
+}
+-(void)selectedAtIndex:(int)index withTag:(int)tag{
+    
+}
 -(void)gotoModifyMenu{
     TBModifyMenu *aTBModifyMenu=[[TBModifyMenu alloc] initWithNibName:@"TBModifyMenu" bundle:nil];
     [[TBAppDelegate shareAppDelegate].tabbarView.view addSubview:aTBModifyMenu.view];
@@ -188,6 +198,9 @@
                      }];
     
     
+}
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
+    [searchBar resignFirstResponder];
 }
 #pragma mark-dealloc
 - (void)dealloc {

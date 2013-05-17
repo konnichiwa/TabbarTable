@@ -13,4 +13,6 @@
     NSMutableArray *arrDragFrame;
 }
 @property (retain, nonatomic) IBOutletCollection(UIView) NSArray *goodFrame;
+@property (retain, nonatomic) IBOutlet UIButton *logOutPress;
+- (IBAction)logOutPress:(id)sender;
 @end

@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "UIGridView.h"
-@interface TBNewCheck : UIViewController
+#import "ColorPickerViewController.h"
+@interface TBNewCheck : UIViewController<UISearchBarDelegate>
 
 @property (retain, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (retain, nonatomic) IBOutlet UIGridView *uitableview1;
 @property (retain, nonatomic) IBOutlet UITableView *tableOderList;
 - (IBAction)showClientPress:(id)sender;
 - (IBAction)paymentPress:(id)sender;
+- (IBAction)selectMenuPress:(id)sender;
+- (IBAction)selectGroupPress:(id)sender;
 @end

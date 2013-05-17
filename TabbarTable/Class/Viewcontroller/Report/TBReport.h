@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ColorPickerViewController.h"
 @interface TBReport : UIViewController
 @property (retain, nonatomic) IBOutlet UISearchBar *searchBar;
+- (IBAction)dayPress:(id)sender;
 
 @end

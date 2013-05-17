@@ -10,6 +10,7 @@
 
 @protocol ColorPickerDelegate <NSObject>
 @optional
+
 -(void)selectedAtIndex:(int)index withTag:(int)tag;
 @end
 

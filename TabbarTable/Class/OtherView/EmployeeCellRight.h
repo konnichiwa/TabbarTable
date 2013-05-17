@@ -10,4 +10,7 @@
 
 @interface EmployeeCellRight : UITableViewCell
 
+@property (retain, nonatomic) IBOutlet UILabel *nameText;
+@property (retain, nonatomic) IBOutlet UILabel *contentText;
+@property (retain, nonatomic) IBOutlet UILabel *dateText;
 @end

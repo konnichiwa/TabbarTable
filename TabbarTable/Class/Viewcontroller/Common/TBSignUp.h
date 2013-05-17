@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "TPKeyboardAvoidingScrollView.h"
 @interface TBSignUp : UIViewController
+@property (retain, nonatomic) IBOutlet TPKeyboardAvoidingScrollView *scrollView;
 - (IBAction)backPress:(id)sender;
 @property (retain, nonatomic) IBOutlet UIButton *signUppress;
 - (IBAction)signUpPress:(id)sender;

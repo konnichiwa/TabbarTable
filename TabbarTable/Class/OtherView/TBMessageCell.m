@@ -1,14 +1,14 @@
 //
-//  EmployeeCellRight.m
+//  TBMessageCell.m
 //  TabbarTable
 //
-//  Created by luan on 5/9/13.
+//  Created by luan on 5/18/13.
 //  Copyright (c) 2013 Luan. All rights reserved.
 //
 
-#import "EmployeeCellRight.h"
+#import "TBMessageCell.h"
 
-@implementation EmployeeCellRight
+@implementation TBMessageCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -26,10 +26,4 @@
     // Configure the view for the selected state
 }
 
-- (void)dealloc {
-    [_nameText release];
-    [_contentText release];
-    [_dateText release];
-    [super dealloc];
-}
 @end

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "TPKeyboardAvoidingScrollView.h"
+#import "UITextField+placeHolder.h"
 @interface TBLogin : UIViewController<UITextFieldDelegate>
 
 @property (retain, nonatomic) IBOutlet TPKeyboardAvoidingScrollView *scrollView;
