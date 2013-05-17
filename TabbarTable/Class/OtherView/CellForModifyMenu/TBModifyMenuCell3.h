@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface TBModifyMenuCell3 : UITableViewCell
+@property (retain, nonatomic) IBOutlet UITextField *numText;
+@property (retain, nonatomic) IBOutlet UITextField *noteText;
 
 @end

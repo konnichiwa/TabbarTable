@@ -10,4 +10,5 @@
 
 @interface TBModifyMenuCell5 : UITableViewCell
 
+@property (retain, nonatomic) IBOutlet UITextField *noteText;
 @end

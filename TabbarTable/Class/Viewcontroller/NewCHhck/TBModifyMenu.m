@@ -49,7 +49,7 @@
     [super viewDidLoad];
     _searchBar.backgroundColor=[UIColor clearColor];
     [[_searchBar.subviews objectAtIndex:0] removeFromSuperview];
-    titleHeader=[[NSMutableArray alloc] initWithObjects:@"Side",@"Preparation",@"Temperature",@"Note",nil];
+    titleHeader=[[NSMutableArray alloc] initWithObjects:@"Side",@"Preparation",@"Temperature",@"Extra",@"Note",nil];
     // Do any additional setup after loading the view from its nib.
 }
 -(void)viewWillAppear:(BOOL)animated{
@@ -65,7 +65,7 @@
 #pragma mark - table delegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 4;
+    return 5;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     switch (section) {
@@ -79,6 +79,9 @@
             return 1;
             break;
         case 3:
+            return 2;
+            break;
+        case 4:
             return 3;
             break;
             
@@ -91,6 +94,7 @@
     switch (indexPath.section) {
         case 0:
         {        TBModifyMenuCell1 *cell=[TBManageModifyMenu cellType1ForModifyMenuWithTable:aTableView WithOwer:self];
+            cell.numText.delegate=(id)self;
             return cell;
         }
             break;
@@ -105,9 +109,16 @@
         }
             break;
         case 3:
+        {        TBModifyMenuCell1 *cell=[TBManageModifyMenu cellType1ForModifyMenuWithTable:aTableView WithOwer:self];
+            cell.numText.delegate=(id)self;
+            return cell;
+        }
+            break;
+        case 4:
         {
             if (indexPath.row==2) {
                 TBModifyMenuCell5 *cell=[TBManageModifyMenu cellType5ForModifyMenuWithTable:aTableView WithOwer:self];
+                cell.noteText.delegate=(id)self;
                 return cell;
             }else{
                 TBModifyMenuCell4 *cell=[TBManageModifyMenu cellType4ForModifyMenuWithTable:aTableView WithOwer:self];
@@ -180,5 +191,9 @@
 
 - (IBAction)donePress:(id)sender {
     [self cancelPress:nil];
+}
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
 }
 @end

@@ -10,4 +10,5 @@
 
 @interface TBModifyMenuCell1 : UITableViewCell
 
+@property (retain, nonatomic) IBOutlet UITextField *numText;
 @end

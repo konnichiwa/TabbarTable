@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "TPKeyboardAvoidingTableView.h"
 @interface TBModifyMenu : UIViewController
-@property (retain, nonatomic) IBOutlet UITableView *tableView;
+@property (retain, nonatomic) IBOutlet TPKeyboardAvoidingTableView *tableView;
 @property (retain, nonatomic) IBOutlet UISearchBar *searchBar;
 
 - (IBAction)cancelPress:(id)sender;
