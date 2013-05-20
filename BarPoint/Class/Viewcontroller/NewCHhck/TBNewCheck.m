@@ -54,7 +54,7 @@
 #pragma mark-gridview delegate
 - (CGFloat) gridView:(UIGridView *)grid widthForColumnAt:(int)columnIndex
 {
-	return 122;
+	return 126;
 }
 
 - (CGFloat) gridView:(UIGridView *)grid heightForRowAt:(int)rowIndex

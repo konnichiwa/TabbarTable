@@ -7,7 +7,8 @@
 //
 
 #import "ShowClientScreen.h"
-
+#import "TBAppDelegate.h"
+#import "DetailClient.h"
 @interface ShowClientScreen ()
 
 @end
@@ -92,5 +93,10 @@
                      completion:^(BOOL finished){
                          [self.view removeFromSuperview];
                      }];
+}
+
+- (IBAction)addClientPress:(id)sender {
+    DetailClient *aDetailClient=[[DetailClient alloc] initWithNibName:@"DetailClient" bundle:nil];
+    [self presentModalViewController:aDetailClient animated:YES];
 }
 @end

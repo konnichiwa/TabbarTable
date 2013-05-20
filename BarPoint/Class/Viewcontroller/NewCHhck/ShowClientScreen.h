@@ -12,4 +12,5 @@
 @property (retain, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (retain, nonatomic) IBOutlet TPKeyboardAvoidingTableView *tableView;
 - (IBAction)submitPress:(id)sender;
+- (IBAction)addClientPress:(id)sender;
 @end

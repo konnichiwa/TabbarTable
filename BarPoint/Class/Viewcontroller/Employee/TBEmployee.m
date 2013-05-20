@@ -130,6 +130,7 @@
                     cell = (EmployeeCellRight *)oneObject;
         }
                 cell.backgroundView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bgCellRightEmployee.png"]];
+        cell.backgroundView.contentMode=UIViewContentModeScaleAspectFit;
         if (isNew&&(indexPath.row==0)) {
             cell.backgroundView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bgCellRightEmployeeNew.png"]];
             cell.nameText.textColor=[UIColor whiteColor];
