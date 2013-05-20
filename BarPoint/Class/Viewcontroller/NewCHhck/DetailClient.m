@@ -35,4 +35,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)dealloc {
+    [_backPress release];
+    [super dealloc];
+}
+- (void)viewDidUnload {
+    [self setBackPress:nil];
+    [super viewDidUnload];
+}
+- (IBAction)backPress:(id)sender {
+    [self dismissModalViewControllerAnimated:YES];
+}
 @end

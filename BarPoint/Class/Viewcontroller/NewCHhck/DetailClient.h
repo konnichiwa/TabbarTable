@@ -10,4 +10,6 @@
 
 @interface DetailClient : UIViewController
 
+@property (retain, nonatomic) IBOutlet UIButton *backPress;
+- (IBAction)backPress:(id)sender;
 @end
