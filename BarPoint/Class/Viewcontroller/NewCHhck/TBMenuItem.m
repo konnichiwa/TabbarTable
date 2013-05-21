@@ -35,14 +35,16 @@
     [self setTableListItem1:nil];
     [self setTableListItem2:nil];
     [self setGridListItem:nil];
+    [self setSeatView:nil];
     [super viewDidUnload];
 }
 - (void)viewDidLoad
 {
     _searchBar.backgroundColor=[UIColor clearColor];
     [[_searchBar.subviews objectAtIndex:0] removeFromSuperview];
-
     [super viewDidLoad];
+    overLayerView=[[UIView alloc] init];
+    overLayerView.backgroundColor=[UIColor blackColor];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -164,6 +166,7 @@
     [_tableListItem1 release];
     [_tableListItem2 release];
     [_gridListItem release];
+    [_seatView release];
     [super dealloc];
 }
 
@@ -183,6 +186,44 @@
 
 - (IBAction)modifyPress:(id)sender {
     [self gotoModifyMenu];
+}
+
+- (IBAction)closeSeatPress:(id)sender {
+    [UIView animateWithDuration:0.5
+                          delay:0.1
+                        options: UIViewAnimationCurveEaseOut
+                     animations:^{
+                         overLayerView.alpha=0;
+                         _seatView.alpha=0;
+                     }
+                     completion:^(BOOL finished){
+                         [overLayerView removeFromSuperview];
+                         [_seatView removeFromSuperview];
+                     }];
+}
+
+- (IBAction)applySeatPress:(id)sender {
+    [self closeSeatPress:nil];
+}
+
+- (IBAction)seatPress:(id)sender {
+    overLayerView.alpha=0;
+    _seatView.alpha=0;
+    overLayerView.frame=CGRectMake(0, 0, 1024, 768);
+        [[TBAppDelegate shareAppDelegate].tabbarView.view addSubview:overLayerView];
+    _seatView.center=self.view.center;
+    [[TBAppDelegate shareAppDelegate].tabbarView.view addSubview:_seatView];
+    [UIView animateWithDuration:0.5
+                          delay:0.1
+                        options: UIViewAnimationCurveEaseOut
+                     animations:^{
+                         overLayerView.alpha=0.7;
+                         _seatView.alpha=1;
+                     }
+                     completion:^(BOOL finished){
+                         
+                     }];
+
 }
 -(void)gotoClientScreen{
     ShowClientScreen *aTBModifyMenu=[[ShowClientScreen alloc] initWithNibName:@"ShowClientScreen" bundle:nil];
