@@ -11,6 +11,32 @@
 		0F2A55F8173A839D00AA5FDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2A55F7173A839D00AA5FDF /* Foundation.framework */; };
 		0F2A55FA173A839D00AA5FDF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2A55F9173A839D00AA5FDF /* CoreGraphics.framework */; };
 		0F2A568D173AA19E00AA5FDF /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F2A568C173AA19D00AA5FDF /* Default-Landscape~ipad.png */; };
+		0F41E665174BAC270054E4B0 /* addclientOptionBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F41E65D174BAC270054E4B0 /* addclientOptionBox.png */; };
+		0F41E666174BAC270054E4B0 /* addclientOptionBoxmini.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F41E65E174BAC270054E4B0 /* addclientOptionBoxmini.png */; };
+		0F41E667174BAC270054E4B0 /* addclientTextBoxmini.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F41E65F174BAC270054E4B0 /* addclientTextBoxmini.png */; };
+		0F41E668174BAC270054E4B0 /* bgAvatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F41E660174BAC270054E4B0 /* bgAvatar.png */; };
+		0F41E669174BAC270054E4B0 /* addclientOptionBox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F41E661174BAC270054E4B0 /* addclientOptionBox@2x.png */; };
+		0F41E66A174BAC270054E4B0 /* addclientOptionBoxmini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F41E662174BAC270054E4B0 /* addclientOptionBoxmini@2x.png */; };
+		0F41E66B174BAC270054E4B0 /* addclientTextBoxmini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F41E663174BAC270054E4B0 /* addclientTextBoxmini@2x.png */; };
+		0F41E66C174BAC270054E4B0 /* bgAvatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F41E664174BAC270054E4B0 /* bgAvatar@2x.png */; };
+		0F41E66F174BAFF40054E4B0 /* avatarBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F41E66D174BAFF40054E4B0 /* avatarBtn.png */; };
+		0F41E670174BAFF40054E4B0 /* avatarBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F41E66E174BAFF40054E4B0 /* avatarBtn@2x.png */; };
+		0F41E67C174BB7180054E4B0 /* addclientbtnAdd.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F41E671174BB7160054E4B0 /* addclientbtnAdd.png */; };
+		0F41E67D174BB7180054E4B0 /* addclientbtnDel.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F41E672174BB7160054E4B0 /* addclientbtnDel.png */; };
+		0F41E67E174BB7180054E4B0 /* addclientbtnDetail.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F41E673174BB7170054E4B0 /* addclientbtnDetail.png */; };
+		0F41E67F174BB7180054E4B0 /* addclientbtnUntick.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F41E674174BB7170054E4B0 /* addclientbtnUntick.png */; };
+		0F41E680174BB7180054E4B0 /* addclientOptionBoxCountry.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F41E675174BB7170054E4B0 /* addclientOptionBoxCountry.png */; };
+		0F41E681174BB7180054E4B0 /* addclientTextBoxPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F41E676174BB7170054E4B0 /* addclientTextBoxPhone.png */; };
+		0F41E682174BB7180054E4B0 /* addclientbtnAdd@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F41E677174BB7170054E4B0 /* addclientbtnAdd@2x.png */; };
+		0F41E683174BB7180054E4B0 /* addclientbtnDel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F41E678174BB7170054E4B0 /* addclientbtnDel@2x.png */; };
+		0F41E684174BB7180054E4B0 /* addclientbtnDetail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F41E679174BB7180054E4B0 /* addclientbtnDetail@2x.png */; };
+		0F41E685174BB7180054E4B0 /* addclientOptionBoxCountry@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F41E67A174BB7180054E4B0 /* addclientOptionBoxCountry@2x.png */; };
+		0F41E686174BB7180054E4B0 /* addclientTextBoxPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F41E67B174BB7180054E4B0 /* addclientTextBoxPhone@2x.png */; };
+		0F41E689174BD3420054E4B0 /* TBAddClientCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F41E688174BD3420054E4B0 /* TBAddClientCell.m */; };
+		0F41E68C174BDCB10054E4B0 /* addclientTextBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F41E68A174BDCB00054E4B0 /* addclientTextBox.png */; };
+		0F41E68D174BDCB10054E4B0 /* addclientTextBox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F41E68B174BDCB10054E4B0 /* addclientTextBox@2x.png */; };
+		0F41E690174BE1300054E4B0 /* addclientoptionBox1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F41E68E174BE12E0054E4B0 /* addclientoptionBox1.png */; };
+		0F41E691174BE1310054E4B0 /* addclientoptionBox1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F41E68F174BE12F0054E4B0 /* addclientoptionBox1@2x.png */; };
 		0FA63AEE174A8A1800490AD7 /* bgCellRightEmployeeNew.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FA63AEC174A8A1800490AD7 /* bgCellRightEmployeeNew.png */; };
 		0FA63AF0174A903B00490AD7 /* checkHeaderMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FA63AEF174A903B00490AD7 /* checkHeaderMenu.png */; };
 		0FA63AF4174A943500490AD7 /* DetailClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA63AF2174A943500490AD7 /* DetailClient.m */; };
@@ -346,6 +372,33 @@
 		0F2A55F7173A839D00AA5FDF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0F2A55F9173A839D00AA5FDF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		0F2A568C173AA19D00AA5FDF /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		0F41E65D174BAC270054E4B0 /* addclientOptionBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addclientOptionBox.png; sourceTree = "<group>"; };
+		0F41E65E174BAC270054E4B0 /* addclientOptionBoxmini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addclientOptionBoxmini.png; sourceTree = "<group>"; };
+		0F41E65F174BAC270054E4B0 /* addclientTextBoxmini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addclientTextBoxmini.png; sourceTree = "<group>"; };
+		0F41E660174BAC270054E4B0 /* bgAvatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgAvatar.png; sourceTree = "<group>"; };
+		0F41E661174BAC270054E4B0 /* addclientOptionBox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addclientOptionBox@2x.png"; sourceTree = "<group>"; };
+		0F41E662174BAC270054E4B0 /* addclientOptionBoxmini@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addclientOptionBoxmini@2x.png"; sourceTree = "<group>"; };
+		0F41E663174BAC270054E4B0 /* addclientTextBoxmini@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addclientTextBoxmini@2x.png"; sourceTree = "<group>"; };
+		0F41E664174BAC270054E4B0 /* bgAvatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgAvatar@2x.png"; sourceTree = "<group>"; };
+		0F41E66D174BAFF40054E4B0 /* avatarBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatarBtn.png; sourceTree = "<group>"; };
+		0F41E66E174BAFF40054E4B0 /* avatarBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatarBtn@2x.png"; sourceTree = "<group>"; };
+		0F41E671174BB7160054E4B0 /* addclientbtnAdd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addclientbtnAdd.png; sourceTree = "<group>"; };
+		0F41E672174BB7160054E4B0 /* addclientbtnDel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addclientbtnDel.png; sourceTree = "<group>"; };
+		0F41E673174BB7170054E4B0 /* addclientbtnDetail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addclientbtnDetail.png; sourceTree = "<group>"; };
+		0F41E674174BB7170054E4B0 /* addclientbtnUntick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addclientbtnUntick.png; sourceTree = "<group>"; };
+		0F41E675174BB7170054E4B0 /* addclientOptionBoxCountry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addclientOptionBoxCountry.png; sourceTree = "<group>"; };
+		0F41E676174BB7170054E4B0 /* addclientTextBoxPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addclientTextBoxPhone.png; sourceTree = "<group>"; };
+		0F41E677174BB7170054E4B0 /* addclientbtnAdd@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addclientbtnAdd@2x.png"; sourceTree = "<group>"; };
+		0F41E678174BB7170054E4B0 /* addclientbtnDel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addclientbtnDel@2x.png"; sourceTree = "<group>"; };
+		0F41E679174BB7180054E4B0 /* addclientbtnDetail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addclientbtnDetail@2x.png"; sourceTree = "<group>"; };
+		0F41E67A174BB7180054E4B0 /* addclientOptionBoxCountry@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addclientOptionBoxCountry@2x.png"; sourceTree = "<group>"; };
+		0F41E67B174BB7180054E4B0 /* addclientTextBoxPhone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addclientTextBoxPhone@2x.png"; sourceTree = "<group>"; };
+		0F41E687174BD3420054E4B0 /* TBAddClientCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBAddClientCell.h; sourceTree = "<group>"; };
+		0F41E688174BD3420054E4B0 /* TBAddClientCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBAddClientCell.m; sourceTree = "<group>"; };
+		0F41E68A174BDCB00054E4B0 /* addclientTextBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addclientTextBox.png; sourceTree = "<group>"; };
+		0F41E68B174BDCB10054E4B0 /* addclientTextBox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addclientTextBox@2x.png"; sourceTree = "<group>"; };
+		0F41E68E174BE12E0054E4B0 /* addclientoptionBox1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addclientoptionBox1.png; sourceTree = "<group>"; };
+		0F41E68F174BE12F0054E4B0 /* addclientoptionBox1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addclientoptionBox1@2x.png"; sourceTree = "<group>"; };
 		0FA63AEC174A8A1800490AD7 /* bgCellRightEmployeeNew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgCellRightEmployeeNew.png; sourceTree = "<group>"; };
 		0FA63AEF174A903B00490AD7 /* checkHeaderMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkHeaderMenu.png; sourceTree = "<group>"; };
 		0FA63AF1174A943400490AD7 /* DetailClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailClient.h; sourceTree = "<group>"; };
@@ -760,6 +813,38 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		0F41E65C174BAC1F0054E4B0 /* Addclient */ = {
+			isa = PBXGroup;
+			children = (
+				0F41E68E174BE12E0054E4B0 /* addclientoptionBox1.png */,
+				0F41E68F174BE12F0054E4B0 /* addclientoptionBox1@2x.png */,
+				0F41E68A174BDCB00054E4B0 /* addclientTextBox.png */,
+				0F41E68B174BDCB10054E4B0 /* addclientTextBox@2x.png */,
+				0F41E671174BB7160054E4B0 /* addclientbtnAdd.png */,
+				0F41E672174BB7160054E4B0 /* addclientbtnDel.png */,
+				0F41E673174BB7170054E4B0 /* addclientbtnDetail.png */,
+				0F41E674174BB7170054E4B0 /* addclientbtnUntick.png */,
+				0F41E675174BB7170054E4B0 /* addclientOptionBoxCountry.png */,
+				0F41E676174BB7170054E4B0 /* addclientTextBoxPhone.png */,
+				0F41E677174BB7170054E4B0 /* addclientbtnAdd@2x.png */,
+				0F41E678174BB7170054E4B0 /* addclientbtnDel@2x.png */,
+				0F41E679174BB7180054E4B0 /* addclientbtnDetail@2x.png */,
+				0F41E67A174BB7180054E4B0 /* addclientOptionBoxCountry@2x.png */,
+				0F41E67B174BB7180054E4B0 /* addclientTextBoxPhone@2x.png */,
+				0F41E66D174BAFF40054E4B0 /* avatarBtn.png */,
+				0F41E66E174BAFF40054E4B0 /* avatarBtn@2x.png */,
+				0F41E65D174BAC270054E4B0 /* addclientOptionBox.png */,
+				0F41E65E174BAC270054E4B0 /* addclientOptionBoxmini.png */,
+				0F41E65F174BAC270054E4B0 /* addclientTextBoxmini.png */,
+				0F41E660174BAC270054E4B0 /* bgAvatar.png */,
+				0F41E661174BAC270054E4B0 /* addclientOptionBox@2x.png */,
+				0F41E662174BAC270054E4B0 /* addclientOptionBoxmini@2x.png */,
+				0F41E663174BAC270054E4B0 /* addclientTextBoxmini@2x.png */,
+				0F41E664174BAC270054E4B0 /* bgAvatar@2x.png */,
+			);
+			path = Addclient;
+			sourceTree = "<group>";
+		};
 		0FEB9EA4174A48090065336D /* BarPoint */ = {
 			isa = PBXGroup;
 			children = (
@@ -829,6 +914,8 @@
 			children = (
 				0FEB9EBD174A480A0065336D /* CellForModifyMenu */,
 				0FEB9ECB174A480A0065336D /* CustomCell.xib */,
+				0F41E687174BD3420054E4B0 /* TBAddClientCell.h */,
+				0F41E688174BD3420054E4B0 /* TBAddClientCell.m */,
 				0FEB9ECC174A480A0065336D /* EmployeeCellLeftCell.h */,
 				0FEB9ECD174A480A0065336D /* EmployeeCellLeftCell.m */,
 				0FEB9ECE174A480A0065336D /* EmployeeCellRight.h */,
@@ -885,6 +972,7 @@
 		0FEB9EDA174A480A0065336D /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				0F41E65C174BAC1F0054E4B0 /* Addclient */,
 				0FEB9EDB174A480A0065336D /* CheckOder */,
 				0FEB9F16174A480A0065336D /* Default-568h@2x.png */,
 				0FEB9F17174A480A0065336D /* Default.png */,
@@ -1706,6 +1794,31 @@
 				0FA63AF5174A943500490AD7 /* DetailClient.xib in Resources */,
 				0FA63AF8174A988B00490AD7 /* bgClientDetail.png in Resources */,
 				0FA63AF9174A988B00490AD7 /* bgClientDetail@2x.png in Resources */,
+				0F41E665174BAC270054E4B0 /* addclientOptionBox.png in Resources */,
+				0F41E666174BAC270054E4B0 /* addclientOptionBoxmini.png in Resources */,
+				0F41E667174BAC270054E4B0 /* addclientTextBoxmini.png in Resources */,
+				0F41E668174BAC270054E4B0 /* bgAvatar.png in Resources */,
+				0F41E669174BAC270054E4B0 /* addclientOptionBox@2x.png in Resources */,
+				0F41E66A174BAC270054E4B0 /* addclientOptionBoxmini@2x.png in Resources */,
+				0F41E66B174BAC270054E4B0 /* addclientTextBoxmini@2x.png in Resources */,
+				0F41E66C174BAC270054E4B0 /* bgAvatar@2x.png in Resources */,
+				0F41E66F174BAFF40054E4B0 /* avatarBtn.png in Resources */,
+				0F41E670174BAFF40054E4B0 /* avatarBtn@2x.png in Resources */,
+				0F41E67C174BB7180054E4B0 /* addclientbtnAdd.png in Resources */,
+				0F41E67D174BB7180054E4B0 /* addclientbtnDel.png in Resources */,
+				0F41E67E174BB7180054E4B0 /* addclientbtnDetail.png in Resources */,
+				0F41E67F174BB7180054E4B0 /* addclientbtnUntick.png in Resources */,
+				0F41E680174BB7180054E4B0 /* addclientOptionBoxCountry.png in Resources */,
+				0F41E681174BB7180054E4B0 /* addclientTextBoxPhone.png in Resources */,
+				0F41E682174BB7180054E4B0 /* addclientbtnAdd@2x.png in Resources */,
+				0F41E683174BB7180054E4B0 /* addclientbtnDel@2x.png in Resources */,
+				0F41E684174BB7180054E4B0 /* addclientbtnDetail@2x.png in Resources */,
+				0F41E685174BB7180054E4B0 /* addclientOptionBoxCountry@2x.png in Resources */,
+				0F41E686174BB7180054E4B0 /* addclientTextBoxPhone@2x.png in Resources */,
+				0F41E68C174BDCB10054E4B0 /* addclientTextBox.png in Resources */,
+				0F41E68D174BDCB10054E4B0 /* addclientTextBox@2x.png in Resources */,
+				0F41E690174BE1300054E4B0 /* addclientoptionBox1.png in Resources */,
+				0F41E691174BE1310054E4B0 /* addclientoptionBox1@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1755,6 +1868,7 @@
 				0FEBA171174A480B0065336D /* TBReport.m in Sources */,
 				0FEBA174174A480B0065336D /* main.m in Sources */,
 				0FA63AF4174A943500490AD7 /* DetailClient.m in Sources */,
+				0F41E689174BD3420054E4B0 /* TBAddClientCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
