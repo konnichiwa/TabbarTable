@@ -177,7 +177,7 @@
         [textTitle release];
         if (section==2) {
             UIImageView *addImage=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"addclientbtnAdd.png"]];
-            addImage.frame=CGRectMake(348, -2, 31, 34);
+            addImage.frame=CGRectMake(345, -2, 31, 34);
             [headerView addSubview:addImage];
             
         }
@@ -194,7 +194,7 @@
         [headerView addSubview:textTitle];
         if (section==2||section==0) {
             UIImageView *addImage=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"addclientbtnAdd.png"]];
-            addImage.frame=CGRectMake(348, -2, 31, 34);
+            addImage.frame=CGRectMake(345, -2, 31, 34);
             [headerView addSubview:addImage];
             
         }

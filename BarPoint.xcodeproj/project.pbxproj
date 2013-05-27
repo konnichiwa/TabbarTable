@@ -381,6 +381,8 @@
 		0FFD0DA617538F1000DD098C /* bgLogin.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FFD0DA417538F1000DD098C /* bgLogin.png */; };
 		0FFD0DA8175392F900DD098C /* bgSignUp1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FFD0DA7175392F900DD098C /* bgSignUp1.png */; };
 		0FFD0DAC1753AD3800DD098C /* NSArray+sortBy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFD0DAB1753AD3800DD098C /* NSArray+sortBy.m */; };
+		0FFD0DAF1753B2E200DD098C /* addClientBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FFD0DAD1753B2E200DD098C /* addClientBtn.png */; };
+		0FFD0DB01753B2E200DD098C /* addClientBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FFD0DAE1753B2E200DD098C /* addClientBtn@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -802,6 +804,8 @@
 		0FFD0DA7175392F900DD098C /* bgSignUp1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgSignUp1.png; sourceTree = "<group>"; };
 		0FFD0DAA1753AD3800DD098C /* NSArray+sortBy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+sortBy.h"; sourceTree = "<group>"; };
 		0FFD0DAB1753AD3800DD098C /* NSArray+sortBy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+sortBy.m"; sourceTree = "<group>"; };
+		0FFD0DAD1753B2E200DD098C /* addClientBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addClientBtn.png; sourceTree = "<group>"; };
+		0FFD0DAE1753B2E200DD098C /* addClientBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addClientBtn@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -851,6 +855,8 @@
 		0F41E65C174BAC1F0054E4B0 /* Addclient */ = {
 			isa = PBXGroup;
 			children = (
+				0FFD0DAD1753B2E200DD098C /* addClientBtn.png */,
+				0FFD0DAE1753B2E200DD098C /* addClientBtn@2x.png */,
 				0F41E69B174BF4B90054E4B0 /* seat1Btn.png */,
 				0F41E69C174BF4BA0054E4B0 /* seat2Btn.png */,
 				0F41E69D174BF4BB0054E4B0 /* seat3Btn.png */,
@@ -1888,6 +1894,8 @@
 				0F41E6B6174BF4CE0054E4B0 /* seatallBtn@2x.png in Resources */,
 				0FFD0DA617538F1000DD098C /* bgLogin.png in Resources */,
 				0FFD0DA8175392F900DD098C /* bgSignUp1.png in Resources */,
+				0FFD0DAF1753B2E200DD098C /* addClientBtn.png in Resources */,
+				0FFD0DB01753B2E200DD098C /* addClientBtn@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
