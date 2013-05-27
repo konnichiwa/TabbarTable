@@ -137,6 +137,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{405, 13}, {58, 21}}</string>
 								<reference key="NSSuperview" ref="759200643"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -233,7 +234,7 @@
 				<real value="61" key="IBUIRowHeight"/>
 			</object>
 			<object class="IBUITableViewCell" id="383814876">
-				<nil key="NSNextResponder"/>
+				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">292</int>
 				<array class="NSMutableArray" key="NSSubviews">
 					<object class="IBUIView" id="147178219">
@@ -307,6 +308,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{14, 24}, {322, 21}}</string>
 								<reference key="NSSuperview" ref="147178219"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -335,6 +337,7 @@
 					</object>
 				</array>
 				<string key="NSFrameSize">{496, 48}</string>
+				<reference key="NSSuperview"/>
 				<reference key="NSNextKeyView" ref="147178219"/>
 				<string key="NSReuseIdentifierKey">_NS:9</string>
 				<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -343,7 +346,7 @@
 				<real value="61" key="IBUIRowHeight"/>
 			</object>
 			<object class="IBUIView" id="985520018">
-				<nil key="NSNextResponder"/>
+				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">292</int>
 				<array class="NSMutableArray" key="NSSubviews">
 					<object class="IBUILabel" id="802360372">
@@ -351,6 +354,7 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{7, 120}, {108, 21}}</string>
 						<reference key="NSSuperview" ref="985520018"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -383,15 +387,12 @@
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="911030971"/>
-						<object class="NSCustomResource" key="IBUINormalBackgroundImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">oderItemAppetizer.png</string>
-						</object>
 						<reference key="IBUIFontDescription" ref="581642303"/>
 						<reference key="IBUIFont" ref="604557164"/>
 					</object>
 				</array>
 				<string key="NSFrameSize">{122, 161}</string>
+				<reference key="NSSuperview"/>
 				<reference key="NSNextKeyView" ref="959462147"/>
 				<string key="NSReuseIdentifierKey">_NS:9</string>
 				<reference key="IBUIBackgroundColor" ref="793655794"/>
@@ -399,7 +400,7 @@
 				<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 			</object>
 			<object class="IBUITableViewCell" id="953077396">
-				<nil key="NSNextResponder"/>
+				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">292</int>
 				<array class="NSMutableArray" key="NSSubviews">
 					<object class="IBUIView" id="481982141">
@@ -477,6 +478,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{337, -3}, {42, 33}}</string>
 								<reference key="NSSuperview" ref="481982141"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -509,6 +511,7 @@
 					</object>
 				</array>
 				<string key="NSFrameSize">{380, 28}</string>
+				<reference key="NSSuperview"/>
 				<reference key="NSNextKeyView" ref="481982141"/>
 				<string key="NSReuseIdentifierKey">_NS:9</string>
 				<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -657,6 +660,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{339, 3}, {30, 34}}</string>
 								<reference key="NSSuperview" ref="795237302"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -1058,7 +1062,6 @@
 			<string key="addclientbtnDetail.png">{30, 34}</string>
 			<string key="bgCellLeftEmployee.png">{496, 48}</string>
 			<string key="bgCellRightEmployee.png">{992, 96}</string>
-			<string key="oderItemAppetizer.png">{122, 124}</string>
 			<string key="punchBtn.png">{39, 35}</string>
 			<string key="untickOder.png">{31, 26}</string>
 		</dictionary>

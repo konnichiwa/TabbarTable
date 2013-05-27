@@ -127,13 +127,13 @@
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">btnAlphabel.png</string>
 						</object>
-						<object class="IBUIFontDescription" key="IBUIFontDescription" id="540908569">
+						<object class="IBUIFontDescription" key="IBUIFontDescription">
 							<int key="type">2</int>
-							<double key="pointSize">15</double>
+							<double key="pointSize">24</double>
 						</object>
-						<object class="NSFont" key="IBUIFont" id="568614074">
+						<object class="NSFont" key="IBUIFont">
 							<string key="NSName">Helvetica-Bold</string>
-							<double key="NSSize">15</double>
+							<double key="NSSize">24</double>
 							<int key="NSfFlags">16</int>
 						</object>
 					</object>
@@ -175,8 +175,15 @@
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">btnGray.png</string>
 						</object>
-						<reference key="IBUIFontDescription" ref="540908569"/>
-						<reference key="IBUIFont" ref="568614074"/>
+						<object class="IBUIFontDescription" key="IBUIFontDescription">
+							<int key="type">2</int>
+							<double key="pointSize">15</double>
+						</object>
+						<object class="NSFont" key="IBUIFont">
+							<string key="NSName">Helvetica-Bold</string>
+							<double key="NSSize">15</double>
+							<int key="NSfFlags">16</int>
+						</object>
 					</object>
 				</array>
 				<string key="NSFrame">{{0, 20}, {1024, 748}}</string>

@@ -70,11 +70,11 @@
 #pragma mark- setup tabbar did login
 -(void)setupTabbarDidLogin
 {
-    GTabTabItem *tabItem1 = [[GTabTabItem alloc] initWithFrame:CGRectMake(0, 0, 204.8, 64) normalState:@"" toggledState:@"btn_tabbar_employee_h"];
-	GTabTabItem *tabItem2 = [[GTabTabItem alloc] initWithFrame:CGRectMake(204.8, 0, 204.8, 64) normalState:@"" toggledState:@"btn_tabbar_report_h"];
-	GTabTabItem *tabItem3 = [[GTabTabItem alloc] initWithFrame:CGRectMake(204.8+204.8, 0, 204.8, 64) normalState:@"" toggledState:@"btn_tabbar_home_h"];
-	GTabTabItem *tabItem4 = [[GTabTabItem alloc] initWithFrame:CGRectMake(204.8+204.8+204.8, 0, 204.8, 64) normalState:@"" toggledState:@"btn_tabbar_print_h"];
-	GTabTabItem *tabItem5 = [[GTabTabItem alloc] initWithFrame:CGRectMake(204.8+204.8+204.8+204.8, 0, 204.8, 64) normalState:@"" toggledState:@"btn_tabbar_New-Check_h.png"];
+    GTabTabItem *tabItem1 = [[GTabTabItem alloc] initWithFrame:CGRectMake(0, 0, 204.5, 64) normalState:@"" toggledState:@"btn_tabbar_employee_h"];
+	GTabTabItem *tabItem2 = [[GTabTabItem alloc] initWithFrame:CGRectMake(205, 0, 203.7, 64) normalState:@"" toggledState:@"btn_tabbar_report_h"];
+	GTabTabItem *tabItem3 = [[GTabTabItem alloc] initWithFrame:CGRectMake(204.8+204.8+1, 0, 204.8-2, 64) normalState:@"" toggledState:@"btn_tabbar_home_h"];
+	GTabTabItem *tabItem4 = [[GTabTabItem alloc] initWithFrame:CGRectMake(204.8+204.8+205, 0, 204.8-2, 64) normalState:@"" toggledState:@"btn_tabbar_print_h"];
+	GTabTabItem *tabItem5 = [[GTabTabItem alloc] initWithFrame:CGRectMake(204.8+204.8+204.8+204.8+2, 0, 204.8-4, 64) normalState:@"" toggledState:@"btn_tabbar_New-Check_h.png"];
     
     TBEmployee *aTBEmployee = [[[TBEmployee alloc] initWithNibName:@"TBEmployee" bundle:nil] autorelease];
     TBReport *aTBReport= [[[TBReport alloc] initWithNibName:@"TBReport" bundle:nil] autorelease];

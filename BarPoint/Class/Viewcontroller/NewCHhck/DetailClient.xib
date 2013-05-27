@@ -149,7 +149,6 @@
 						<int key="NSvFlags">274</int>
 						<string key="NSFrame">{{566, 52}, {389, 698}}</string>
 						<reference key="NSSuperview" ref="171079067"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<reference key="IBUIBackgroundColor" ref="806751303"/>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -369,7 +368,6 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{138, 130}, {167, 21}}</string>
 						<reference key="NSSuperview" ref="623840644"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -579,7 +577,6 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{126, 131}, {179, 21}}</string>
 						<reference key="NSSuperview" ref="433357872"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -809,7 +806,6 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{160, 71}, {207, 30}}</string>
 						<reference key="NSSuperview" ref="960751642"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -1102,7 +1098,6 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{153, 72}, {212, 30}}</string>
 						<reference key="NSSuperview" ref="628175390"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -1608,7 +1603,6 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{303, 237}, {65, 30}}</string>
 						<reference key="NSSuperview" ref="451346262"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>

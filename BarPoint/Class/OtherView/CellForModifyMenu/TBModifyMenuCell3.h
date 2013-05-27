@@ -12,4 +12,6 @@
 @property (retain, nonatomic) IBOutlet UITextField *numText;
 @property (retain, nonatomic) IBOutlet UITextField *noteText;
 
+@property (retain, nonatomic) IBOutletCollection(UILabel) NSArray *textlabel;
+@property (retain, nonatomic) IBOutlet UISlider *slider;
 @end

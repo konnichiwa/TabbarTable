@@ -106,6 +106,7 @@
             break;
         case 2:
         {        TBModifyMenuCell3 *cell=[TBManageModifyMenu cellType3ForModifyMenuWithTable:aTableView WithOwer:self];
+            [cell.slider addTarget:self action:@selector(chagevalue:) forControlEvents:UIControlEventValueChanged];
             return cell;
         }
             break;
@@ -167,6 +168,29 @@
 }
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
+}
+-(void)chagevalue:(id)sender{
+    TBModifyMenuCell3 *cell=(TBModifyMenuCell3*)[_tableView cellForRowAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:2]];
+    float range=[(UISlider*)sender value];
+    for (UILabel *label in cell.textlabel ) {
+        label.textColor=[UIColor darkGrayColor];
+    }
+    if (range<20) {
+        UILabel *label=[cell.textlabel objectAtIndex:0];
+        label.textColor=[UIColor colorWithRed:0 green:80/255.0 blue:116/255.0 alpha:1];
+    }else if (range>=20 && range<40){
+        UILabel *label=[cell.textlabel objectAtIndex:1];
+        label.textColor=[UIColor colorWithRed:0 green:80/255.0 blue:116/255.0 alpha:1];
+    }else if (range>=40 && range<60){
+        UILabel *label=[cell.textlabel objectAtIndex:2];
+        label.textColor=[UIColor colorWithRed:0 green:80/255.0 blue:116/255.0 alpha:1];
+    }else if (range>=60 && range<80){
+        UILabel *label=[cell.textlabel objectAtIndex:3];
+        label.textColor=[UIColor colorWithRed:0 green:80/255.0 blue:116/255.0 alpha:1];
+    }else{
+        UILabel *label=[cell.textlabel objectAtIndex:4];
+        label.textColor=[UIColor colorWithRed:0 green:80/255.0 blue:116/255.0 alpha:1];
+    }
 }
 #pragma mark- GestureRecognizer delegate
 - (void)dealloc {

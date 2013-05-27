@@ -7,7 +7,7 @@
 //
 
 #import "TBModifyMenuCell3.h"
-
+#import "NSArray+sortBy.h"
 @implementation TBModifyMenuCell3
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -16,6 +16,7 @@
     if (self) {
         // Initialization code
     }
+    self.textlabel=[self.textlabel sortByObjectTag];
     return self;
 }
 
@@ -29,6 +30,8 @@
 - (void)dealloc {
     [_numText release];
     [_noteText release];
+    [_textlabel release];
+    [_slider release];
     [super dealloc];
 }
 @end

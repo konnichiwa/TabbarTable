@@ -120,7 +120,7 @@
 					<object class="IBUIButton" id="77611585">
 						<reference key="NSNextResponder" ref="546681304"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{941, 7}, {72, 37}}</string>
+						<string key="NSFrame">{{944, 7}, {71, 37}}</string>
 						<reference key="NSSuperview" ref="546681304"/>
 						<reference key="NSNextKeyView" ref="905486566"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -155,6 +155,7 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{0, 100}, {1024, 586}}</string>
 						<reference key="NSSuperview" ref="546681304"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -258,7 +259,7 @@
 					<object class="IBUISearchBar" id="632826789">
 						<reference key="NSNextResponder" ref="546681304"/>
 						<int key="NSvFlags">290</int>
-						<string key="NSFrame">{{669, 54}, {345, 44}}</string>
+						<string key="NSFrame">{{675, 54}, {345, 44}}</string>
 						<reference key="NSSuperview" ref="546681304"/>
 						<reference key="NSNextKeyView" ref="231427905"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -486,7 +487,7 @@
 			<string key="btnBlue.png">{92, 37}</string>
 			<string key="btnInfo.png">{71, 32}</string>
 			<string key="btnnearSearch.png">{36, 33}</string>
-			<string key="checkHeaderMenu.png">{639, 50}</string>
+			<string key="checkHeaderMenu.png">{1231, 100}</string>
 			<string key="testBGreport.png">{1023, 586}</string>
 		</dictionary>
 		<string key="IBCocoaTouchPluginVersion">2083</string>

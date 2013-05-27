@@ -46,7 +46,7 @@
 							<object class="IBUIImageView" id="173890440">
 								<reference key="NSNextResponder" ref="415923075"/>
 								<int key="NSvFlags">274</int>
-								<string key="NSFrame">{{20, 50}, {1024, 719}}</string>
+								<string key="NSFrame">{{20, 20}, {1024, 750}}</string>
 								<reference key="NSSuperview" ref="415923075"/>
 								<reference key="NSNextKeyView" ref="213614851"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -54,7 +54,7 @@
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 								<object class="NSCustomResource" key="IBUIImage">
 									<string key="NSClassName">NSImage</string>
-									<string key="NSResourceName">bgLogin.png</string>
+									<string key="NSResourceName">bgSignUp1.png</string>
 								</object>
 							</object>
 							<object class="IBUIImageView" id="1061929378">
@@ -174,6 +174,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{286, 669}, {492, 62}}</string>
 								<reference key="NSSuperview" ref="415923075"/>
+								<reference key="NSNextKeyView" ref="1007049497"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -200,24 +201,10 @@
 									<int key="NSfFlags">16</int>
 								</object>
 							</object>
-							<object class="IBUIImageView" id="170275034">
-								<reference key="NSNextResponder" ref="415923075"/>
-								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{20, 20}, {1024, 50}}</string>
-								<reference key="NSSuperview" ref="415923075"/>
-								<reference key="NSNextKeyView" ref="173890440"/>
-								<string key="NSReuseIdentifierKey">_NS:9</string>
-								<bool key="IBUIUserInteractionEnabled">NO</bool>
-								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-								<object class="NSCustomResource" key="IBUIImage">
-									<string key="NSClassName">NSImage</string>
-									<string key="NSResourceName">bgHeader.png</string>
-								</object>
-							</object>
 							<object class="IBUIButton" id="213614851">
 								<reference key="NSNextResponder" ref="415923075"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{34, 26}, {71, 37}}</string>
+								<string key="NSFrame">{{29, 28}, {71, 37}}</string>
 								<reference key="NSSuperview" ref="415923075"/>
 								<reference key="NSNextKeyView" ref="176436362"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -299,7 +286,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{286, 621}, {492, 53}}</string>
 								<reference key="NSSuperview" ref="415923075"/>
-								<reference key="NSNextKeyView" ref="591941500"/>
+								<reference key="NSNextKeyView" ref="393808505"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -330,7 +317,6 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{307, 634}, {167, 27}}</string>
 								<reference key="NSSuperview" ref="415923075"/>
-								<reference key="NSNextKeyView" ref="393808505"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -377,6 +363,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{298, 626}, {466, 44}}</string>
 								<reference key="NSSuperview" ref="415923075"/>
+								<reference key="NSNextKeyView" ref="591941500"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -394,7 +381,7 @@
 						</array>
 						<string key="NSFrame">{{-20, -20}, {1064, 789}}</string>
 						<reference key="NSSuperview" ref="794358050"/>
-						<reference key="NSNextKeyView" ref="170275034"/>
+						<reference key="NSNextKeyView" ref="173890440"/>
 						<string key="NSReuseIdentifierKey">_NS:10</string>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<bool key="IBUIMultipleTouchEnabled">YES</bool>
@@ -553,7 +540,6 @@
 							<reference ref="1059966313"/>
 							<reference ref="196216506"/>
 							<reference ref="1003497119"/>
-							<reference ref="170275034"/>
 							<reference ref="213614851"/>
 							<reference ref="176436362"/>
 							<reference ref="480660007"/>
@@ -609,11 +595,6 @@
 					<object class="IBObjectRecord">
 						<int key="objectID">13</int>
 						<reference key="object" ref="393808505"/>
-						<reference key="parent" ref="415923075"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">14</int>
-						<reference key="object" ref="170275034"/>
 						<reference key="parent" ref="415923075"/>
 					</object>
 					<object class="IBObjectRecord">
@@ -673,7 +654,6 @@
 				<string key="11.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="12.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="13.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="14.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="15.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="4.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="5.CustomClassName">TPKeyboardAvoidingScrollView</string>
@@ -695,7 +675,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">70</int>
+			<int key="maxID">71</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>
@@ -703,8 +683,7 @@
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="bgHeader.png">{1023, 50}</string>
-			<string key="bgLogin.png">{1021, 750}</string>
+			<string key="bgSignUp1.png">{2048, 1500}</string>
 			<string key="bgTextBoxLogin.png">{492, 52}</string>
 			<string key="bgnOptionalLogin.png">{492, 53}</string>
 			<string key="btnBlue.png">{92, 37}</string>

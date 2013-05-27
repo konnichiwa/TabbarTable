@@ -58,7 +58,7 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrameSize">{1024, 50}</string>
 						<reference key="NSSuperview" ref="766721923"/>
-						<reference key="NSNextKeyView" ref="826203031"/>
+						<reference key="NSNextKeyView" ref="931805230"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -67,10 +67,10 @@
 							<string key="NSResourceName">bgHeader.png</string>
 						</object>
 					</object>
-					<object class="IBUIButton" id="826203031">
+					<object class="IBUIButton" id="931805230">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{5, 8}, {72, 33}}</string>
+						<string key="NSFrame">{{9, 7}, {71, 37}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSNextKeyView" ref="27048274"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -78,36 +78,35 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
+						<string key="IBUITitleShadowOffset">{0, -1}</string>
+						<string key="IBUINormalTitle">Back</string>
 						<object class="NSColor" key="IBUIHighlightedTitleColor" id="736602160">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MQA</bytes>
 						</object>
-						<object class="NSColor" key="IBUINormalTitleColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
-						</object>
-						<object class="NSColor" key="IBUINormalTitleShadowColor" id="786273458">
+						<reference key="IBUINormalTitleColor" ref="736602160"/>
+						<object class="NSColor" key="IBUINormalTitleShadowColor">
 							<int key="NSColorSpace">3</int>
-							<bytes key="NSWhite">MC41AA</bytes>
+							<bytes key="NSWhite">MAA</bytes>
 						</object>
 						<object class="NSCustomResource" key="IBUINormalBackgroundImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">btnBack.png</string>
+							<string key="NSResourceName">btnBlue.png</string>
 						</object>
-						<object class="IBUIFontDescription" key="IBUIFontDescription" id="617417670">
+						<object class="IBUIFontDescription" key="IBUIFontDescription" id="612941055">
 							<int key="type">2</int>
-							<double key="pointSize">15</double>
+							<double key="pointSize">13</double>
 						</object>
-						<object class="NSFont" key="IBUIFont" id="393572123">
+						<object class="NSFont" key="IBUIFont" id="122077412">
 							<string key="NSName">Helvetica-Bold</string>
-							<double key="NSSize">15</double>
+							<double key="NSSize">13</double>
 							<int key="NSfFlags">16</int>
 						</object>
 					</object>
 					<object class="IBUIButton" id="27048274">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{954, 9}, {72, 33}}</string>
+						<string key="NSFrame">{{955, 9}, {71, 31}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSNextKeyView" ref="718259667"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -120,13 +119,23 @@
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
-						<reference key="IBUINormalTitleShadowColor" ref="786273458"/>
+						<object class="NSColor" key="IBUINormalTitleShadowColor" id="786273458">
+							<int key="NSColorSpace">3</int>
+							<bytes key="NSWhite">MC41AA</bytes>
+						</object>
 						<object class="NSCustomResource" key="IBUINormalBackgroundImage">
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">btnInfo.png</string>
 						</object>
-						<reference key="IBUIFontDescription" ref="617417670"/>
-						<reference key="IBUIFont" ref="393572123"/>
+						<object class="IBUIFontDescription" key="IBUIFontDescription" id="617417670">
+							<int key="type">2</int>
+							<double key="pointSize">15</double>
+						</object>
+						<object class="NSFont" key="IBUIFont" id="95660724">
+							<string key="NSName">Helvetica-Bold</string>
+							<double key="NSSize">15</double>
+							<int key="NSfFlags">16</int>
+						</object>
 					</object>
 					<object class="IBUITableView" id="427597031">
 						<reference key="NSNextResponder" ref="766721923"/>
@@ -370,7 +379,7 @@
 							<string key="NSResourceName">btnScheEmployee.png</string>
 						</object>
 						<reference key="IBUIFontDescription" ref="617417670"/>
-						<reference key="IBUIFont" ref="393572123"/>
+						<reference key="IBUIFont" ref="95660724"/>
 					</object>
 					<object class="IBUIButton" id="372974418">
 						<reference key="NSNextResponder" ref="766721923"/>
@@ -394,7 +403,7 @@
 							<string key="NSResourceName">btnNewMessEmployee.png</string>
 						</object>
 						<reference key="IBUIFontDescription" ref="617417670"/>
-						<reference key="IBUIFont" ref="393572123"/>
+						<reference key="IBUIFont" ref="95660724"/>
 					</object>
 					<object class="IBUIImageView" id="421154586">
 						<reference key="NSNextResponder" ref="766721923"/>
@@ -481,7 +490,7 @@
 								<nil key="IBUIHighlightedColor"/>
 								<int key="IBUIBaselineAdjustment">0</int>
 								<reference key="IBUIFontDescription" ref="617417670"/>
-								<reference key="IBUIFont" ref="393572123"/>
+								<reference key="IBUIFont" ref="95660724"/>
 								<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
 							</object>
 							<object class="IBUILabel" id="679154273">
@@ -562,7 +571,7 @@
 									<string key="NSResourceName">sendSMSBtn.png</string>
 								</object>
 								<reference key="IBUIFontDescription" ref="617417670"/>
-								<reference key="IBUIFont" ref="393572123"/>
+								<reference key="IBUIFont" ref="95660724"/>
 							</object>
 							<object class="IBUIView" id="744473147">
 								<reference key="NSNextResponder" ref="900118061"/>
@@ -637,7 +646,7 @@
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="786273458"/>
 						<reference key="IBUIFontDescription" ref="617417670"/>
-						<reference key="IBUIFont" ref="393572123"/>
+						<reference key="IBUIFont" ref="95660724"/>
 					</object>
 				</array>
 				<string key="NSFrame">{{0, 20}, {1024, 748}}</string>
@@ -710,7 +719,7 @@
 							<string key="NSResourceName">closeImageBtn.png</string>
 						</object>
 						<reference key="IBUIFontDescription" ref="617417670"/>
-						<reference key="IBUIFont" ref="393572123"/>
+						<reference key="IBUIFont" ref="95660724"/>
 					</object>
 					<object class="IBUILabel" id="264505408">
 						<reference key="NSNextResponder" ref="188176773"/>
@@ -806,15 +815,8 @@
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">btnGray.png</string>
 						</object>
-						<object class="IBUIFontDescription" key="IBUIFontDescription" id="612941055">
-							<int key="type">2</int>
-							<double key="pointSize">13</double>
-						</object>
-						<object class="NSFont" key="IBUIFont" id="269238106">
-							<string key="NSName">Helvetica-Bold</string>
-							<double key="NSSize">13</double>
-							<int key="NSfFlags">16</int>
-						</object>
+						<reference key="IBUIFontDescription" ref="612941055"/>
+						<reference key="IBUIFont" ref="122077412"/>
 					</object>
 					<object class="IBUILabel" id="25606166">
 						<reference key="NSNextResponder" ref="241339984"/>
@@ -858,7 +860,7 @@
 						<reference key="IBUINormalTitleShadowColor" ref="786273458"/>
 						<reference key="IBUINormalBackgroundImage" ref="635593076"/>
 						<reference key="IBUIFontDescription" ref="612941055"/>
-						<reference key="IBUIFont" ref="269238106"/>
+						<reference key="IBUIFont" ref="122077412"/>
 					</object>
 				</array>
 				<string key="NSFrameSize">{377, 423}</string>
@@ -1124,7 +1126,6 @@
 						<array class="NSMutableArray" key="children">
 							<reference ref="980947996"/>
 							<reference ref="387503660"/>
-							<reference ref="27048274"/>
 							<reference ref="428439943"/>
 							<reference ref="430963960"/>
 							<reference ref="897045351"/>
@@ -1136,7 +1137,6 @@
 							<reference ref="54724386"/>
 							<reference ref="200620432"/>
 							<reference ref="372974418"/>
-							<reference ref="826203031"/>
 							<reference ref="130625402"/>
 							<reference ref="271333290"/>
 							<reference ref="1048755515"/>
@@ -1145,6 +1145,8 @@
 							<reference ref="253521963"/>
 							<reference ref="900118061"/>
 							<reference ref="379497000"/>
+							<reference ref="931805230"/>
+							<reference ref="27048274"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -1156,11 +1158,6 @@
 					<object class="IBObjectRecord">
 						<int key="objectID">5</int>
 						<reference key="object" ref="387503660"/>
-						<reference key="parent" ref="766721923"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">6</int>
-						<reference key="object" ref="826203031"/>
 						<reference key="parent" ref="766721923"/>
 					</object>
 					<object class="IBObjectRecord">
@@ -1387,6 +1384,11 @@
 						<reference key="object" ref="379497000"/>
 						<reference key="parent" ref="766721923"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">89</int>
+						<reference key="object" ref="931805230"/>
+						<reference key="parent" ref="766721923"/>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -1426,7 +1428,6 @@
 				<string key="57.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="58.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="59.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="6.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="60.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="61.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="62.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -1439,13 +1440,14 @@
 				<string key="76.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="78.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="8.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="89.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="9.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 			</dictionary>
 			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">88</int>
+			<int key="maxID">89</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>
@@ -1461,7 +1463,7 @@
 			<string key="bgHeader.png">{1023, 50}</string>
 			<string key="bgPopupimage.png">{337, 423}</string>
 			<string key="bgSMSto.png">{480, 36}</string>
-			<string key="btnBack.png">{72, 33}</string>
+			<string key="btnBlue.png">{92, 37}</string>
 			<string key="btnGray.png">{107, 39}</string>
 			<string key="btnInfo.png">{71, 32}</string>
 			<string key="btnNewMessEmployee.png">{49, 44}</string>
