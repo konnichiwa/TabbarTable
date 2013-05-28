@@ -109,7 +109,7 @@
     
     self.contentInset = [self contentInsetForKeyboard];
     [self setContentOffset:CGPointMake(self.contentOffset.x,
-                                       [self idealOffsetForView:firstResponder withSpace:[self keyboardRect].origin.y - self.bounds.origin.y])
+                                       [self idealOffsetForView:firstResponder withSpace:[self keyboardRect].origin.y - self.bounds.origin.y+18])
                   animated:YES];
     [self setScrollIndicatorInsets:self.contentInset];
     
@@ -223,7 +223,7 @@
 - (UIEdgeInsets)contentInsetForKeyboard {
     UIEdgeInsets newInset = self.contentInset;
     CGRect keyboardRect = [self keyboardRect];
-    newInset.bottom = keyboardRect.size.height - ((keyboardRect.origin.y+keyboardRect.size.height) - (self.bounds.origin.y+self.bounds.size.height));
+    newInset.bottom = keyboardRect.size.height - ((keyboardRect.origin.y+keyboardRect.size.height)+1200 - (self.bounds.origin.y+self.bounds.size.height));
     return newInset;
 }
 

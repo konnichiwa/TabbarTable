@@ -43,7 +43,11 @@
     overlayerView=[[UIView alloc] initWithFrame:self.view.frame];
     overlayerView.backgroundColor=[UIColor blackColor];
     isNew=YES;
+//    _scrollviewToAjd.contentSize=CGSizeMake(1023, 900);
+//    _scrollviewToAjd.frame=CGRectMake(0, 1, 1024, 748);
+//    _scrollviewToAjd.scrollsToTop=YES;
     // Do any additional setup after loading the view from its nib.
+    [(TPKeyboardAvoidingScrollView*)self.view setContentSize:CGSizeMake(0, 0)];
 }
 -(void)checkPlaceholderMess{
     if (isShowPlaceHoderMessBox) {
@@ -204,6 +208,7 @@
     [_textMessage release];
     [_messagePlahoderBox release];
     [_messageTable release];
+    [_btnSendSMS release];
     [super dealloc];
 }
 - (void)viewDidUnload {
@@ -221,6 +226,7 @@
     [self setTextMessage:nil];
     [self setMessagePlahoderBox:nil];
     [self setMessageTable:nil];
+    [self setBtnSendSMS:nil];
     [super viewDidUnload];
 }
 - (void)growingTextViewDidBeginEditing:(HPGrowingTextView *)growingTextView{
@@ -236,6 +242,24 @@
     r.size.height -= diff;
     r.origin.y += diff;
 	_messageView.frame = r;
+}
+#pragma mark-textfield delegate
+- (void)textFieldDidBeginEditing:(UITextField *)textField{
+    
+}
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
+    NSString *text=@"";
+    if ([string length]==0) {
+        text=[textField.text substringToIndex:[textField.text length]-1];
+    }else{
+        text=[textField.text stringByAppendingString:string];
+    }
+    if ([text isEqualToString:@""]) {
+        [_btnSendSMS setImage:[UIImage imageNamed:@"btnSendsms_h"] forState:UIControlStateNormal];
+    }else{
+         [_btnSendSMS setImage:[UIImage imageNamed:@"btnSendsms"] forState:UIControlStateNormal];
+    }
+    return YES;
 }
 #pragma mark- action
 - (IBAction)submitImagePress:(id)sender {
@@ -273,6 +297,8 @@
 }
 
 - (IBAction)senPress:(id)sender {
+    _textMessage.text=@"";
+    [_btnSendSMS setImage:[UIImage imageNamed:@"btnSendsms_h"] forState:UIControlStateNormal];
         [_textMessage resignFirstResponder];
 }
 -(void)punch1Press:(id)sender{

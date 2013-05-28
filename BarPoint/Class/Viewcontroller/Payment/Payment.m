@@ -33,6 +33,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     listItem=[[NSMutableArray alloc] initWithObjects:@"Beer",@"Coffee",@"Dessert",@"Drinks",@"Entrée",@"Appetizer",@"Kid’s Menu",@"Liquors",@"Salads",@"Sandwiches",@"Sides",@"Soups",@"Wine",nil];
+    _creditCardAuthView.hidden=NO;_creditCardSaleView.hidden=YES;
+    _creditCardVisaView.hidden=YES;_creditCardAMEXBView.hidden=YES;
 }
 
 - (void)didReceiveMemoryWarning
@@ -50,6 +52,13 @@
     [_debitCardView release];
     [_adjustmentView release];
     [_creditCardView release];
+    [_creditCardAuthView release];
+    [_creditCardSaleView release];
+    [_creditVisaBtn release];
+    [_creditAMEXBtn release];
+    [_creditCardVisaView release];
+    [_creditCardAMEXBView release];
+    [_labelCreditSale release];
     [super dealloc];
 }
 - (void)viewDidUnload {
@@ -61,6 +70,13 @@
     [self setDebitCardView:nil];
     [self setAdjustmentView:nil];
     [self setCreditCardView:nil];
+    [self setCreditCardAuthView:nil];
+    [self setCreditCardSaleView:nil];
+    [self setCreditVisaBtn:nil];
+    [self setCreditAMEXBtn:nil];
+    [self setCreditCardVisaView:nil];
+    [self setCreditCardAMEXBView:nil];
+    [self setLabelCreditSale:nil];
     [super viewDidUnload];
 }
 #pragma mark-gridview delegate
@@ -208,11 +224,28 @@
 }
 #pragma mark-debitCard
 - (IBAction)debitMothPress:(id)sender {
-    [[ColorPickerViewController alloc] showPoppoWitharray:[[NSMutableArray alloc] initWithObjects:@"Test",@"Test",@"Test",nil] inRect:[sender frame] inView:self.creditCardView withPopoverArrow:UIPopoverArrowDirectionUp withDelegate:(id)self WithTag:3];
+    [[ColorPickerViewController alloc] showPoppoWitharray:[[NSMutableArray alloc] initWithObjects:@"Test",@"Test",@"Test",nil] inRect:[sender frame] inView:self.creditCardAuthView withPopoverArrow:UIPopoverArrowDirectionUp withDelegate:(id)self WithTag:3];
 }
 
 - (IBAction)debitYearPress:(id)sender {
-    [[ColorPickerViewController alloc] showPoppoWitharray:[[NSMutableArray alloc] initWithObjects:@"Test",@"Test",@"Test",nil] inRect:[sender frame] inView:self.creditCardView withPopoverArrow:UIPopoverArrowDirectionUp withDelegate:(id)self WithTag:3];
+    [[ColorPickerViewController alloc] showPoppoWitharray:[[NSMutableArray alloc] initWithObjects:@"Test",@"Test",@"Test",nil] inRect:[sender frame] inView:self.creditCardAuthView withPopoverArrow:UIPopoverArrowDirectionUp withDelegate:(id)self WithTag:3];
+}
+
+- (IBAction)visaCreditPress:(id)sender {
+    
+    _labelCreditSale.hidden=YES;
+    [sender setSelected:YES];
+    
+    if (sender ==_creditVisaBtn) {
+        [_creditAMEXBtn setSelected:NO];
+        _creditCardVisaView.hidden=NO;
+        _creditCardAMEXBView.hidden=YES;
+    }
+    if (sender ==_creditAMEXBtn) {
+         [_creditVisaBtn setSelected:NO];
+        _creditCardVisaView.hidden=YES;
+        _creditCardAMEXBView.hidden=NO;
+    }
 }
 #pragma mark-debitCard1
 - (IBAction)debitType1:(id)sender {
@@ -228,5 +261,15 @@
 }
 - (IBAction)surchargeTypePress:(id)sender {
         [[ColorPickerViewController alloc] showPoppoWitharray:[[NSMutableArray alloc] initWithObjects:@"Test",@"Test",@"Test",nil] inRect:[sender frame] inView:self.surchargeView withPopoverArrow:UIPopoverArrowDirectionUp withDelegate:(id)self WithTag:3];
+}
+
+- (IBAction)segmentPress:(id)sender {
+    if ([sender selectedSegmentIndex]==1) {
+        _creditCardAuthView.hidden=YES;
+        _creditCardSaleView.hidden=NO;
+    }else{
+        _creditCardAuthView.hidden=NO;
+        _creditCardSaleView.hidden=YES;
+    }
 }
 @end

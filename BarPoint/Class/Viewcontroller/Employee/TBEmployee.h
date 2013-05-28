@@ -12,7 +12,7 @@
 #import "TPKeyboardAvoidingScrollView.h"
 #define WIDTHPOPUP 377
 #define HIGHTPOPUP 423
-@interface TBEmployee : UIViewController
+@interface TBEmployee : UIViewController<UITextFieldDelegate>
 {
     UIView *overlayerView;
 }
@@ -23,13 +23,14 @@
 @property (retain, nonatomic) IBOutlet UIView *popupImage1;
 @property (retain, nonatomic) IBOutlet HPGrowingTextView *textView;
 @property (retain, nonatomic) IBOutlet UIView *messageView;
-@property (retain, nonatomic) IBOutlet TPKeyboardAvoidingScrollView *scrollviewToAjd;
+@property (retain, nonatomic) IBOutlet UIScrollView *scrollviewToAjd;
 @property (retain, nonatomic) IBOutlet UIImageView *bgmsgBox;
 @property (retain, nonatomic) IBOutlet UIImageView *textEntryMsgbox;
 @property (retain, nonatomic) IBOutlet UIImageView *messagePlahoderBox;
 @property (retain, nonatomic) IBOutlet HPGrowingTextView *contentMsgBox;
 @property (retain, nonatomic) IBOutlet UIView *showMessageView;
 @property (retain, nonatomic) IBOutlet UITextField *textMessage;
+@property (retain, nonatomic) IBOutlet UIButton *btnSendSMS;
 
 - (IBAction)submitImagePress:(id)sender;
 

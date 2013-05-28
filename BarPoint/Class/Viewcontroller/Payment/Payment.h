@@ -19,6 +19,14 @@
 @property (retain, nonatomic) IBOutlet UIView *debitCardView;
 @property (retain, nonatomic) IBOutlet UIView *adjustmentView;
 @property (retain, nonatomic) IBOutlet UIView *creditCardView;
+@property (retain, nonatomic) IBOutlet UIView *creditCardAuthView;
+@property (retain, nonatomic) IBOutlet UIView *creditCardSaleView;
+//credit
+@property (retain, nonatomic) IBOutlet UIButton *creditVisaBtn;
+@property (retain, nonatomic) IBOutlet UIButton *creditAMEXBtn;
+@property (retain, nonatomic) IBOutlet UIView *creditCardVisaView;
+@property (retain, nonatomic) IBOutlet UIView *creditCardAMEXBView;
+@property (retain, nonatomic) IBOutlet UILabel *labelCreditSale;
 
 - (IBAction)typePayment:(id)sender;
 - (IBAction)backPress:(id)sender;
@@ -30,10 +38,13 @@
 - (IBAction)debittypePress:(id)sender;
 - (IBAction)debitMothPress:(id)sender;
 - (IBAction)debitYearPress:(id)sender;
+- (IBAction)visaCreditPress:(id)sender;
+
 //debit card
 - (IBAction)debitType1:(id)sender;
 - (IBAction)debitMoth1:(id)sender;
 - (IBAction)debitYear1:(id)sender;
 //surcharge
 - (IBAction)surchargeTypePress:(id)sender;
+- (IBAction)segmentPress:(id)sender;
 @end
