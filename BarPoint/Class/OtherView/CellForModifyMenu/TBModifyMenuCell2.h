@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface TBModifyMenuCell2 : UITableViewCell
+@property (retain, nonatomic) IBOutletCollection(UIButton) NSArray *btnSelection;
 
 @end

@@ -17,7 +17,7 @@
 #import "ColorPickerViewController.h"
 @interface TBModifyMenu ()
 {
-
+    
     NSMutableArray *titleHeader;
 }
 @end
@@ -101,6 +101,25 @@
             break;
         case 1:
         {        TBModifyMenuCell2 *cell=[TBManageModifyMenu cellType2ForModifyMenuWithTable:aTableView WithOwer:self];
+            if (indexPath.row==0) {
+                for (UIButton *btn in cell.btnSelection) {
+                    if (btn.tag==5) {
+                        [btn setSelected:YES];
+                    }
+                    [btn addTarget:self action:@selector(pressChooseModify1:) forControlEvents:UIControlEventTouchUpInside];
+                    [btn setBackgroundImage:[UIImage imageNamed:@"cellBtnBlue.png"] forState:UIControlStateSelected];
+                }
+            }
+            if (indexPath.row==1) {
+                for (UIButton *btn in cell.btnSelection) {
+                    if (btn.tag==1) {
+                        [btn setSelected:YES];
+                    }
+                    [btn addTarget:self action:@selector(pressChooseModify2:) forControlEvents:UIControlEventTouchUpInside];
+                    [btn setBackgroundImage:[UIImage imageNamed:@"celBtnRed.png"] forState:UIControlStateSelected];
+                }
+            }
+            
             return cell;
         }
             break;
@@ -125,7 +144,7 @@
             }else{
                 TBModifyMenuCell4 *cell=[TBManageModifyMenu cellType4ForModifyMenuWithTable:aTableView WithOwer:self];
                 [cell.btnChooseCelebration addTarget:(id)self action:@selector(ChooseCelebrationPress:) forControlEvents:UIControlEventTouchUpInside];
-                 return cell;
+                return cell;
             }
         }
             break;
@@ -171,7 +190,7 @@
 }
 -(void)chagevalue:(id)sender{
     
-     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0   inSection:2];
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0   inSection:2];
     TBModifyMenuCell3 *cell=(TBModifyMenuCell3*)[_tableView cellForRowAtIndexPath:indexPath];
     float range=[(UISlider*)sender value];
     for (UILabel *label in cell.textlabel ) {
@@ -206,9 +225,30 @@
     [super viewDidUnload];
 }
 -(void)ChooseCelebrationPress:(id)sender{
-        [[ColorPickerViewController alloc] showPoppoWitharray:[[NSMutableArray alloc] initWithObjects:@"Test",@"Test",@"Test",nil] inRect:[sender frame] inView:[sender superview] withPopoverArrow:UIPopoverArrowDirectionDown withDelegate:(id)self WithTag:3];
+    [[ColorPickerViewController alloc] showPoppoWitharray:[[NSMutableArray alloc] initWithObjects:@"Test",@"Test",@"Test",nil] inRect:[sender frame] inView:[sender superview] withPopoverArrow:UIPopoverArrowDirectionDown withDelegate:(id)self WithTag:3];
 }
 -(void)selectedAtIndex:(int)index withTag:(int)tag{
+    
+}
+#pragma mark-action
+-(void)pressChooseModify1:(id)sender{
+    
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0   inSection:1];
+    TBModifyMenuCell2 *cell=(TBModifyMenuCell2*)[_tableView cellForRowAtIndexPath:indexPath];
+    for (UIButton *btn in cell.btnSelection) {
+        [btn setSelected:NO];
+    }
+    [sender setSelected:YES];
+
+}
+-(void)pressChooseModify2:(id)sender{
+    
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:1   inSection:1];
+    TBModifyMenuCell2 *cell=(TBModifyMenuCell2*)[_tableView cellForRowAtIndexPath:indexPath];
+    for (UIButton *btn in cell.btnSelection) {
+        [btn setSelected:NO];
+    }
+    [sender setSelected:YES];
     
 }
 - (IBAction)cancelPress:(id)sender {

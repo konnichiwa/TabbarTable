@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="8.00">
 	<data>
-		<int key="IBDocument.SystemTarget">1552</int>
+		<int key="IBDocument.SystemTarget">1536</int>
 		<string key="IBDocument.SystemVersion">11E53</string>
-		<string key="IBDocument.InterfaceBuilderVersion">3084</string>
+		<string key="IBDocument.InterfaceBuilderVersion">2844</string>
 		<string key="IBDocument.AppKitVersion">1138.47</string>
 		<string key="IBDocument.HIToolboxVersion">569.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			<string key="NS.object.0">2083</string>
+			<string key="NS.object.0">1930</string>
 		</object>
 		<array key="IBDocument.IntegratedClassDependencies">
 			<string>IBProxyObject</string>
@@ -159,6 +159,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{606, 6}, {35, 35}}</string>
 								<reference key="NSSuperview" ref="221085164"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -256,8 +257,10 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{580, 8}, {55, 32}}</string>
 								<reference key="NSSuperview" ref="405952826"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
+								<int key="IBUITag">7</int>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
 								<int key="IBUIContentVerticalAlignment">0</int>
@@ -287,6 +290,7 @@
 								<reference key="NSNextKeyView" ref="682616463"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
+								<int key="IBUITag">6</int>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
 								<int key="IBUIContentVerticalAlignment">0</int>
@@ -301,22 +305,20 @@
 							<object class="IBUIButton" id="1006600780">
 								<reference key="NSNextResponder" ref="405952826"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{466, 8}, {55, 32}}</string>
+								<string key="NSFrame">{{466, 7}, {55, 33}}</string>
 								<reference key="NSSuperview" ref="405952826"/>
 								<reference key="NSNextKeyView" ref="788076904"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
+								<int key="IBUITag">5</int>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
 								<int key="IBUIContentVerticalAlignment">0</int>
-								<string key="IBUINormalTitle">extra</string>
+								<string key="IBUINormalTitle">Extra</string>
 								<reference key="IBUIHighlightedTitleColor" ref="410771861"/>
 								<reference key="IBUINormalTitleColor" ref="410771861"/>
 								<reference key="IBUINormalTitleShadowColor" ref="592672276"/>
-								<object class="NSCustomResource" key="IBUINormalBackgroundImage">
-									<string key="NSClassName">NSImage</string>
-									<string key="NSResourceName">cellBtnBlue.png</string>
-								</object>
+								<reference key="IBUINormalBackgroundImage" ref="941124475"/>
 								<reference key="IBUIFontDescription" ref="791052947"/>
 								<reference key="IBUIFont" ref="122055007"/>
 							</object>
@@ -328,6 +330,7 @@
 								<reference key="NSNextKeyView" ref="1006600780"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
+								<int key="IBUITag">4</int>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
 								<int key="IBUIContentVerticalAlignment">0</int>
@@ -347,6 +350,7 @@
 								<reference key="NSNextKeyView" ref="503153987"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
+								<int key="IBUITag">3</int>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
 								<int key="IBUIContentVerticalAlignment">0</int>
@@ -366,6 +370,7 @@
 								<reference key="NSNextKeyView" ref="702244495"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
+								<int key="IBUITag">2</int>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
 								<int key="IBUIContentVerticalAlignment">0</int>
@@ -385,6 +390,7 @@
 								<reference key="NSNextKeyView" ref="500126284"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
+								<int key="IBUITag">1</int>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
 								<int key="IBUIContentVerticalAlignment">0</int>
@@ -442,6 +448,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{13, 21}, {609, 23}}</string>
 								<reference key="NSSuperview" ref="306872892"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -593,7 +600,7 @@
 				<string key="IBUIReuseIdentifier">TBModifyMenuCell3</string>
 			</object>
 			<object class="IBUITableViewCell" id="347732656">
-				<reference key="NSNextResponder"/>
+				<nil key="NSNextResponder"/>
 				<int key="NSvFlags">292</int>
 				<array class="NSMutableArray" key="NSSubviews">
 					<object class="IBUIView" id="12701718">
@@ -705,7 +712,6 @@
 					</object>
 				</array>
 				<string key="NSFrameSize">{640, 49}</string>
-				<reference key="NSSuperview"/>
 				<reference key="NSNextKeyView" ref="12701718"/>
 				<string key="NSReuseIdentifierKey">_NS:9</string>
 				<int key="IBUITag">1</int>
@@ -715,7 +721,7 @@
 				<real value="49" key="IBUIRowHeight"/>
 			</object>
 			<object class="IBUITableViewCell" id="1011475521">
-				<reference key="NSNextResponder"/>
+				<nil key="NSNextResponder"/>
 				<int key="NSvFlags">292</int>
 				<array class="NSMutableArray" key="NSSubviews">
 					<object class="IBUIView" id="278773616">
@@ -784,7 +790,6 @@
 					</object>
 				</array>
 				<string key="NSFrameSize">{640, 97}</string>
-				<reference key="NSSuperview"/>
 				<reference key="NSNextKeyView" ref="278773616"/>
 				<string key="NSReuseIdentifierKey">_NS:9</string>
 				<int key="IBUITag">1</int>
@@ -811,6 +816,76 @@
 						<reference key="destination" ref="372490531"/>
 					</object>
 					<int key="connectionID">49</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
+						<string key="label">btnSelection</string>
+						<reference key="source" ref="24650108"/>
+						<reference key="destination" ref="451410401"/>
+						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
+						<bool key="addsContentToExistingCollection">NO</bool>
+					</object>
+					<int key="connectionID">63</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
+						<string key="label">btnSelection</string>
+						<reference key="source" ref="24650108"/>
+						<reference key="destination" ref="500126284"/>
+						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
+						<bool key="addsContentToExistingCollection">NO</bool>
+					</object>
+					<int key="connectionID">64</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
+						<string key="label">btnSelection</string>
+						<reference key="source" ref="24650108"/>
+						<reference key="destination" ref="702244495"/>
+						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
+						<bool key="addsContentToExistingCollection">NO</bool>
+					</object>
+					<int key="connectionID">65</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
+						<string key="label">btnSelection</string>
+						<reference key="source" ref="24650108"/>
+						<reference key="destination" ref="503153987"/>
+						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
+						<bool key="addsContentToExistingCollection">NO</bool>
+					</object>
+					<int key="connectionID">66</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
+						<string key="label">btnSelection</string>
+						<reference key="source" ref="24650108"/>
+						<reference key="destination" ref="1006600780"/>
+						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
+						<bool key="addsContentToExistingCollection">NO</bool>
+					</object>
+					<int key="connectionID">67</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
+						<string key="label">btnSelection</string>
+						<reference key="source" ref="24650108"/>
+						<reference key="destination" ref="788076904"/>
+						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
+						<bool key="addsContentToExistingCollection">NO</bool>
+					</object>
+					<int key="connectionID">68</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
+						<string key="label">btnSelection</string>
+						<reference key="source" ref="24650108"/>
+						<reference key="destination" ref="682616463"/>
+						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
+						<bool key="addsContentToExistingCollection">NO</bool>
+					</object>
+					<int key="connectionID">69</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
@@ -1181,7 +1256,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">62</int>
+			<int key="maxID">69</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>
@@ -1194,9 +1269,8 @@
 			<string key="bgcellTableModify.png">{639, 48}</string>
 			<string key="bgtextBoxgrayModify.png">{62, 33}</string>
 			<string key="btnDelCell.png">{30, 32}</string>
-			<string key="cellBtnBlue.png">{55, 33}</string>
 			<string key="cellBtnGray.png">{55, 32}</string>
 		</dictionary>
-		<string key="IBCocoaTouchPluginVersion">2083</string>
+		<string key="IBCocoaTouchPluginVersion">1930</string>
 	</data>
 </archive>

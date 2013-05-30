@@ -27,4 +27,8 @@
     // Configure the view for the selected state
 }
 
+- (void)dealloc {
+    [_btnSelection release];
+    [super dealloc];
+}
 @end

@@ -160,6 +160,13 @@
 - (IBAction)selectGroupPress:(id)sender {
                 [[ColorPickerViewController alloc] showPoppoWitharray:[[NSMutableArray alloc] initWithObjects:@"Test",@"Test",@"Test",nil] inRect:[sender frame] inView:self.view withPopoverArrow:UIPopoverArrowDirectionUp withDelegate:(id)self WithTag:2];
 }
+
+- (IBAction)checkOderItemsPress:(id)sender {
+    for (UIButton *btn in _btnCheckOderItems) {
+        [btn setSelected:NO];
+    }
+    [sender setSelected:YES];
+}
 -(void)selectedAtIndex:(int)index withTag:(int)tag{
     
 }
@@ -208,12 +215,14 @@
     [_uitableview1 release];
     [listItem release];
     [_tableOderList release];
+    [_btnCheckOderItems release];
     [super dealloc];
 }
 - (void)viewDidUnload {
     [self setSearchBar:nil];
     [self setUitableview1:nil];
     [self setTableOderList:nil];
+    [self setBtnCheckOderItems:nil];
     [super viewDidUnload];
 }
 @end

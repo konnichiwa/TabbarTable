@@ -59,6 +59,7 @@
     [_creditCardVisaView release];
     [_creditCardAMEXBView release];
     [_labelCreditSale release];
+    [_btnCheckOderItems release];
     [super dealloc];
 }
 - (void)viewDidUnload {
@@ -77,6 +78,7 @@
     [self setCreditCardVisaView:nil];
     [self setCreditCardAMEXBView:nil];
     [self setLabelCreditSale:nil];
+    [self setBtnCheckOderItems:nil];
     [super viewDidUnload];
 }
 #pragma mark-gridview delegate
@@ -271,5 +273,11 @@
         _creditCardAuthView.hidden=NO;
         _creditCardSaleView.hidden=YES;
     }
+}
+- (IBAction)checkOderItemsPress:(id)sender {
+    for (UIButton *btn in _btnCheckOderItems) {
+        [btn setSelected:NO];
+    }
+    [sender setSelected:YES];
 }
 @end

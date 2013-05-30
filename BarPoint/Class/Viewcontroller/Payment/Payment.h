@@ -27,6 +27,7 @@
 @property (retain, nonatomic) IBOutlet UIView *creditCardVisaView;
 @property (retain, nonatomic) IBOutlet UIView *creditCardAMEXBView;
 @property (retain, nonatomic) IBOutlet UILabel *labelCreditSale;
+@property (retain, nonatomic) IBOutletCollection(UIButton) NSArray *btnCheckOderItems;
 
 - (IBAction)typePayment:(id)sender;
 - (IBAction)backPress:(id)sender;
@@ -47,4 +48,5 @@
 //surcharge
 - (IBAction)surchargeTypePress:(id)sender;
 - (IBAction)segmentPress:(id)sender;
+- (IBAction)checkOderItemsPress:(id)sender;
 @end

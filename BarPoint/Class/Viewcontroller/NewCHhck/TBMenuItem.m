@@ -36,6 +36,7 @@
     [self setTableListItem2:nil];
     [self setGridListItem:nil];
     [self setSeatView:nil];
+    [self setBtnCheckOderItems:nil];
     [super viewDidUnload];
 }
 - (void)viewDidLoad
@@ -167,6 +168,7 @@
     [_tableListItem2 release];
     [_gridListItem release];
     [_seatView release];
+    [_btnCheckOderItems release];
     [super dealloc];
 }
 
@@ -224,6 +226,13 @@
                          
                      }];
 
+}
+
+- (IBAction)checkOderItemsPress:(id)sender {
+    for (UIButton *btn in _btnCheckOderItems) {
+        [btn setSelected:NO];
+    }
+    [sender setSelected:YES];
 }
 -(void)gotoClientScreen{
     ShowClientScreen *aTBModifyMenu=[[ShowClientScreen alloc] initWithNibName:@"ShowClientScreen" bundle:nil];
