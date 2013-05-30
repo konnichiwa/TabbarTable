@@ -31,6 +31,18 @@
     }
     return self;
 }
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft || interfaceOrientation == UIInterfaceOrientationLandscapeRight);
+}
+- (BOOL)shouldAutorotate {
+    
+    
+    return YES;
+}
+
+-(NSInteger)supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskLandscape;
+}
 
 - (void)viewDidLoad
 {
@@ -274,6 +286,7 @@
 
 - (IBAction)schedulePress:(id)sender {
     TBScheduleViewController *aTBScheduleViewController=[[[TBScheduleViewController alloc] initWithNibName:@"TBScheduleViewController" bundle:nil] autorelease];
+    aTBScheduleViewController.view.frame=self.view.frame;
     [self.navigationController pushViewController:aTBScheduleViewController animated:YES];
 }
 

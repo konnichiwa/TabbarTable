@@ -32,6 +32,18 @@
     }
     return self;
 }
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft || interfaceOrientation == UIInterfaceOrientationLandscapeRight);
+}
+- (BOOL)shouldAutorotate {
+    
+    
+    return YES;
+}
+
+-(NSInteger)supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskLandscape;
+}
 -  (void)handleSingleTap:(UITapGestureRecognizer*)tap {
     
 }

@@ -52,14 +52,12 @@
 
     
 }
-- (BOOL)textFieldShouldReturn:(UITextField *)textField{
-    [textField resignFirstResponder];
-    return YES;
-}
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft || interfaceOrientation == UIInterfaceOrientationLandscapeRight);
 }
 - (BOOL)shouldAutorotate {
+    
+    
     return YES;
 }
 
@@ -74,4 +72,5 @@
     TBSignUp *aTBSignUp=[[TBSignUp alloc] initWithNibName:@"TBSignUp" bundle:nil];
     [self.navigationController pushViewController:aTBSignUp animated:YES];
 }
+
 @end

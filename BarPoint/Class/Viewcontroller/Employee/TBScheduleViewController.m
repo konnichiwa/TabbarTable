@@ -29,6 +29,7 @@
 
 - (void)viewDidLoad
 {
+    self.view.frame=CGRectMake(0, 0, 1024, 748);
     [super viewDidLoad];
     imageview=[[UIView alloc] initWithFrame:CGRectMake(0 , 0, 0, 0)];
     imageview.backgroundColor=[UIColor blackColor];
@@ -143,4 +144,17 @@
                          
                      }];
     
-}@end
+}
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft || interfaceOrientation == UIInterfaceOrientationLandscapeRight);
+}
+- (BOOL)shouldAutorotate {
+    
+    
+    return NO;
+}
+
+-(NSInteger)supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskLandscape;
+}
+@end

@@ -22,7 +22,18 @@
     }
     return self;
 }
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft || interfaceOrientation == UIInterfaceOrientationLandscapeRight);
+}
+- (BOOL)shouldAutorotate {
+    
+    
+    return YES;
+}
 
+-(NSInteger)supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskLandscape;
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -48,13 +59,13 @@
 
 - (void)dragViewDidStartDragging:(TKDragView *)dragView{
     
+    
     [UIView animateWithDuration:0.2 animations:^{
         dragView.transform = CGAffineTransformMakeScale(1.2, 1.2);
     }];
 }
 
 - (void)dragViewDidEndDragging:(TKDragView *)dragView{
-    
     [UIView animateWithDuration:0.2 animations:^{
         dragView.transform = CGAffineTransformMakeScale(1.0, 1.0);
     }];

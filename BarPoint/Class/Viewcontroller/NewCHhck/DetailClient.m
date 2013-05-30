@@ -29,6 +29,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    _tableView1.backgroundView=nil;
+    _tableView2.backgroundView=nil;
     _tableView1.backgroundColor=[UIColor clearColor];
     _tableView2.backgroundColor=[UIColor clearColor];
     headerTit1=[[NSMutableArray alloc] initWithObjects:@"Client Name",@"Client Information",@"Client Phone",@"",nil];
@@ -176,7 +178,8 @@
         [headerView addSubview:textTitle];
         [textTitle release];
         if (section==2) {
-            UIImageView *addImage=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"addclientbtnAdd.png"]];
+            UIButton *addImage=[[UIButton alloc] init];
+            [addImage setBackgroundImage:[UIImage imageNamed:@"addclientbtnAdd.png"] forState:UIControlStateNormal];
             addImage.frame=CGRectMake(345, -2, 31, 34);
             [headerView addSubview:addImage];
             
