@@ -97,6 +97,6 @@
 
 - (IBAction)addClientPress:(id)sender {
     DetailClient *aDetailClient=[[DetailClient alloc] initWithNibName:@"DetailClient" bundle:nil];
-    [self presentModalViewController:aDetailClient animated:YES];
+    [[TBAppDelegate shareAppDelegate].tabbarView  presentModalViewController:aDetailClient animated:YES];
 }
 @end

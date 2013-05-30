@@ -170,7 +170,9 @@
     
 }
 -(void)chagevalue:(id)sender{
-    TBModifyMenuCell3 *cell=(TBModifyMenuCell3*)[_tableView cellForRowAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:2]];
+    
+     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0   inSection:2];
+    TBModifyMenuCell3 *cell=(TBModifyMenuCell3*)[_tableView cellForRowAtIndexPath:indexPath];
     float range=[(UISlider*)sender value];
     for (UILabel *label in cell.textlabel ) {
         label.textColor=[UIColor darkGrayColor];
