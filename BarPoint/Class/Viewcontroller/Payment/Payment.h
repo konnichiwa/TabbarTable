@@ -28,11 +28,15 @@
 @property (retain, nonatomic) IBOutlet UIView *creditCardAMEXBView;
 @property (retain, nonatomic) IBOutlet UILabel *labelCreditSale;
 @property (retain, nonatomic) IBOutletCollection(UIButton) NSArray *btnCheckOderItems;
+@property (retain, nonatomic) IBOutletCollection(UIButton) NSArray *arraychooseCash;
+
 
 - (IBAction)typePayment:(id)sender;
 - (IBAction)backPress:(id)sender;
+@property (retain, nonatomic) IBOutlet UIButton *chooseMoneyCashPress;
 //cash
 - (IBAction)cashTypePaymentPress:(id)sender;
+- (IBAction)chooseMoneyCashPress:(id)sender;
 //adjustment
 - (IBAction)adjustmentPress:(id)sender;
 //credit card

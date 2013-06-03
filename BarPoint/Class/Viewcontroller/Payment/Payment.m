@@ -60,6 +60,8 @@
     [_creditCardAMEXBView release];
     [_labelCreditSale release];
     [_btnCheckOderItems release];
+    [_arraychooseCash release];
+    [_chooseMoneyCashPress release];
     [super dealloc];
 }
 - (void)viewDidUnload {
@@ -79,6 +81,8 @@
     [self setCreditCardAMEXBView:nil];
     [self setLabelCreditSale:nil];
     [self setBtnCheckOderItems:nil];
+    [self setArraychooseCash:nil];
+    [self setChooseMoneyCashPress:nil];
     [super viewDidUnload];
 }
 #pragma mark-gridview delegate
@@ -215,6 +219,17 @@
 #pragma mark-cash Action
 - (IBAction)cashTypePaymentPress:(id)sender {
     [[ColorPickerViewController alloc] showPoppoWitharray:[[NSMutableArray alloc] initWithObjects:@"Test",@"Test",@"Test",nil] inRect:[sender frame] inView:self.cashView withPopoverArrow:UIPopoverArrowDirectionUp withDelegate:(id)self WithTag:3];
+}
+
+- (IBAction)chooseMoneyCashPress:(id)sender {
+    for (UIButton *btn in _arraychooseCash) {
+        
+        if (btn==(UIButton*)sender) {
+            [btn setSelected:YES];
+        }else{
+            [btn setSelected:NO];
+        }
+    }
 }
 #pragma mark-adjustment Action
 - (IBAction)adjustmentPress:(id)sender {

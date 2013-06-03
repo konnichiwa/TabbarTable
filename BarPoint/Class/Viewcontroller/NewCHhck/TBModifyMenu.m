@@ -50,12 +50,13 @@
     [super viewDidLoad];
     _searchBar.backgroundColor=[UIColor clearColor];
     [[_searchBar.subviews objectAtIndex:0] removeFromSuperview];
+
     titleHeader=[[NSMutableArray alloc] initWithObjects:@"Side",@"Preparation",@"Temperature",@"Extra",@"Note",nil];
     // Do any additional setup after loading the view from its nib.
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:YES];
-    
+        _searchBar.placeholder=@"Search for Ingredients,Sides,Etc.";
 }
 - (void)didReceiveMemoryWarning
 {
@@ -107,7 +108,11 @@
                         [btn setSelected:YES];
                     }
                     [btn addTarget:self action:@selector(pressChooseModify1:) forControlEvents:UIControlEventTouchUpInside];
-                    [btn setBackgroundImage:[UIImage imageNamed:@"cellBtnBlue.png"] forState:UIControlStateSelected];
+                    if (btn.tag==1) {
+                        [btn setBackgroundImage:[UIImage imageNamed:@"celBtnRed.png"] forState:UIControlStateSelected];
+                    }else{
+                        [btn setBackgroundImage:[UIImage imageNamed:@"cellBtnBlue.png"] forState:UIControlStateSelected];
+                    }
                 }
             }
             if (indexPath.row==1) {
@@ -116,7 +121,11 @@
                         [btn setSelected:YES];
                     }
                     [btn addTarget:self action:@selector(pressChooseModify2:) forControlEvents:UIControlEventTouchUpInside];
-                    [btn setBackgroundImage:[UIImage imageNamed:@"celBtnRed.png"] forState:UIControlStateSelected];
+                    if (btn.tag==1) {
+                        [btn setBackgroundImage:[UIImage imageNamed:@"celBtnRed.png"] forState:UIControlStateSelected];
+                    }else{
+                        [btn setBackgroundImage:[UIImage imageNamed:@"cellBtnBlue.png"] forState:UIControlStateSelected];
+                    }
                 }
             }
             
@@ -199,18 +208,23 @@
     if (range<20) {
         UILabel *label=[cell.textlabel objectAtIndex:0];
         label.textColor=[UIColor colorWithRed:0 green:80/255.0 blue:116/255.0 alpha:1];
+        [(UISlider*)sender setValue:0.0];
     }else if (range>=20 && range<40){
         UILabel *label=[cell.textlabel objectAtIndex:1];
         label.textColor=[UIColor colorWithRed:0 green:80/255.0 blue:116/255.0 alpha:1];
+        [(UISlider*)sender setValue:25.0];
     }else if (range>=40 && range<60){
         UILabel *label=[cell.textlabel objectAtIndex:2];
         label.textColor=[UIColor colorWithRed:0 green:80/255.0 blue:116/255.0 alpha:1];
+        [(UISlider*)sender setValue:50.0];
     }else if (range>=60 && range<80){
         UILabel *label=[cell.textlabel objectAtIndex:3];
         label.textColor=[UIColor colorWithRed:0 green:80/255.0 blue:116/255.0 alpha:1];
+        [(UISlider*)sender setValue:75.0];
     }else{
         UILabel *label=[cell.textlabel objectAtIndex:4];
         label.textColor=[UIColor colorWithRed:0 green:80/255.0 blue:116/255.0 alpha:1];
+        [(UISlider*)sender setValue:100.0];
     }
 }
 #pragma mark- GestureRecognizer delegate
