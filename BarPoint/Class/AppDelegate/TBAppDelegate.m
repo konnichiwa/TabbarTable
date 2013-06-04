@@ -38,6 +38,11 @@
     self.window.autoresizesSubviews=YES;
     [self.window makeKeyAndVisible];
     [TPKeyboardAvoidingScrollView class];
+    [[API sharedInstance] getCountryListWithCompleteBlock:^(NSDictionary *result,NSError *error){
+        if (!error) {
+            NSLog(@"countryList:%@",result);
+        }
+    }];
     return YES;
 }
 
@@ -116,6 +121,26 @@
     [tabItemsArray release];
     
     
+}
+#pragma mark -
+#pragma mark User Services Delegate Methods
+
+-(void)startSpinner: (NSString *) label{
+    if(HUD){
+        HUD.labelText = label;
+        [HUD show:YES];
+        return;
+    }
+    HUD = [[MBProgressHUD alloc] initWithView:self.window];
+	[self.window addSubview:HUD];
+    HUD.delegate = (id)self;
+    HUD.labelText = label;
+	[HUD show:YES];
+    
+}
+
+-(void)stopSpinner {
+    [HUD hide:YES];
 }
 
 @end

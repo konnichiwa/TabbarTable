@@ -14,10 +14,14 @@
 #import "TBPrint.h"
 #import "TBReport.h"
 #import "TBLogin.h"
+#import "API.h"
+#import "MBProgressHUD.h"
 @class TBViewController;
 @class GTabBar;
 @interface TBAppDelegate : UIResponder <UIApplicationDelegate>
-
+{
+MBProgressHUD *HUD;
+}
 @property (strong, nonatomic) UIWindow *window;
 
 @property(strong,nonatomic) GTabBar *tabbarView;
@@ -28,4 +32,6 @@
 @property(strong,nonatomic) UINavigationController *ncNewcheck;
 @property(strong,nonatomic) TBLogin *aTBLogin;
 + (TBAppDelegate *)shareAppDelegate;
+- (void) startSpinner: (NSString *) label;
+- (void) stopSpinner;
 @end
