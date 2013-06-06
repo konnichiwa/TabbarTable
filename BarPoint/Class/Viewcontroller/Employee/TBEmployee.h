@@ -31,6 +31,8 @@
 @property (retain, nonatomic) IBOutlet UIView *showMessageView;
 @property (retain, nonatomic) IBOutlet UITextField *textMessage;
 @property (retain, nonatomic) IBOutlet UIButton *btnSendSMS;
+@property (retain, nonatomic) IBOutlet UIImageView *popupImageView;
+@property (retain, nonatomic) IBOutlet UILabel *popupTitleText;
 
 - (IBAction)submitImagePress:(id)sender;
 

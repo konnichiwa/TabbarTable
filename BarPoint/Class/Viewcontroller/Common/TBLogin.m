@@ -10,8 +10,11 @@
 #import "TBAppDelegate.h"
 #import "TBSignUp.h"
 #import "API.h"
+#import "Country.h"
 @interface TBLogin ()
-
+{
+    UITextField *currentTextField;
+}
 @end
 
 @implementation TBLogin
@@ -54,6 +57,7 @@
     [super viewDidUnload];
 }
 - (void)textFieldDidBeginEditing:(UITextField *)textField{
+    currentTextField=textField;
 }
 -(void)textFieldDidEndEditing:(UITextField *)textField{
 
@@ -73,15 +77,25 @@
 }
 - (IBAction)loginPress:(id)sender {
     
-
-    NSDictionary *dict=[[NSDictionary alloc] initWithObjects:[NSArray arrayWithObjects:_locationText.text,_userNameText.text,_passwordText.text,@"access_pos_admin", nil] forKeys:[NSArray arrayWithObjects:@"location_id",@"employee_id",@"password",@"type_access ",nil]];
+    [currentTextField resignFirstResponder];
+    if ([[_locationText.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] isEqualToString:@""]||[[_userNameText.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] isEqualToString:@""]||[[_passwordText.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] isEqualToString:@""]) {
+        [UIAlertView error:@"Please input all field"];
+        return;
+    }
+    Country *country=[TBManageDatabase getcountryWithName:_userNameText.text];
+    NSString *locationID=_locationText.text;
+    if (country) {
+        locationID=country.iD;
+    }
+    NSDictionary *dict=[[NSDictionary alloc] initWithObjects:[NSArray arrayWithObjects:[NSNumber numberWithInt:[locationID integerValue]],_userNameText.text,_passwordText.text,@"access_pos_admin", nil] forKeys:[NSArray arrayWithObjects:@"location_id",@"employee_id",@"password",@"type_access",nil]];
     [[API sharedInstance] loginWithDict:dict WithCompleteBlock:^(id result,NSError *error){
         if (!error) {
             NSLog(@"result:%@",[(NSArray*)result objectAtIndex:0]);
-            if ([[(NSArray*)result objectAtIndex:0] integerValue]==1) {
+            if ([[(NSArray*)result objectAtIndex:0] integerValue]==0) {
+                [TBManageDatabase saveAcctoTableWithUsername:_userNameText.text password:_passwordText.text locationid:_locationText.text];
                 [self presentModalViewController:[TBAppDelegate shareAppDelegate].tabbarView animated:YES];
             }
-            if ([[(NSArray*)result objectAtIndex:0] integerValue]==2) {
+            if (([[(NSArray*)result objectAtIndex:0] integerValue]==2)||([[(NSArray*)result objectAtIndex:0] integerValue]==1)) {
                 [UIAlertView error:@"login incorrect"];
             }
             if ([[(NSArray*)result objectAtIndex:0] integerValue]==3) {

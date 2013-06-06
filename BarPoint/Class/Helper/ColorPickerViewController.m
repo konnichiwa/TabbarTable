@@ -67,7 +67,7 @@
     
     // Configure the cell...
     cell.textLabel.text = [colorNames objectAtIndex:indexPath.row];
-    cell.textLabel.textAlignment=NSTextAlignmentCenter;
+//    cell.textLabel.textAlignment=NSTextAlignmentCenter;
     
     return cell;
 }
@@ -96,6 +96,9 @@
     //Calculate how wide the view should be by finding how wide each string is expected to be
     CGFloat largestLabelWidth = 0;
     for (NSString *colorName in colorNames) {
+        if ((id)colorName==[NSNull null]) {
+            colorName=@"";
+        }
         //Checks size of text using the default font for UITableViewCell's textLabel.
         CGSize labelSize = [colorName sizeWithFont:[UIFont boldSystemFontOfSize:20.0f]];
         if (labelSize.width > largestLabelWidth) {

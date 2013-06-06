@@ -10,6 +10,10 @@
 
 @interface EmployeeCellLeftCell : UITableViewCell
 
+@property (retain, nonatomic) IBOutlet UILabel *dateText;
+@property (retain, nonatomic) IBOutlet UILabel *timeInText;
+@property (retain, nonatomic) IBOutlet UILabel *timeOutText;
+@property (retain, nonatomic) IBOutlet UILabel *timeText;
 @property (retain, nonatomic) IBOutlet UIButton *puchBtn1;
 @property (retain, nonatomic) IBOutlet UIButton *puchBtn2;
 @end

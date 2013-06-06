@@ -17,5 +17,7 @@ typedef void (^JSONResponseBlock)(id result, NSError *error);
 
 +(API*)sharedInstance;
 - (void)loginWithDict:(NSDictionary*)dict WithCompleteBlock:(JSONResponseBlock)block;
+- (void)signUpWithDict:(NSDictionary*)dict WithCompleteBlock:(JSONResponseBlock)block;
 -(void)getCountryListWithCompleteBlock:(JSONResponseBlock)block;
+-(void)getScheduleOfuserWithDict:(NSDictionary*)dict WithCompleteBlock:(JSONResponseBlock)block;
 @end

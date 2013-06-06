@@ -7,7 +7,12 @@
 //
 
 #import "TBAppDelegate.h"
+#import "MagicalRecordHelpers.h"
 @implementation TBAppDelegate
+{
+    UITextField *currentTextField;
+
+}
 @synthesize tabbarView;
 @synthesize ncEmployee;
 @synthesize ncReport;
@@ -29,6 +34,15 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    [MagicalRecordHelpers setupCoreDataStackWithStoreNamed:@"BarPoint.sqlite"];
+//    [self preloadCountry];
+    [[API sharedInstance] getCountryListWithCompleteBlock:^(id result,NSError *error){
+        if (!error) {
+            NSLog(@"coutry:%@",[(NSDictionary*)result objectForKey:@"countries"]);
+            [TBManageDatabase saveCountrytoTable:[(NSDictionary*)result objectForKey:@"countries"]];
+            [TBManageDatabase saveLocationTypetoTable:[(NSDictionary*)result objectForKey:@"types"]];
+        }
+    }];
     // Override point for customization after application launch.
     [self setupTabbarDidLogin];
     aTBLogin=[[TBLogin alloc] initWithNibName:@"TBLogin" bundle:nil];
@@ -38,11 +52,7 @@
     self.window.autoresizesSubviews=YES;
     [self.window makeKeyAndVisible];
     [TPKeyboardAvoidingScrollView class];
-    [[API sharedInstance] getCountryListWithCompleteBlock:^(NSDictionary *result,NSError *error){
-        if (!error) {
-            NSLog(@"countryList:%@",result);
-        }
-    }];
+
     return YES;
 }
 
@@ -143,4 +153,14 @@
     [HUD hide:YES];
 }
 
+#pragma mark-add country
+-(void)preloadCountry{
+    NSError* err = nil;
+    NSString* dataPath = [[NSBundle mainBundle] pathForResource:@"Country" ofType:@"json"];
+    NSArray* Banks = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:dataPath]
+                                                     options:kNilOptions
+                                                       error:&err];
+    NSLog(@"Imported Banks: %@", Banks);
+    [TBManageDatabase saveCountrytoTable:Banks];
+}
 @end

@@ -16,6 +16,7 @@
 #import "TBLogin.h"
 #import "API.h"
 #import "MBProgressHUD.h"
+#import "TBManageDatabase.h"
 @class TBViewController;
 @class GTabBar;
 @interface TBAppDelegate : UIResponder <UIApplicationDelegate>

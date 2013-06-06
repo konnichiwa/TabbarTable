@@ -11,12 +11,20 @@
 #import "EmployeeCellRight.h"
 #import "TBAppDelegate.h"
 #import "TBMessageCell.h"
+#import "UserAccount.h"
+#import "API.h"
+#import "TBManageDatabase.h"
+#import "EmployeeSchedule.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 @interface TBEmployee ()
 {
     CGPoint backPoint;
     BOOL isNew;
     int countOf;
     BOOL isShowPlaceHoderMessBox;
+    NSMutableArray *listSche;
+    NSString *imageLinktoSHow;
+    NSString *popuptitlestr;
 
 }
 @end
@@ -48,6 +56,9 @@
 {
     
     [super viewDidLoad];
+    imageLinktoSHow=@"";
+    popuptitlestr=@"";
+    listSche=[[NSMutableArray alloc] initWithArray:[EmployeeSchedule MR_findAll]];
     isShowPlaceHoderMessBox=YES;
     [self checkPlaceholderMess];
     countOf=0;
@@ -60,6 +71,16 @@
 //    _scrollviewToAjd.scrollsToTop=YES;
     // Do any additional setup after loading the view from its nib.
     [(TPKeyboardAvoidingScrollView*)self.view setContentSize:CGSizeMake(0, 0)];
+    //get schedule
+    UserAccount *user=[TBManageDatabase getAccount];
+    NSDictionary *dict=[[NSDictionary alloc] initWithObjects:[NSArray arrayWithObjects:user.locationId,user.userName,user.password, nil] forKeys:[NSArray arrayWithObjects:@"location_id",@"emp_id",@"password", nil]];
+    [[API sharedInstance] getScheduleOfuserWithDict:dict WithCompleteBlock:^(id result,NSError *error){
+        if (!error) {
+            [TBManageDatabase addScheduleTotable:[(NSArray*)result objectAtIndex:1]];
+            listSche=[[NSMutableArray alloc] initWithArray:[EmployeeSchedule MR_findAll]];
+            [_leftTableView reloadData];
+        }
+    }];
 }
 -(void)checkPlaceholderMess{
     if (isShowPlaceHoderMessBox) {
@@ -108,7 +129,7 @@
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (tableView.tag==1) {
-        return 15;
+        return [listSche count];
     }else if(tableView.tag==2){
         return 20;
     }else{
@@ -119,6 +140,7 @@
     if (aTableView.tag==1) {
         static NSString *indentifier = @"EmployeeCellLeft";
         EmployeeCellLeftCell *cell = (EmployeeCellLeftCell *)[aTableView dequeueReusableCellWithIdentifier: indentifier];
+        EmployeeSchedule *a=[listSche objectAtIndex:indexPath.row];
         //cell = nil;
         if (cell == nil)  {
             NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"CustomCell"
@@ -127,10 +149,16 @@
                 if ([oneObject isKindOfClass:[EmployeeCellLeftCell class]])
                     cell = (EmployeeCellLeftCell *)oneObject;
         }
+        cell.dateText.text=a.dateSchedule;
+        cell.timeInText.text=a.inTime;
+        cell.timeOutText.text=a.outTime;
+        cell.timeText.text=a.duration;
         cell.puchBtn1.tag=indexPath.row;
         cell.puchBtn2.tag=indexPath.row;
         [cell.puchBtn1 addTarget:self action:@selector(punch1Press:) forControlEvents:UIControlEventTouchUpInside];
+        cell.puchBtn1.tag=indexPath.row;
         [cell.puchBtn2 addTarget:self action:@selector(punch2Press:) forControlEvents:UIControlEventTouchUpInside];
+        cell.puchBtn2.tag=indexPath.row;
         cell.backgroundView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bgCellLeftEmployee.png"]];
         //add dot right of animal name
         return cell;
@@ -221,6 +249,8 @@
     [_messagePlahoderBox release];
     [_messageTable release];
     [_btnSendSMS release];
+    [_popupImageView release];
+    [_popupTitleText release];
     [super dealloc];
 }
 - (void)viewDidUnload {
@@ -239,6 +269,8 @@
     [self setMessagePlahoderBox:nil];
     [self setMessageTable:nil];
     [self setBtnSendSMS:nil];
+    [self setPopupImageView:nil];
+    [self setPopupTitleText:nil];
     [super viewDidUnload];
 }
 - (void)growingTextViewDidBeginEditing:(HPGrowingTextView *)growingTextView{
@@ -317,11 +349,17 @@
 -(void)punch1Press:(id)sender{
     CGPoint frame =   [[sender superview] convertPoint:[sender center] toView:self.view];
     backPoint=frame;
+    EmployeeSchedule *a=[listSche objectAtIndex:[sender tag]];
+    imageLinktoSHow=a.imageIn;
+    popuptitlestr=[NSString stringWithFormat:@"%@ - %@ - Punch In",a.dateSchedule,a.inTime];
     [self showPopupTocenterWithView:_popupImage fromPoint:frame];
 }
 -(void)punch2Press:(id)sender{
 
     CGPoint frame =   [[sender superview] convertPoint:[sender center] toView:self.view];
+    EmployeeSchedule *a=[listSche objectAtIndex:[sender tag]];
+    imageLinktoSHow=a.imageOut;
+        popuptitlestr=[NSString stringWithFormat:@"%@ - %@ - Punch In",a.dateSchedule,a.outTime];
     backPoint=frame;
     [self showPopupTocenterWithView:_popupImage fromPoint:frame];
 }
@@ -335,6 +373,9 @@
     myView.alpha=0;
     overlayerView.frame=CGRectMake(0, 0, 1024, 768);
     [[TBAppDelegate shareAppDelegate].tabbarView.view addSubview:myView];
+    NSLog(@"image link:%@",imageLinktoSHow);
+    [_popupImageView setImageWithURL:[NSURL URLWithString:imageLinktoSHow] placeholderImage:nil options:SDWebImageProgressiveDownload];
+    _popupTitleText.text=popuptitlestr;
     [UIView animateWithDuration:0.5
                           delay:0.1
                         options: UIViewAnimationCurveEaseOut

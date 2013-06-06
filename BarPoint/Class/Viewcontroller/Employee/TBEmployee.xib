@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="8.00">
 	<data>
-		<int key="IBDocument.SystemTarget">1552</int>
+		<int key="IBDocument.SystemTarget">1536</int>
 		<string key="IBDocument.SystemVersion">11E53</string>
-		<string key="IBDocument.InterfaceBuilderVersion">3084</string>
+		<string key="IBDocument.InterfaceBuilderVersion">2843</string>
 		<string key="IBDocument.AppKitVersion">1138.47</string>
 		<string key="IBDocument.HIToolboxVersion">569.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			<string key="NS.object.0">2083</string>
+			<string key="NS.object.0">1929</string>
 		</object>
 		<array key="IBDocument.IntegratedClassDependencies">
 			<string>IBProxyObject</string>
@@ -412,6 +412,7 @@
 						<string key="NSFrame">{{593, 466}, {367, 213}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<int key="IBUIContentMode">1</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
@@ -690,12 +691,9 @@
 						<reference key="NSNextKeyView" ref="762041878"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIClipsSubviews">YES</bool>
+						<int key="IBUIContentMode">1</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<object class="NSCustomResource" key="IBUIImage" id="426034093">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">testimagePopup.png</string>
-						</object>
 					</object>
 					<object class="IBUIButton" id="762041878">
 						<reference key="NSNextResponder" ref="188176773"/>
@@ -703,6 +701,7 @@
 						<string key="NSFrame">{{129, 370}, {119, 37}}</string>
 						<reference key="NSSuperview" ref="188176773"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -799,7 +798,10 @@
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<reference key="IBUIImage" ref="426034093"/>
+						<object class="NSCustomResource" key="IBUIImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">testimagePopup.png</string>
+						</object>
 					</object>
 					<object class="IBUIButton" id="489446152">
 						<reference key="NSNextResponder" ref="241339984"/>
@@ -864,6 +866,7 @@
 						<string key="NSFrame">{{191, 370}, {88, 37}}</string>
 						<reference key="NSSuperview" ref="241339984"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -987,6 +990,22 @@
 						<reference key="destination" ref="905725776"/>
 					</object>
 					<int key="connectionID">100</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">popupImageView</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="728858767"/>
+					</object>
+					<int key="connectionID">103</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">popupTitleText</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="264505408"/>
+					</object>
+					<int key="connectionID">105</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
@@ -1465,7 +1484,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">101</int>
+			<int key="maxID">105</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1529,6 +1548,8 @@
 						<string key="messageView">UIView</string>
 						<string key="popupImage">UIView</string>
 						<string key="popupImage1">UIView</string>
+						<string key="popupImageView">UIImageView</string>
+						<string key="popupTitleText">UILabel</string>
 						<string key="rightTableView">UITableView</string>
 						<string key="scrollviewToAjd">UIScrollView</string>
 						<string key="showMessageView">UIView</string>
@@ -1572,6 +1593,14 @@
 						<object class="IBToOneOutletInfo" key="popupImage1">
 							<string key="name">popupImage1</string>
 							<string key="candidateClassName">UIView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="popupImageView">
+							<string key="name">popupImageView</string>
+							<string key="candidateClassName">UIImageView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="popupTitleText">
+							<string key="name">popupTitleText</string>
+							<string key="candidateClassName">UILabel</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="rightTableView">
 							<string key="name">rightTableView</string>
@@ -1637,6 +1666,6 @@
 			<string key="placeholderPuchImage.png">{296, 224}</string>
 			<string key="testimagePopup.png">{313, 311}</string>
 		</dictionary>
-		<string key="IBCocoaTouchPluginVersion">2083</string>
+		<string key="IBCocoaTouchPluginVersion">1929</string>
 	</data>
 </archive>

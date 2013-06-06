@@ -29,6 +29,10 @@
 - (void)dealloc {
     [_puchBtn1 release];
     [_puchBtn2 release];
+    [_dateText release];
+    [_timeInText release];
+    [_timeOutText release];
+    [_timeText release];
     [super dealloc];
 }
 @end
