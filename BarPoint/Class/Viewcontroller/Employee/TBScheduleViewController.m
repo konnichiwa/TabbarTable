@@ -34,6 +34,11 @@
     imageview=[[UIView alloc] initWithFrame:CGRectMake(0 , 0, 0, 0)];
     imageview.backgroundColor=[UIColor blackColor];
     [self.view addSubview:imageview];
+    NSDateFormatter *dateFormatter = [[[NSDateFormatter alloc] init] autorelease];
+    [dateFormatter setDateFormat:@"MMMM"];
+    NSDate *date = [NSDate date];
+    NSString *dateString = [dateFormatter stringFromDate:date];
+    _headerText.text=[NSString stringWithFormat:@"Schedule For The Month of %@",dateString];
     // Do any additional setup after loading the view from its nib.
 }
 -(void)viewDidAppear:(BOOL)animated{
@@ -93,10 +98,12 @@
 
 - (void)dealloc {
     [_tableView release];
+    [_headerText release];
     [super dealloc];
 }
 - (void)viewDidUnload {
     [self setTableView:nil];
+    [self setHeaderText:nil];
     [super viewDidUnload];
 }
 - (IBAction)btnBackEmployee:(id)sender {

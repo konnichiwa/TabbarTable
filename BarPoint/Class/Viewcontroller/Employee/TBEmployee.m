@@ -15,6 +15,7 @@
 #import "API.h"
 #import "TBManageDatabase.h"
 #import "EmployeeSchedule.h"
+#import "Message.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 @interface TBEmployee ()
 {
@@ -23,6 +24,7 @@
     int countOf;
     BOOL isShowPlaceHoderMessBox;
     NSMutableArray *listSche;
+    NSMutableArray *listMsg;
     NSString *imageLinktoSHow;
     NSString *popuptitlestr;
 
@@ -58,7 +60,9 @@
     [super viewDidLoad];
     imageLinktoSHow=@"";
     popuptitlestr=@"";
+
     listSche=[[NSMutableArray alloc] initWithArray:[EmployeeSchedule MR_findAll]];
+    listMsg=[[NSMutableArray alloc] initWithArray:[Message MR_findAll]];
     isShowPlaceHoderMessBox=YES;
     [self checkPlaceholderMess];
     countOf=0;
@@ -73,7 +77,8 @@
     [(TPKeyboardAvoidingScrollView*)self.view setContentSize:CGSizeMake(0, 0)];
     //get schedule
     UserAccount *user=[TBManageDatabase getAccount];
-    NSDictionary *dict=[[NSDictionary alloc] initWithObjects:[NSArray arrayWithObjects:user.locationId,user.userName,user.password, nil] forKeys:[NSArray arrayWithObjects:@"location_id",@"emp_id",@"password", nil]];
+    NSMutableDictionary *dict=[[NSMutableDictionary alloc] initWithObjects:[NSArray arrayWithObjects:user.locationId,user.userName,user.password, nil] forKeys:[NSArray arrayWithObjects:@"location_id",@"emp_id",@"password", nil]];
+    _nameSchedule.text=user.userName;
     [[API sharedInstance] getScheduleOfuserWithDict:dict WithCompleteBlock:^(id result,NSError *error){
         if (!error) {
             [TBManageDatabase addScheduleTotable:[(NSArray*)result objectAtIndex:1]];
@@ -81,6 +86,16 @@
             [_leftTableView reloadData];
         }
     }];
+    NSMutableDictionary *dict1=[[NSMutableDictionary alloc] initWithObjects:[NSArray arrayWithObjects:user.locationId,user.userName, nil] forKeys:[NSArray arrayWithObjects:@"location_id",@"emp_id", nil]];
+    [[API sharedInstance] getMsgOfuserWithDict:dict1 WithCompleteBlock:^(id result,NSError *error){
+        if (!error) {
+            NSLog(@"mess;%@",[(NSArray*)result objectAtIndex:0]);
+            [TBManageDatabase addMsgTotable:[(NSArray*)result objectAtIndex:0]];
+            listMsg=[[NSMutableArray alloc] initWithArray:[Message MR_findAll]];
+            [_rightTableView reloadData];
+        }
+    }];
+    [dict release];
 }
 -(void)checkPlaceholderMess{
     if (isShowPlaceHoderMessBox) {
@@ -131,7 +146,7 @@
     if (tableView.tag==1) {
         return [listSche count];
     }else if(tableView.tag==2){
-        return 20;
+        return [listMsg count];
     }else{
         return countOf;
     }
@@ -175,12 +190,12 @@
         }
                 cell.backgroundView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bgCellRightEmployee.png"]];
         cell.backgroundView.contentMode=UIViewContentModeScaleAspectFit;
-        if (isNew&&(indexPath.row==0)) {
+        Message *newMess=[listMsg objectAtIndex:indexPath.row];
+        if ([newMess.readd isEqualToString:@"1"]) {
             cell.backgroundView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bgCellRightEmployeeNew.png"]];
             cell.nameText.textColor=[UIColor whiteColor];
              cell.contentText.textColor=[UIColor whiteColor];
              cell.dateText.textColor=[UIColor whiteColor];
-            
         }else{
            cell.backgroundView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bgCellRightEmployee.png"]];
             cell.nameText.textColor=[UIColor darkGrayColor];
@@ -188,6 +203,9 @@
             cell.dateText.textColor=[UIColor darkGrayColor];
         }
         //add dot right of animal name
+        cell.nameText.text=newMess.entered_by_emp_id;
+        cell.contentText.text=newMess.message;
+        cell.dateText.text=[NSString stringWithFormat:@"%@  %@",newMess.dateMsg,newMess.timeMsg];
         return cell;
 
     }else{
@@ -251,6 +269,7 @@
     [_btnSendSMS release];
     [_popupImageView release];
     [_popupTitleText release];
+    [_nameSchedule release];
     [super dealloc];
 }
 - (void)viewDidUnload {
@@ -271,6 +290,7 @@
     [self setBtnSendSMS:nil];
     [self setPopupImageView:nil];
     [self setPopupTitleText:nil];
+    [self setNameSchedule:nil];
     [super viewDidUnload];
 }
 - (void)growingTextViewDidBeginEditing:(HPGrowingTextView *)growingTextView{

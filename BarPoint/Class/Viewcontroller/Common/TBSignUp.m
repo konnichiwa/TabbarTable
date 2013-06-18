@@ -18,11 +18,12 @@
     NSArray *allCountry;
     NSArray *allEmType;
     NSMutableDictionary *dictForUpload;
+        NSArray *fields;
 }
 @end
 
 @implementation TBSignUp
-
+@synthesize keyboardControls;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -38,6 +39,11 @@
     self.view.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"bgApp.png"]];
     dictForUpload=[[NSMutableDictionary alloc] initWithObjects:[NSArray arrayWithObjects:[NSNumber numberWithInt:1],@"",@"",@"",@"",@"",@"ipad",@"WinePAD",@"",nil] forKeys:[NSArray arrayWithObjects:@"noinsert",@"loc_name",@"loc_email",@"Country",@"loc_contactname",@"loc_phone",@"created_mobile",@"created_on",@"loc_type",nil]];
     // Do any additional setup after loading the view from its nib.
+    fields = [[NSArray alloc] initWithObjects: self.contactNameText, self.businessNameText,self.phoneText, self.emailText,nil];
+    
+    [self setKeyboardControls:[[BSKeyboardControls alloc] initWithFields:fields]];
+    [self.keyboardControls setDelegate:(id)self];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -148,6 +154,14 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
     [textField resignFirstResponder];
     return YES;
+}
+- (void)keyboardControlsDonePressed:(BSKeyboardControls *)keyboardControls
+{
+    [keyboardControls.activeField resignFirstResponder];
+}
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    [self.keyboardControls setActiveField:textField];
 }
 -(BOOL) NSStringIsValidEmail:(NSString *)checkString
 {

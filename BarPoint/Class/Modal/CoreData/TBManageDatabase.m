@@ -81,4 +81,41 @@
     }
  
 }
++(void)addMsgTotable:(NSArray*)arr{
+   NSManagedObjectContext *localContext = [NSManagedObjectContext MR_contextForCurrentThread];
+    for (NSDictionary *dict in arr) {
+        NSPredicate *predict=[NSPredicate predicateWithFormat:@"iD==%@",[dict objectForKey:@"id"]];
+        if ([Message MR_findFirstWithPredicate:predict]) {
+            continue;
+        }
+        Message *newMsg=[Message MR_createInContext:localContext];
+        newMsg.iD=[dict objectForKey:@"id"];
+        newMsg.message=[dict objectForKey:@"message"];
+        newMsg.entered_by_emp_id=[dict objectForKey:@"entered_by_emp_id"];
+        newMsg.dateMsg=[dict objectForKey:@"date"];
+        newMsg.timeMsg=[dict objectForKey:@"time"];
+        newMsg.first_name=[dict objectForKey:@"first_name"];
+        newMsg.last_name=[dict objectForKey:@"last_name"];
+        newMsg.readd=[dict objectForKey:@"readd"];
+        if ([dict objectForKey:@"seen_date"]!=[NSNull null]) {
+            newMsg.seen_date=[dict objectForKey:@"seen_date"];
+        }
+        newMsg.seen_time=[dict objectForKey:@"seen_time"];
+        newMsg.emp_id=[dict objectForKey:@"emp_id"];
+        [localContext MR_save];
+    }
+}
++(void)addContactTotable:(NSArray*)arr{
+    NSManagedObjectContext *localContext = [NSManagedObjectContext MR_contextForCurrentThread];
+    for (NSDictionary *dict in arr) {
+        NSPredicate *predict=[NSPredicate predicateWithFormat:@"emp_id==%@",[dict objectForKey:@"emp_id"]];
+        if ([Contact MR_findFirstWithPredicate:predict]) {
+            continue;
+        }
+        Contact *newContact=[Contact MR_createInContext:localContext];
+        newContact.emp_id=[dict objectForKey:@"emp_id"];
+        newContact.name=[dict objectForKey:@"name"];
+        [localContext MR_save];
+    }
+}
 @end

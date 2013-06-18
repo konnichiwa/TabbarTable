@@ -117,4 +117,18 @@
     }];
     [operation start];
 }
+-(void)getMsgOfuserWithDict:(NSDictionary*)dict WithCompleteBlock:(JSONResponseBlock)block{
+    NSMutableURLRequest *apiRequest = [self requestWithMethod:@"GET" path:@"/api2/attendance/return_messages.php" parameters:dict];
+    
+    AFJSONRequestOperation* operation = [[AFJSONRequestOperation alloc] initWithRequest: apiRequest];
+    [AFJSONRequestOperation addAcceptableContentTypes:[NSSet setWithObject:@"text/html"]];
+    [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+        //success!
+        block(responseObject,nil);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        //failure :(
+        block([NSDictionary dictionary],error);
+    }];
+    [operation start];
+}
 @end

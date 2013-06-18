@@ -11,6 +11,8 @@
 #import "UserAccount.h"
 #import "TypeLocation.h"
 #import "EmployeeSchedule.h"
+#import "Message.h"
+#import "Contact.h"
 #import "CoreData+MagicalRecord.h"
 @interface TBManageDatabase : NSObject
 +(void)saveCountrytoTable:(NSArray*) arr;
@@ -22,4 +24,6 @@
 +(UserAccount*)getAccount;
 
 +(void)addScheduleTotable:(NSArray*)arr;
++(void)addMsgTotable:(NSArray*)arr;
++(void)addContactTotable:(NSArray*)arr;
 @end

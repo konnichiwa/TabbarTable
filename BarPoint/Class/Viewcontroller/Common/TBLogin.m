@@ -106,6 +106,7 @@
             [UIAlertView error:[error description]];
         }
     }];
+    _passwordText.text=@"";
 }
 
 - (IBAction)signUpPress:(id)sender {

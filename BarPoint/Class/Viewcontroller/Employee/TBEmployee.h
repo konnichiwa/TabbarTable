@@ -10,6 +10,7 @@
 #import "TBScheduleViewController.h"
 #import "HPGrowingTextView.h"
 #import "TPKeyboardAvoidingScrollView.h"
+
 #define WIDTHPOPUP 377
 #define HIGHTPOPUP 423
 @interface TBEmployee : UIViewController<UITextFieldDelegate>
@@ -33,6 +34,7 @@
 @property (retain, nonatomic) IBOutlet UIButton *btnSendSMS;
 @property (retain, nonatomic) IBOutlet UIImageView *popupImageView;
 @property (retain, nonatomic) IBOutlet UILabel *popupTitleText;
+@property (retain, nonatomic) IBOutlet UILabel *nameSchedule;
 
 - (IBAction)submitImagePress:(id)sender;
 

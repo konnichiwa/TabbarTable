@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="11E53" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="11E53" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Contact" representedClassName="Contact" syncable="YES">
+        <attribute name="emp_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="Country" representedClassName="Country" syncable="YES">
         <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="iD" optional="YES" attributeType="String" syncable="YES"/>
@@ -14,6 +18,19 @@
         <attribute name="inTime" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="outTime" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <entity name="Message" representedClassName="Message" syncable="YES">
+        <attribute name="dateMsg" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emp_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="entered_by_emp_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="first_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iD" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="readd" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="seen_date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="seen_time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeMsg" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="TypeLocation" representedClassName="TypeLocation" syncable="YES">
         <attribute name="iD" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
@@ -26,8 +43,10 @@
     </entity>
     <elements>
         <element name="Country" positionX="160" positionY="192" width="128" height="90"/>
-        <element name="UserAccount" positionX="160" positionY="192" width="128" height="105"/>
-        <element name="TypeLocation" positionX="160" positionY="192" width="128" height="75"/>
         <element name="EmployeeSchedule" positionX="160" positionY="192" width="128" height="150"/>
+        <element name="TypeLocation" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="UserAccount" positionX="160" positionY="192" width="128" height="105"/>
+        <element name="Message" positionX="160" positionY="192" width="128" height="210"/>
+        <element name="Contact" positionX="160" positionY="192" width="128" height="75"/>
     </elements>
 </model>

@@ -11,6 +11,7 @@
 @interface TBScheduleViewController : UIViewController
 
 @property (retain, nonatomic) IBOutlet UITableView *tableView;
+@property (retain, nonatomic) IBOutlet UILabel *headerText;
 - (IBAction)btnBackEmployee:(id)sender;
 - (IBAction)backBtn:(id)sender;
 - (IBAction)infoPress:(id)sender;

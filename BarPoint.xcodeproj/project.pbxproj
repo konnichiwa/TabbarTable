@@ -66,6 +66,10 @@
 		0F41E6B6174BF4CE0054E4B0 /* seatallBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F41E6A8174BF4CD0054E4B0 /* seatallBtn@2x.png */; };
 		0F4A3764175CF36300155690 /* btnInfo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F4A3762175CF36300155690 /* btnInfo.png */; };
 		0F4A3765175CF36300155690 /* btnInfo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F4A3763175CF36300155690 /* btnInfo@2x.png */; };
+		0F85EEFA1770A5B400259B54 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F85EEF91770A5B300259B54 /* Message.m */; };
+		0F85EF011770A5B500259B54 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F85EF001770A5B500259B54 /* Contact.m */; };
+		0F85EF0A1770BE0E00259B54 /* BSKeyboardControls.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F85EF061770BE0E00259B54 /* BSKeyboardControls.m */; };
+		0F85EF0B1770BE0E00259B54 /* BSKeyboardControls.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F85EF071770BE0E00259B54 /* BSKeyboardControls.strings */; };
 		0F9ADC90175E3A7400097C20 /* API.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9ADC8E175E3A7400097C20 /* API.m */; };
 		0FA63AEE174A8A1800490AD7 /* bgCellRightEmployeeNew.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FA63AEC174A8A1800490AD7 /* bgCellRightEmployeeNew.png */; };
 		0FA63AF0174A903B00490AD7 /* checkHeaderMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FA63AEF174A903B00490AD7 /* checkHeaderMenu.png */; };
@@ -532,6 +536,14 @@
 		0F41E6A8174BF4CD0054E4B0 /* seatallBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "seatallBtn@2x.png"; sourceTree = "<group>"; };
 		0F4A3762175CF36300155690 /* btnInfo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnInfo.png; sourceTree = "<group>"; };
 		0F4A3763175CF36300155690 /* btnInfo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnInfo@2x.png"; sourceTree = "<group>"; };
+		0F85EEF81770A5B200259B54 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		0F85EEF91770A5B300259B54 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		0F85EEFF1770A5B500259B54 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
+		0F85EF001770A5B500259B54 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
+		0F85EF051770BE0E00259B54 /* BSKeyboardControls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSKeyboardControls.h; sourceTree = "<group>"; };
+		0F85EF061770BE0E00259B54 /* BSKeyboardControls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSKeyboardControls.m; sourceTree = "<group>"; };
+		0F85EF081770BE0E00259B54 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/BSKeyboardControls.strings; sourceTree = "<group>"; };
+		0F85EF091770BE0E00259B54 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/BSKeyboardControls.strings; sourceTree = "<group>"; };
 		0F9ADC8E175E3A7400097C20 /* API.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = API.m; sourceTree = "<group>"; };
 		0F9ADC8F175E3A7400097C20 /* API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
 		0FA63AEC174A8A1800490AD7 /* bgCellRightEmployeeNew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgCellRightEmployeeNew.png; sourceTree = "<group>"; };
@@ -1092,6 +1104,16 @@
 			path = Addclient;
 			sourceTree = "<group>";
 		};
+		0F85EF041770BE0E00259B54 /* BSKeyboardControls */ = {
+			isa = PBXGroup;
+			children = (
+				0F85EF051770BE0E00259B54 /* BSKeyboardControls.h */,
+				0F85EF061770BE0E00259B54 /* BSKeyboardControls.m */,
+				0F85EF071770BE0E00259B54 /* BSKeyboardControls.strings */,
+			);
+			path = BSKeyboardControls;
+			sourceTree = "<group>";
+		};
 		0FD70E52175F6C750076DBEF /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -1151,6 +1173,10 @@
 				0FD70E8F175F6F240076DBEF /* TBManageDatabase.h */,
 				0FD70E90175F6F240076DBEF /* TBManageDatabase.m */,
 				0FD70E83175F6CD90076DBEF /* BarPoint.xcdatamodeld */,
+				0F85EEFF1770A5B500259B54 /* Contact.h */,
+				0F85EF001770A5B500259B54 /* Contact.m */,
+				0F85EEF81770A5B200259B54 /* Message.h */,
+				0F85EEF91770A5B300259B54 /* Message.m */,
 				0FD70E9D175FACBB0076DBEF /* EmployeeSchedule.h */,
 				0FD70E9E175FACBC0076DBEF /* EmployeeSchedule.m */,
 				0FD70E9A175F75B40076DBEF /* TypeLocation.h */,
@@ -1206,6 +1232,7 @@
 		0FEB9EA8174A48090065336D /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				0F85EF041770BE0E00259B54 /* BSKeyboardControls */,
 				0FEB9EA9174A48090065336D /* TBAppDelegate.h */,
 				0FEB9EAA174A48090065336D /* TBAppDelegate.m */,
 			);
@@ -1897,6 +1924,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				da,
 			);
 			mainGroup = 0F2A55E6173A839C00AA5FDF;
 			productRefGroup = 0F2A55F2173A839C00AA5FDF /* Products */;
@@ -2294,6 +2322,7 @@
 				0F4A3764175CF36300155690 /* btnInfo.png in Resources */,
 				0F4A3765175CF36300155690 /* btnInfo@2x.png in Resources */,
 				0FD70E8E175F6E560076DBEF /* Country.json in Resources */,
+				0F85EF0B1770BE0E00259B54 /* BSKeyboardControls.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2379,12 +2408,24 @@
 				0FD70E97175F6FC00076DBEF /* UserAccount.m in Sources */,
 				0FD70E9C175F75B40076DBEF /* TypeLocation.m in Sources */,
 				0FD70E9F175FACBD0076DBEF /* EmployeeSchedule.m in Sources */,
+				0F85EEFA1770A5B400259B54 /* Message.m in Sources */,
+				0F85EF011770A5B500259B54 /* Contact.m in Sources */,
+				0F85EF0A1770BE0E00259B54 /* BSKeyboardControls.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		0F85EF071770BE0E00259B54 /* BSKeyboardControls.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F85EF081770BE0E00259B54 /* da */,
+				0F85EF091770BE0E00259B54 /* en */,
+			);
+			name = BSKeyboardControls.strings;
+			sourceTree = "<group>";
+		};
 		0FEBA02C174A480B0065336D /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "TPKeyboardAvoidingScrollView.h"
+#import "BSKeyboardControls.h"
 @interface TBSignUp : UIViewController
 @property (retain, nonatomic) IBOutlet TPKeyboardAvoidingScrollView *scrollView;
 @property (retain, nonatomic) IBOutlet UITextField *contactNameText;
@@ -16,6 +17,7 @@
 @property (retain, nonatomic) IBOutlet UITextField *emailText;
 @property (retain, nonatomic) IBOutlet UILabel *countryText;
 @property (retain, nonatomic) IBOutlet UILabel *businessTypeText;
+@property (nonatomic, strong) BSKeyboardControls *keyboardControls;
 - (IBAction)backPress:(id)sender;
 @property (retain, nonatomic) IBOutlet UIButton *signUppress;
 - (IBAction)signUpPress:(id)sender;

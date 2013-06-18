@@ -26,4 +26,10 @@
     // Configure the view for the selected state
 }
 
+- (void)dealloc {
+    [_nameText release];
+    [_msgText release];
+    [_timeText release];
+    [super dealloc];
+}
 @end
