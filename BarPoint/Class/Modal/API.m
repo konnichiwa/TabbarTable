@@ -61,23 +61,8 @@
     [operation start];
 }
 - (void)signUpWithDict:(NSDictionary*)dict WithCompleteBlock:(JSONResponseBlock)block {
-//    NSMutableURLRequest *apiRequest = [self requestWithMethod:@"GET" path:@"/api2/insertlocandemp.php" parameters:dict];
-//    NSLog(@"link request:%@",apiRequest);
-//    AFJSONRequestOperation* operation = [[AFJSONRequestOperation alloc] initWithRequest: apiRequest];
-//    [[TBAppDelegate shareAppDelegate] startSpinner:@"Login..."];
-//    [AFJSONRequestOperation addAcceptableContentTypes:[NSSet setWithObject:@"text/html"]];
-//    [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-//        //success!
-//        [[TBAppDelegate shareAppDelegate] stopSpinner];
-//        block(responseObject,nil);
-//    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-//        //failure :(
-//        [[TBAppDelegate shareAppDelegate] stopSpinner];
-//        block(@"",error);
-//    }];
-//    [operation start];
-//    [self setDefaultHeader:@"Accept" value:@"text/html"];
     AFHTTPClient *request=[[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:kAPIHost]];
+    [[TBAppDelegate shareAppDelegate] startSpinner:@""];
    [ request getPath:@"/api2/insertlocandemp.php" parameters:dict success:^(AFHTTPRequestOperation *operation, id responseObject) {
                 //success!
             [[TBAppDelegate shareAppDelegate] stopSpinner];

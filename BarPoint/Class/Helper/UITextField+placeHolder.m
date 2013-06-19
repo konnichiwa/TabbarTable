@@ -9,8 +9,5 @@
 #import "UITextField+placeHolder.h"
 
 @implementation UITextField (placeHolder)
-- (void) drawPlaceholderInRect:(CGRect)rect {
-    [[UIColor whiteColor] setFill];
-    [[self placeholder] drawInRect:rect withFont:[self font]];
-}
+
 @end

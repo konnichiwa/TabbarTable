@@ -48,15 +48,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _searchBar.backgroundColor=[UIColor clearColor];
-    [[_searchBar.subviews objectAtIndex:0] removeFromSuperview];
+//    _searchBar.backgroundColor=[UIColor clearColor];
+//    [[_searchBar.subviews objectAtIndex:0] removeFromSuperview];
 
     titleHeader=[[NSMutableArray alloc] initWithObjects:@"Side",@"Preparation",@"Temperature",@"Extra",@"Note",nil];
+    [self.searchBar setPlaceholder:@"Search for Ingredients,Sides,Etc."];
+//    _searchBar.text=@"1234";
+    
     // Do any additional setup after loading the view from its nib.
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:YES];
-        _searchBar.placeholder=@"Search for Ingredients,Sides,Etc.";
+       
 }
 - (void)didReceiveMemoryWarning
 {

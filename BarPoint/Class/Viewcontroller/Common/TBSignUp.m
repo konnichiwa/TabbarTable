@@ -95,10 +95,13 @@
         return;
     }
     if (![self NSStringIsValidEmail:_emailText.text]) {
-        [UIAlertView error:@"Input invalid email"];
+        [UIAlertView error:@"Please input invalid email"];
+        return;
+    };
+    if (![self isValidPhoneNum:_phoneText.text]) {
+         [UIAlertView error:@"Please input invalid phone number"];
         return;
     }
-    ;
     [dictForUpload setObject:_contactNameText.text forKey:@"loc_contactname"];
     [dictForUpload setObject:_businessNameText.text forKey:@"loc_name"];
     [dictForUpload setObject:[NSNumber numberWithInt:[_phoneText.text integerValue]] forKey:@"loc_phone"];
@@ -107,8 +110,8 @@
         if (!error) {
             NSString* newStr = [[[NSString alloc] initWithData:(NSData*)result
                                                       encoding:NSUTF8StringEncoding] autorelease];
-            if ([newStr intValue]==1) {
-                [self presentModalViewController:[TBAppDelegate shareAppDelegate].tabbarView animated:YES];
+            if ([newStr intValue]==1){
+                [UIAlertView error:@"Representative will contact you shortly to complete your registration"];
             }else{
                 [UIAlertView error:@"This Email Already Exist"];
             }
@@ -171,5 +174,22 @@
     NSString *emailRegex = stricterFilter ? stricterFilterString : laxString;
     NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
     return [emailTest evaluateWithObject:checkString];
+}
+-(BOOL)isValidPhoneNum:(NSString*)num{
+    NSString *phoneNumber = num;
+    if ([phoneNumber length]!=10) {
+        return NO;
+    }
+    if (![self isNumeric:phoneNumber]) {
+        return NO;
+    }
+    return YES;
+}
+-(BOOL)isNumeric:(NSString*)inputString{
+    BOOL isValid = NO;
+    NSCharacterSet *alphaNumbersSet = [NSCharacterSet decimalDigitCharacterSet];
+    NSCharacterSet *stringSet = [NSCharacterSet characterSetWithCharactersInString:inputString];
+    isValid = [alphaNumbersSet isSupersetOfSet:stringSet];
+    return isValid;
 }
 @end

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="8.00">
 	<data>
-		<int key="IBDocument.SystemTarget">1552</int>
+		<int key="IBDocument.SystemTarget">1536</int>
 		<string key="IBDocument.SystemVersion">11E53</string>
-		<string key="IBDocument.InterfaceBuilderVersion">3084</string>
+		<string key="IBDocument.InterfaceBuilderVersion">2843</string>
 		<string key="IBDocument.AppKitVersion">1138.47</string>
 		<string key="IBDocument.HIToolboxVersion">569.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			<string key="NS.object.0">2083</string>
+			<string key="NS.object.0">1929</string>
 		</object>
 		<array key="IBDocument.IntegratedClassDependencies">
 			<string>IBProxyObject</string>
@@ -174,6 +174,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{286, 609}, {492, 62}}</string>
 								<reference key="NSSuperview" ref="68062211"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -205,6 +206,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{963, 28}, {71, 37}}</string>
 								<reference key="NSSuperview" ref="68062211"/>
+								<reference key="NSNextKeyView" ref="948078379"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -454,8 +456,11 @@
 				<string key="1120.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="1121.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="1122.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="1124.CustomClassName">TBTextFieldHolder</string>
 				<string key="1124.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="1125.CustomClassName">TBTextFieldHolder</string>
 				<string key="1125.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="1126.CustomClassName">TBTextFieldHolder</string>
 				<string key="1126.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="1135.CustomClassName">TPKeyboardAvoidingScrollView</string>
 				<string key="1135.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -479,6 +484,6 @@
 			<string key="btnBlue.png">{92, 37}</string>
 			<string key="btnLogin.png">{492, 62}</string>
 		</dictionary>
-		<string key="IBCocoaTouchPluginVersion">2083</string>
+		<string key="IBCocoaTouchPluginVersion">1929</string>
 	</data>
 </archive>

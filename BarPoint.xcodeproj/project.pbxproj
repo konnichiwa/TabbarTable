@@ -78,6 +78,7 @@
 		0FA63AF8174A988B00490AD7 /* bgClientDetail.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FA63AF6174A988B00490AD7 /* bgClientDetail.png */; };
 		0FA63AF9174A988B00490AD7 /* bgClientDetail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FA63AF7174A988B00490AD7 /* bgClientDetail@2x.png */; };
 		0FCCE768173BF67600CA1966 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FCCE767173BF67600CA1966 /* QuartzCore.framework */; };
+		0FCCFAE21771EDD200DF79D1 /* TBTextFieldHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCFAE11771EDD200DF79D1 /* TBTextFieldHolder.m */; };
 		0FD70E73175F6C750076DBEF /* NSAttributeDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD70E56175F6C750076DBEF /* NSAttributeDescription+MagicalDataImport.m */; };
 		0FD70E74175F6C750076DBEF /* NSEntityDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD70E58175F6C750076DBEF /* NSEntityDescription+MagicalDataImport.m */; };
 		0FD70E75175F6C750076DBEF /* NSNumber+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD70E5A175F6C750076DBEF /* NSNumber+MagicalDataImport.m */; };
@@ -554,6 +555,8 @@
 		0FA63AF6174A988B00490AD7 /* bgClientDetail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgClientDetail.png; sourceTree = "<group>"; };
 		0FA63AF7174A988B00490AD7 /* bgClientDetail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgClientDetail@2x.png"; sourceTree = "<group>"; };
 		0FCCE767173BF67600CA1966 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0FCCFAE01771EDD200DF79D1 /* TBTextFieldHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBTextFieldHolder.h; sourceTree = "<group>"; };
+		0FCCFAE11771EDD200DF79D1 /* TBTextFieldHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBTextFieldHolder.m; sourceTree = "<group>"; };
 		0FD70E55175F6C750076DBEF /* NSAttributeDescription+MagicalDataImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributeDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
 		0FD70E56175F6C750076DBEF /* NSAttributeDescription+MagicalDataImport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributeDescription+MagicalDataImport.m"; sourceTree = "<group>"; };
 		0FD70E57175F6C750076DBEF /* NSEntityDescription+MagicalDataImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSEntityDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
@@ -1259,6 +1262,8 @@
 				0FEB9EB2174A480A0065336D /* UIGridView */,
 				0FEB9EBA174A480A0065336D /* UITextField+placeHolder.h */,
 				0FEB9EBB174A480A0065336D /* UITextField+placeHolder.m */,
+				0FCCFAE01771EDD200DF79D1 /* TBTextFieldHolder.h */,
+				0FCCFAE11771EDD200DF79D1 /* TBTextFieldHolder.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -2411,6 +2416,7 @@
 				0F85EEFA1770A5B400259B54 /* Message.m in Sources */,
 				0F85EF011770A5B500259B54 /* Contact.m in Sources */,
 				0F85EF0A1770BE0E00259B54 /* BSKeyboardControls.m in Sources */,
+				0FCCFAE21771EDD200DF79D1 /* TBTextFieldHolder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

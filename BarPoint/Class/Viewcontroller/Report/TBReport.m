@@ -28,7 +28,7 @@
     [super viewDidLoad];
     _searchBar.backgroundColor=[UIColor clearColor];
     [[_searchBar.subviews objectAtIndex:0] removeFromSuperview];
-
+    _searchBar.placeholder=@"Search";
     // Do any additional setup after loading the view from its nib.
 }
 
