@@ -12,6 +12,7 @@
 #import "API.h"
 #import "Country.h"
 #import "UITextField+placeHolder.h"
+#import "TBPasscodeLogin.h"
 @interface TBLogin ()
 {
     UITextField *currentTextField;
@@ -94,7 +95,9 @@
             NSLog(@"result:%@",[(NSArray*)result objectAtIndex:0]);
             if ([[(NSArray*)result objectAtIndex:0] integerValue]==0) {
                 [TBManageDatabase saveAcctoTableWithUsername:_userNameText.text password:_passwordText.text locationid:_locationText.text];
-                [self presentModalViewController:[TBAppDelegate shareAppDelegate].tabbarView animated:YES];
+//                [self presentModalViewController:[TBAppDelegate shareAppDelegate].tabbarView animated:YES];
+                TBPasscodeLogin *aTBPasscodeLogin=[[[TBPasscodeLogin alloc] initWithNibName:@"TBPasscodeLogin" bundle:nil] autorelease];;
+                [self.navigationController pushViewController:aTBPasscodeLogin animated:YES];
             }
             if (([[(NSArray*)result objectAtIndex:0] integerValue]==2)||([[(NSArray*)result objectAtIndex:0] integerValue]==1)) {
                 [UIAlertView error:@"login incorrect"];
@@ -114,6 +117,13 @@
 
     TBSignUp *aTBSignUp=[[TBSignUp alloc] initWithNibName:@"TBSignUp" bundle:nil];
     [self.navigationController pushViewController:aTBSignUp animated:YES];
+}
+
+- (IBAction)debugPress:(id)sender {
+    _userNameText.text=@"carlos";
+    _passwordText.text=@"111222";
+    _locationText.text=@"10001";
+    [self loginPress:nil];
 }
 
 @end

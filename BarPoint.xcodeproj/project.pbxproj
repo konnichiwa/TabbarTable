@@ -70,6 +70,24 @@
 		0F85EF011770A5B500259B54 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F85EF001770A5B500259B54 /* Contact.m */; };
 		0F85EF0A1770BE0E00259B54 /* BSKeyboardControls.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F85EF061770BE0E00259B54 /* BSKeyboardControls.m */; };
 		0F85EF0B1770BE0E00259B54 /* BSKeyboardControls.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F85EF071770BE0E00259B54 /* BSKeyboardControls.strings */; };
+		0F958A731773324100DEE898 /* TBPasscodeLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F958A711773324100DEE898 /* TBPasscodeLogin.m */; };
+		0F958A741773324100DEE898 /* TBPasscodeLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F958A721773324100DEE898 /* TBPasscodeLogin.xib */; };
+		0F958A84177332D800DEE898 /* bgPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F958A75177332D800DEE898 /* bgPad.png */; };
+		0F958A85177332D800DEE898 /* padBtnaccess.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F958A76177332D800DEE898 /* padBtnaccess.png */; };
+		0F958A86177332D800DEE898 /* padBtn0.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F958A77177332D800DEE898 /* padBtn0.png */; };
+		0F958A87177332D800DEE898 /* padBtn7.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F958A78177332D800DEE898 /* padBtn7.png */; };
+		0F958A88177332D800DEE898 /* padBtn8.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F958A79177332D800DEE898 /* padBtn8.png */; };
+		0F958A89177332D800DEE898 /* padBtn9.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F958A7A177332D800DEE898 /* padBtn9.png */; };
+		0F958A8A177332D800DEE898 /* padBtnDel.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F958A7B177332D800DEE898 /* padBtnDel.png */; };
+		0F958A8B177332D800DEE898 /* padBtnkeyBoard.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F958A7C177332D800DEE898 /* padBtnkeyBoard.png */; };
+		0F958A8C177332D800DEE898 /* padBtn1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F958A7D177332D800DEE898 /* padBtn1.png */; };
+		0F958A8D177332D800DEE898 /* padBtn2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F958A7E177332D800DEE898 /* padBtn2.png */; };
+		0F958A8E177332D800DEE898 /* padBtn4.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F958A7F177332D800DEE898 /* padBtn4.png */; };
+		0F958A8F177332D800DEE898 /* padBtn5.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F958A80177332D800DEE898 /* padBtn5.png */; };
+		0F958A90177332D800DEE898 /* padBtn6.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F958A81177332D800DEE898 /* padBtn6.png */; };
+		0F958A91177332D800DEE898 /* padBtn13.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F958A82177332D800DEE898 /* padBtn13.png */; };
+		0F958A92177332D800DEE898 /* padBgText.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F958A83177332D800DEE898 /* padBgText.png */; };
+		0F958A941773361500DEE898 /* bgtabtest.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F958A931773361500DEE898 /* bgtabtest.png */; };
 		0F9ADC90175E3A7400097C20 /* API.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9ADC8E175E3A7400097C20 /* API.m */; };
 		0FA63AEE174A8A1800490AD7 /* bgCellRightEmployeeNew.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FA63AEC174A8A1800490AD7 /* bgCellRightEmployeeNew.png */; };
 		0FA63AF0174A903B00490AD7 /* checkHeaderMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FA63AEF174A903B00490AD7 /* checkHeaderMenu.png */; };
@@ -545,6 +563,25 @@
 		0F85EF061770BE0E00259B54 /* BSKeyboardControls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSKeyboardControls.m; sourceTree = "<group>"; };
 		0F85EF081770BE0E00259B54 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/BSKeyboardControls.strings; sourceTree = "<group>"; };
 		0F85EF091770BE0E00259B54 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/BSKeyboardControls.strings; sourceTree = "<group>"; };
+		0F958A701773324100DEE898 /* TBPasscodeLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBPasscodeLogin.h; sourceTree = "<group>"; };
+		0F958A711773324100DEE898 /* TBPasscodeLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBPasscodeLogin.m; sourceTree = "<group>"; };
+		0F958A721773324100DEE898 /* TBPasscodeLogin.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TBPasscodeLogin.xib; sourceTree = "<group>"; };
+		0F958A75177332D800DEE898 /* bgPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgPad.png; sourceTree = "<group>"; };
+		0F958A76177332D800DEE898 /* padBtnaccess.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = padBtnaccess.png; sourceTree = "<group>"; };
+		0F958A77177332D800DEE898 /* padBtn0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = padBtn0.png; sourceTree = "<group>"; };
+		0F958A78177332D800DEE898 /* padBtn7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = padBtn7.png; sourceTree = "<group>"; };
+		0F958A79177332D800DEE898 /* padBtn8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = padBtn8.png; sourceTree = "<group>"; };
+		0F958A7A177332D800DEE898 /* padBtn9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = padBtn9.png; sourceTree = "<group>"; };
+		0F958A7B177332D800DEE898 /* padBtnDel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = padBtnDel.png; sourceTree = "<group>"; };
+		0F958A7C177332D800DEE898 /* padBtnkeyBoard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = padBtnkeyBoard.png; sourceTree = "<group>"; };
+		0F958A7D177332D800DEE898 /* padBtn1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = padBtn1.png; sourceTree = "<group>"; };
+		0F958A7E177332D800DEE898 /* padBtn2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = padBtn2.png; sourceTree = "<group>"; };
+		0F958A7F177332D800DEE898 /* padBtn4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = padBtn4.png; sourceTree = "<group>"; };
+		0F958A80177332D800DEE898 /* padBtn5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = padBtn5.png; sourceTree = "<group>"; };
+		0F958A81177332D800DEE898 /* padBtn6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = padBtn6.png; sourceTree = "<group>"; };
+		0F958A82177332D800DEE898 /* padBtn13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = padBtn13.png; sourceTree = "<group>"; };
+		0F958A83177332D800DEE898 /* padBgText.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = padBgText.png; sourceTree = "<group>"; };
+		0F958A931773361500DEE898 /* bgtabtest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgtabtest.png; sourceTree = "<group>"; };
 		0F9ADC8E175E3A7400097C20 /* API.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = API.m; sourceTree = "<group>"; };
 		0F9ADC8F175E3A7400097C20 /* API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
 		0FA63AEC174A8A1800490AD7 /* bgCellRightEmployeeNew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgCellRightEmployeeNew.png; sourceTree = "<group>"; };
@@ -1507,6 +1544,22 @@
 		0FEB9F50174A480A0065336D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0F958A931773361500DEE898 /* bgtabtest.png */,
+				0F958A75177332D800DEE898 /* bgPad.png */,
+				0F958A76177332D800DEE898 /* padBtnaccess.png */,
+				0F958A77177332D800DEE898 /* padBtn0.png */,
+				0F958A78177332D800DEE898 /* padBtn7.png */,
+				0F958A79177332D800DEE898 /* padBtn8.png */,
+				0F958A7A177332D800DEE898 /* padBtn9.png */,
+				0F958A7B177332D800DEE898 /* padBtnDel.png */,
+				0F958A7C177332D800DEE898 /* padBtnkeyBoard.png */,
+				0F958A7D177332D800DEE898 /* padBtn1.png */,
+				0F958A7E177332D800DEE898 /* padBtn2.png */,
+				0F958A7F177332D800DEE898 /* padBtn4.png */,
+				0F958A80177332D800DEE898 /* padBtn5.png */,
+				0F958A81177332D800DEE898 /* padBtn6.png */,
+				0F958A82177332D800DEE898 /* padBtn13.png */,
+				0F958A83177332D800DEE898 /* padBgText.png */,
 				0FFD0DA7175392F900DD098C /* bgSignUp1.png */,
 				0FFD0DA417538F1000DD098C /* bgLogin.png */,
 				0FEB9F51174A480A0065336D /* bgHome.png */,
@@ -1763,6 +1816,9 @@
 				0FEBA005174A480B0065336D /* TBSignUp.h */,
 				0FEBA006174A480B0065336D /* TBSignUp.m */,
 				0FEBA007174A480B0065336D /* TBSignUp.xib */,
+				0F958A701773324100DEE898 /* TBPasscodeLogin.h */,
+				0F958A711773324100DEE898 /* TBPasscodeLogin.m */,
+				0F958A721773324100DEE898 /* TBPasscodeLogin.xib */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -2328,6 +2384,23 @@
 				0F4A3765175CF36300155690 /* btnInfo@2x.png in Resources */,
 				0FD70E8E175F6E560076DBEF /* Country.json in Resources */,
 				0F85EF0B1770BE0E00259B54 /* BSKeyboardControls.strings in Resources */,
+				0F958A741773324100DEE898 /* TBPasscodeLogin.xib in Resources */,
+				0F958A84177332D800DEE898 /* bgPad.png in Resources */,
+				0F958A85177332D800DEE898 /* padBtnaccess.png in Resources */,
+				0F958A86177332D800DEE898 /* padBtn0.png in Resources */,
+				0F958A87177332D800DEE898 /* padBtn7.png in Resources */,
+				0F958A88177332D800DEE898 /* padBtn8.png in Resources */,
+				0F958A89177332D800DEE898 /* padBtn9.png in Resources */,
+				0F958A8A177332D800DEE898 /* padBtnDel.png in Resources */,
+				0F958A8B177332D800DEE898 /* padBtnkeyBoard.png in Resources */,
+				0F958A8C177332D800DEE898 /* padBtn1.png in Resources */,
+				0F958A8D177332D800DEE898 /* padBtn2.png in Resources */,
+				0F958A8E177332D800DEE898 /* padBtn4.png in Resources */,
+				0F958A8F177332D800DEE898 /* padBtn5.png in Resources */,
+				0F958A90177332D800DEE898 /* padBtn6.png in Resources */,
+				0F958A91177332D800DEE898 /* padBtn13.png in Resources */,
+				0F958A92177332D800DEE898 /* padBgText.png in Resources */,
+				0F958A941773361500DEE898 /* bgtabtest.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2417,6 +2490,7 @@
 				0F85EF011770A5B500259B54 /* Contact.m in Sources */,
 				0F85EF0A1770BE0E00259B54 /* BSKeyboardControls.m in Sources */,
 				0FCCFAE21771EDD200DF79D1 /* TBTextFieldHolder.m in Sources */,
+				0F958A731773324100DEE898 /* TBPasscodeLogin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

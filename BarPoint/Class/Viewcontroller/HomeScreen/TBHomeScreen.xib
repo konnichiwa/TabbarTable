@@ -474,7 +474,6 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{917, 540}, {98, 135}}</string>
 						<reference key="NSSuperview" ref="535017470"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<reference key="IBUIBackgroundColor" ref="49564089"/>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -1668,7 +1667,7 @@
 			<string key="bgHeader.png">{1023, 50}</string>
 			<string key="bgHome.png">{1024, 750}</string>
 			<string key="btnBlue.png">{92, 37}</string>
-			<string key="btnInfo.png">{71, 32}</string>
+			<string key="btnInfo.png">{66, 32}</string>
 			<string key="checkHeaderMenu.png">{1231, 100}</string>
 			<string key="homeAvatar1.png">{44, 46}</string>
 			<string key="homeAvatar2.png">{44, 46}</string>

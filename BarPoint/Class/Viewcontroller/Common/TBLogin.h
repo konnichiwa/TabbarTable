@@ -19,4 +19,5 @@
 @property (retain, nonatomic) IBOutlet TPKeyboardAvoidingScrollView *scrollView;
 - (IBAction)loginPress:(id)sender;
 - (IBAction)signUpPress:(id)sender;
+- (IBAction)debugPress:(id)sender;
 @end

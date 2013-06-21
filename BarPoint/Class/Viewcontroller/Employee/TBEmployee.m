@@ -244,8 +244,7 @@
         }
         countOf=1;
         isShowPlaceHoderMessBox=NO; [self checkPlaceholderMess];
-         [_rightTableView reloadData];
-        [_messageTable reloadData];
+        [_messageTable performSelector:@selector(reloadData) withObject:nil afterDelay:0.5];
     }
 
 }
