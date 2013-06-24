@@ -85,6 +85,5 @@
 - (IBAction)enterPress:(id)sender {
 
     [self presentModalViewController:[TBAppDelegate shareAppDelegate].tabbarView animated:YES];
-    [self.navigationController popToRootViewControllerAnimated:NO];
 }
 @end

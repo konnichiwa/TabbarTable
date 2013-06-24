@@ -48,8 +48,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-//    _searchBar.backgroundColor=[UIColor clearColor];
-//    [[_searchBar.subviews objectAtIndex:0] removeFromSuperview];
+    _searchBar.backgroundColor=[UIColor clearColor];
+    [[_searchBar.subviews objectAtIndex:0] removeFromSuperview];
 
     titleHeader=[[NSMutableArray alloc] initWithObjects:@"Side",@"Preparation",@"Temperature",@"Extra",@"Note",nil];
     [self.searchBar setPlaceholder:@"Search for Ingredients,Sides,Etc."];

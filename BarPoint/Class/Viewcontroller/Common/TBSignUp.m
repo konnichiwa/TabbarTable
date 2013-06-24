@@ -111,7 +111,7 @@
             NSString* newStr = [[[NSString alloc] initWithData:(NSData*)result
                                                       encoding:NSUTF8StringEncoding] autorelease];
             if ([newStr intValue]==1){
-                [UIAlertView error:@"Representative will contact you shortly to complete your registration"];
+                [UIAlertView error:@"A representative will contact you shortly to complete your registration"];
             }else{
                 [UIAlertView error:@"This Email Already Exist"];
             }
@@ -127,13 +127,13 @@
 
 - (IBAction)chooseCountryPress:(id)sender {
     allCountry=nil;
-    allCountry=[[NSArray alloc] initWithArray:[[Country MR_findAll] valueForKeyPath:@"name"]];
+    allCountry=[[NSArray alloc] initWithArray:[[Country MR_findAllSortedBy:@"name" ascending:YES] valueForKeyPath:@"name"]];
         [[ColorPickerViewController alloc] showPoppoWitharray:allCountry inRect:[sender frame] inView:self.scrollView withPopoverArrow:UIPopoverArrowDirectionDown withDelegate:(id)self WithTag:3];
 }
 
 - (IBAction)chooseBusinessTypePress:(id)sender {
     allEmType=nil;
-    allEmType=[[NSArray alloc] initWithArray:[[TypeLocation MR_findAll] valueForKeyPath:@"name"]];
+    allEmType=[[NSArray alloc] initWithArray:[[TypeLocation MR_findAllSortedBy:@"name" ascending:YES] valueForKeyPath:@"name"]];
             [[ColorPickerViewController alloc] showPoppoWitharray:allEmType inRect:[sender frame] inView:self.scrollView withPopoverArrow:UIPopoverArrowDirectionDown withDelegate:(id)self WithTag:2];
 }
 -(void)selectedAtIndex:(int)index withTag:(int)tag{
