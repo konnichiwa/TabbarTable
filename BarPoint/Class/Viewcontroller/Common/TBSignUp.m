@@ -15,7 +15,7 @@
 #import "API.h"
 @interface TBSignUp ()
 {
-    NSArray *allCountry;
+    NSMutableArray *allCountry;
     NSArray *allEmType;
     NSMutableDictionary *dictForUpload;
         NSArray *fields;
@@ -127,7 +127,9 @@
 
 - (IBAction)chooseCountryPress:(id)sender {
     allCountry=nil;
-    allCountry=[[NSArray alloc] initWithArray:[[Country MR_findAllSortedBy:@"name" ascending:YES] valueForKeyPath:@"name"]];
+    allCountry=[[NSMutableArray alloc] initWithArray:[[Country MR_findAllSortedBy:@"name" ascending:YES] valueForKeyPath:@"name"]];
+    [allCountry removeObject:@"United States"];
+    [allCountry insertObject:@"United States" atIndex:0];
         [[ColorPickerViewController alloc] showPoppoWitharray:allCountry inRect:[sender frame] inView:self.scrollView withPopoverArrow:UIPopoverArrowDirectionDown withDelegate:(id)self WithTag:3];
 }
 
@@ -141,7 +143,7 @@
         Country *country=[TBManageDatabase getcountryWithName:[allCountry objectAtIndex:index]];
         if (country) {
             _countryText.text=[allCountry objectAtIndex:index];
-            [dictForUpload setObject:[NSNumber numberWithInt:[country.iD intValue]] forKey:@"Country"];
+            [dictForUpload setObject:country.iD forKey:@"Country"];
         }
         allCountry=nil;
     }

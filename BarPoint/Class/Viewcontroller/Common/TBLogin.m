@@ -16,6 +16,7 @@
 @interface TBLogin ()
 {
     UITextField *currentTextField;
+            NSArray *fields;
 }
 @end
 
@@ -35,6 +36,9 @@
     [super viewDidLoad];
     _scrollView.contentSize=CGSizeMake(1024, 768);
         self.view.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"bgApp.png"]];
+        fields = [[NSArray alloc] initWithObjects: self.locationText,self.userNameText,self.passwordText,nil];
+    [self setKeyboardControls:[[BSKeyboardControls alloc] initWithFields:fields]];
+    [self.keyboardControls setDelegate:(id)self];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -60,11 +64,22 @@
 }
 - (void)textFieldDidBeginEditing:(UITextField *)textField{
     currentTextField=textField;
+        [self.keyboardControls setActiveField:textField];
 }
--(void)textFieldDidEndEditing:(UITextField *)textField{
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+//    [textField resignFirstResponder];
+    if (textField!=[fields lastObject]) {
+        [(TPKeyboardAvoidingScrollView*)_scrollView focusNextTextField];
+    }else{
+        [self loginPress:nil];
+    }
+    return YES;
+}
+- (void)keyboardControlsDonePressed:(BSKeyboardControls *)keyboardControls
+{
+    [keyboardControls.activeField resignFirstResponder];
+}
 
-    
-}
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft || interfaceOrientation == UIInterfaceOrientationLandscapeRight);
 }
@@ -100,7 +115,7 @@
                 [self.navigationController pushViewController:aTBPasscodeLogin animated:YES];
             }
             if (([[(NSArray*)result objectAtIndex:0] integerValue]==2)||([[(NSArray*)result objectAtIndex:0] integerValue]==1)) {
-                [UIAlertView error:@"login incorrect"];
+                [UIAlertView error:@"Invalid user or password"];
             }
             if ([[(NSArray*)result objectAtIndex:0] integerValue]==3) {
                 [UIAlertView error:@": A SoftPoint Representative will contact you shortly to complete your registration."];

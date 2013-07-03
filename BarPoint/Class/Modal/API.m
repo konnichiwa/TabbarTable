@@ -47,7 +47,7 @@
     NSMutableURLRequest *apiRequest = [self requestWithMethod:@"GET" path:@"/api2/verifyemp.php" parameters:dict];
     
     AFJSONRequestOperation* operation = [[AFJSONRequestOperation alloc] initWithRequest: apiRequest];
-    [[TBAppDelegate shareAppDelegate] startSpinner:@"Login..."];
+    [[TBAppDelegate shareAppDelegate] startSpinner:@"Loading..."];
     [AFJSONRequestOperation addAcceptableContentTypes:[NSSet setWithObject:@"text/html"]];
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         //success!
@@ -72,6 +72,7 @@
                 [[TBAppDelegate shareAppDelegate] stopSpinner];
                 block(@"",error);
             }];
+    NSLog(@"url:%@",dict);
     [request release];
 }
 -(void)getCountryListWithCompleteBlock:(JSONResponseBlock)block{

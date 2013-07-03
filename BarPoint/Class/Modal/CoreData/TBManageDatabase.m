@@ -101,7 +101,12 @@
             newMsg.seen_date=[dict objectForKey:@"seen_date"];
         }
         newMsg.seen_time=[dict objectForKey:@"seen_time"];
-        newMsg.emp_id=[dict objectForKey:@"emp_id"];
+        if ([dict objectForKey:@"emp_id"]!=[NSNull null]) {
+           newMsg.emp_id=[dict objectForKey:@"emp_id"];
+        }else{
+            newMsg.emp_id=@"";
+        }
+        
         [localContext MR_save];
     }
 }

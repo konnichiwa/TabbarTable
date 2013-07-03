@@ -21,11 +21,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "BarPoint/Class/AppDelegate/TBAppDelegate.m"
-         timestampString = "392132579.712159"
+         timestampString = "394549777.828436"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "158"
-         endingLineNumber = "158"
+         startingLineNumber = "163"
+         endingLineNumber = "163"
          landmarkName = "-preloadCountry"
          landmarkType = "5">
       </FileBreakpoint>

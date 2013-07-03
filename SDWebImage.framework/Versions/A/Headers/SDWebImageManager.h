@@ -153,9 +153,4 @@ typedef NSString *(^CacheKeyFilter)(NSURL *url);
  */
 - (void)cancelForDelegate:(id<SDWebImageManagerDelegate>)delegate;
 
-/**
- * Cancel all current opreations
- */
-- (void)cancelAll;
-
 @end

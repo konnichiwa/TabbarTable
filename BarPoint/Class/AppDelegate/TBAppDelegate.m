@@ -38,9 +38,14 @@
 //    [self preloadCountry];
     [[API sharedInstance] getCountryListWithCompleteBlock:^(id result,NSError *error){
         if (!error) {
-            NSLog(@"coutry:%@",[(NSDictionary*)result objectForKey:@"countries"]);
-            [TBManageDatabase saveCountrytoTable:[(NSDictionary*)result objectForKey:@"countries"]];
-            [TBManageDatabase saveLocationTypetoTable:[(NSDictionary*)result objectForKey:@"types"]];
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,0), ^ {
+                NSLog(@"coutry:%@",[(NSDictionary*)result objectForKey:@"countries"]);
+                [TBManageDatabase saveCountrytoTable:[(NSDictionary*)result objectForKey:@"countries"]];
+                [TBManageDatabase saveLocationTypetoTable:[(NSDictionary*)result objectForKey:@"types"]];
+            });
+
+        }else{
+            NSLog(@"error:%@",error);
         }
     }];
     // Override point for customization after application launch.
