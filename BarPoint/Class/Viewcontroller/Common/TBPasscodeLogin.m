@@ -92,11 +92,24 @@
 }
 
 - (IBAction)logOutPress:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
+    UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Manager Log Out" message:@"Password" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
+    alert.alertViewStyle=UIAlertViewStyleSecureTextInput;
+    [alert show];
+    [alert release];
+   
 }
-
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if(buttonIndex==1)
+    {
+        UITextField *code = [alertView textFieldAtIndex:0];
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+}
 - (IBAction)enterPress:(id)sender {
 
+    
     [self presentModalViewController:[TBAppDelegate shareAppDelegate].tabbarView animated:YES];
+    self.resultText.text=@"";
 }
 @end

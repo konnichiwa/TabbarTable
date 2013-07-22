@@ -21,4 +21,5 @@ typedef void (^JSONResponseBlock)(id result, NSError *error);
 -(void)getCountryListWithCompleteBlock:(JSONResponseBlock)block;
 -(void)getScheduleOfuserWithDict:(NSDictionary*)dict WithCompleteBlock:(JSONResponseBlock)block;
 -(void)getMsgOfuserWithDict:(NSDictionary*)dict WithCompleteBlock:(JSONResponseBlock)block;
+-(void)getEmpListWithDict:(NSDictionary*)dict WithCompleteBlock:(JSONResponseBlock)block;
 @end

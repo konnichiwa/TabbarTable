@@ -19,4 +19,5 @@
 @property (nonatomic, retain) NSMutableArray *colorNames;
 @property (nonatomic, assign) id<ColorPickerDelegate> delegate;
 - (void)showPoppoWitharray:(NSArray*)array inRect:(CGRect)rect inView:(UIView*)view withPopoverArrow:(UIPopoverArrowDirection)popoverArrow withDelegate:(id)dele WithTag:(int)tag;
+-(void)dismissPoppo;
 @end

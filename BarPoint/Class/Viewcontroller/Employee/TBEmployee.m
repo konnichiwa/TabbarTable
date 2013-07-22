@@ -78,7 +78,7 @@
     //get schedule
     UserAccount *user=[TBManageDatabase getAccount];
     NSMutableDictionary *dict=[[NSMutableDictionary alloc] initWithObjects:[NSArray arrayWithObjects:user.locationId,user.userName,user.password, nil] forKeys:[NSArray arrayWithObjects:@"location_id",@"emp_id",@"password", nil]];
-    _nameSchedule.text=user.userName;
+    _nameSchedule.text=@"";
     [[API sharedInstance] getScheduleOfuserWithDict:dict WithCompleteBlock:^(id result,NSError *error){
         if (!error) {
             [TBManageDatabase addScheduleTotable:[(NSArray*)result objectAtIndex:1]];
@@ -95,7 +95,23 @@
             [_rightTableView reloadData];
         }
     }];
+    
+    NSMutableDictionary *dict2=[[NSMutableDictionary alloc] initWithObjects:[NSArray arrayWithObjects:user.locationId,nil] forKeys:[NSArray arrayWithObjects:@"location_id",nil]];
+    [[API sharedInstance] getEmpListWithDict:dict2 WithCompleteBlock:^(id result,NSError *error){
+        if (!error) {
+            NSLog(@"mess;%@",result);
+            for (NSArray *arr in result) {
+                if ([[arr objectAtIndex:0] isEqualToString:user.userName]) {
+                    
+                    _nameSchedule.text=[NSString stringWithFormat:@"%@ %@",[arr objectAtIndex:1],[arr objectAtIndex:2]];
+                    break;
+                }
+            }
+        }
+    }];
+
     [dict release];
+    [dict1 release];
 }
 -(void)checkPlaceholderMess{
     if (isShowPlaceHoderMessBox) {

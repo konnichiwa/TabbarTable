@@ -15,10 +15,10 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         // Initialization code
+          _noteText.contentVerticalAlignment = UIControlContentVerticalAlignmentTop;
     }
     return self;
 }
-
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {
     [super setSelected:selected animated:animated];
@@ -28,6 +28,7 @@
 
 - (void)dealloc {
     [_noteText release];
+    [_noteText1 release];
     [super dealloc];
 }
 @end

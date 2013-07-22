@@ -54,6 +54,18 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft || interfaceOrientation == UIInterfaceOrientationLandscapeRight);
+}
+- (BOOL)shouldAutorotate {
+    
+    
+    return YES;
+}
+
+-(NSInteger)supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskLandscape;
+}
 #pragma mark-gridview delegate
 - (CGFloat) gridView:(UIGridView *)grid widthForColumnAt:(int)columnIndex
 {

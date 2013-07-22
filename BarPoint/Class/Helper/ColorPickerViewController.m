@@ -119,4 +119,7 @@
     [self.tableView reloadData];
 
 }
+-(void)dismissPoppo{
+[colorPickerPopover dismissPopoverAnimated:YES];
+}
 @end

@@ -97,6 +97,8 @@
 
 - (IBAction)addClientPress:(id)sender {
     DetailClient *aDetailClient=[[DetailClient alloc] initWithNibName:@"DetailClient" bundle:nil];
-    [[TBAppDelegate shareAppDelegate].tabbarView  presentModalViewController:aDetailClient animated:YES];
+//    [[TBAppDelegate shareAppDelegate].ncNewcheck.topViewController  presentModalViewController:aDetailClient animated:YES];
+    [[TBAppDelegate shareAppDelegate].ncNewcheck pushViewController:aDetailClient animated:YES];
+    [self.view removeFromSuperview];
 }
 @end

@@ -54,7 +54,7 @@
     titleHeader=[[NSMutableArray alloc] initWithObjects:@"Side",@"Preparation",@"Temperature",@"Extra",@"Note",nil];
     [self.searchBar setPlaceholder:@"Search for Ingredients,Sides,Etc."];
 //    _searchBar.text=@"1234";
-    
+
     // Do any additional setup after loading the view from its nib.
 }
 -(void)viewWillAppear:(BOOL)animated{
@@ -152,6 +152,7 @@
             if (indexPath.row==2) {
                 TBModifyMenuCell5 *cell=[TBManageModifyMenu cellType5ForModifyMenuWithTable:aTableView WithOwer:self];
                 cell.noteText.delegate=(id)self;
+                cell.noteText1.placeholder=@"Message to the Chef...";
                 return cell;
             }else{
                 TBModifyMenuCell4 *cell=[TBManageModifyMenu cellType4ForModifyMenuWithTable:aTableView WithOwer:self];
@@ -227,6 +228,7 @@
     }else{
         UILabel *label=[cell.textlabel objectAtIndex:4];
         label.textColor=[UIColor colorWithRed:0 green:80/255.0 blue:116/255.0 alpha:1];
+        [(UISlider*)sender setValue:75.0];
         [(UISlider*)sender setValue:100.0];
     }
 }

@@ -18,6 +18,7 @@
 			<string>IBUISlider</string>
 			<string>IBUITableViewCell</string>
 			<string>IBUITextField</string>
+			<string>IBUITextView</string>
 		</array>
 		<array key="IBDocument.PluginDependencies">
 			<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -767,7 +768,7 @@
 								<string key="NSFrame">{{-1, -3}, {642, 96}}</string>
 								<reference key="NSSuperview" ref="278773616"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="185927700"/>
+								<reference key="NSNextKeyView" ref="808902528"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -776,29 +777,21 @@
 									<string key="NSResourceName">bgCellMenuModifyTextbox.png</string>
 								</object>
 							</object>
-							<object class="IBUITextField" id="185927700">
+							<object class="IBUITextView" id="808902528">
 								<reference key="NSNextResponder" ref="278773616"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{6, 5}, {627, 82}}</string>
+								<string key="NSFrame">{{0, 7}, {631, 79}}</string>
 								<reference key="NSSuperview" ref="278773616"/>
 								<reference key="NSWindow"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
-								<bool key="IBUIOpaque">NO</bool>
+								<reference key="IBUIBackgroundColor" ref="866763785"/>
 								<bool key="IBUIClipsSubviews">YES</bool>
+								<bool key="IBUIMultipleTouchEnabled">YES</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-								<int key="IBUIContentVerticalAlignment">0</int>
+								<bool key="IBUIShowsHorizontalScrollIndicator">NO</bool>
 								<string key="IBUIText"/>
-								<string key="IBUIPlaceholder">Message to the Chef...</string>
-								<object class="NSColor" key="IBUITextColor">
-									<int key="NSColorSpace">3</int>
-									<bytes key="NSWhite">MAA</bytes>
-									<object class="NSColorSpace" key="NSCustomColorSpace">
-										<int key="NSID">2</int>
-									</object>
-								</object>
-								<bool key="IBUIAdjustsFontSizeToFit">YES</bool>
-								<float key="IBUIMinimumFontSize">17</float>
 								<object class="IBUITextInputTraits" key="IBUITextInputTraits">
+									<int key="IBUIAutocapitalizationType">2</int>
 									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								</object>
 								<object class="IBUIFontDescription" key="IBUIFontDescription">
@@ -934,14 +927,6 @@
 					<int key="connectionID">50</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">noteText</string>
-						<reference key="source" ref="840356871"/>
-						<reference key="destination" ref="185927700"/>
-					</object>
-					<int key="connectionID">51</int>
-				</object>
-				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
 						<string key="label">textlabel</string>
 						<reference key="source" ref="840356871"/>
@@ -1009,11 +994,11 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">noteText</string>
+						<string key="label">noteText1</string>
 						<reference key="source" ref="1011475521"/>
-						<reference key="destination" ref="185927700"/>
+						<reference key="destination" ref="808902528"/>
 					</object>
-					<int key="connectionID">53</int>
+					<int key="connectionID">71</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -1220,18 +1205,13 @@
 						<reference key="object" ref="1011475521"/>
 						<array class="NSMutableArray" key="children">
 							<reference ref="59786705"/>
-							<reference ref="185927700"/>
+							<reference ref="808902528"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">46</int>
 						<reference key="object" ref="59786705"/>
-						<reference key="parent" ref="1011475521"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">48</int>
-						<reference key="object" ref="185927700"/>
 						<reference key="parent" ref="1011475521"/>
 					</object>
 					<object class="IBObjectRecord">
@@ -1243,6 +1223,11 @@
 						<int key="objectID">55</int>
 						<reference key="object" ref="100777340"/>
 						<reference key="parent" ref="347732656"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">70</int>
+						<reference key="object" ref="808902528"/>
+						<reference key="parent" ref="1011475521"/>
 					</object>
 				</array>
 			</object>
@@ -1280,12 +1265,13 @@
 				<string key="43.CustomClassName">TBModifyMenuCell5</string>
 				<string key="43.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="46.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="48.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="5.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="54.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="55.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="6.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="7.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="70.CustomClassName">UIPlaceHolderTextView</string>
+				<string key="70.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="8.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="9.CustomClassName">TBModifyMenuCell2</string>
 				<string key="9.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -1294,7 +1280,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">69</int>
+			<int key="maxID">71</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1390,20 +1376,31 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">TBModifyMenuCell5</string>
 					<string key="superclassName">UITableViewCell</string>
-					<object class="NSMutableDictionary" key="outlets">
-						<string key="NS.key.0">noteText</string>
-						<string key="NS.object.0">UITextField</string>
-					</object>
-					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<string key="NS.key.0">noteText</string>
-						<object class="IBToOneOutletInfo" key="NS.object.0">
+					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="noteText">UITextField</string>
+						<string key="noteText1">UIPlaceHolderTextView</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="noteText">
 							<string key="name">noteText</string>
 							<string key="candidateClassName">UITextField</string>
 						</object>
-					</object>
+						<object class="IBToOneOutletInfo" key="noteText1">
+							<string key="name">noteText1</string>
+							<string key="candidateClassName">UIPlaceHolderTextView</string>
+						</object>
+					</dictionary>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">./Classes/TBModifyMenuCell5.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">UIPlaceHolderTextView</string>
+					<string key="superclassName">UITextView</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/UIPlaceHolderTextView.h</string>
 					</object>
 				</object>
 			</array>

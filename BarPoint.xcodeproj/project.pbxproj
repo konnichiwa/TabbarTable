@@ -436,6 +436,7 @@
 		0FEBA173174A480B0065336D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0FEBA02C174A480B0065336D /* InfoPlist.strings */; };
 		0FEBA174174A480B0065336D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEBA02E174A480B0065336D /* main.m */; };
 		0FF0FEE7177D05E5000C10C7 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF0FEE6177D05E5000C10C7 /* SDWebImage.framework */; };
+		0FF9A6D71796D60D002464BD /* UIPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF9A6D61796D60D002464BD /* UIPlaceHolderTextView.m */; };
 		0FFD0DA617538F1000DD098C /* bgLogin.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FFD0DA417538F1000DD098C /* bgLogin.png */; };
 		0FFD0DA8175392F900DD098C /* bgSignUp1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FFD0DA7175392F900DD098C /* bgSignUp1.png */; };
 		0FFD0DAC1753AD3800DD098C /* NSArray+sortBy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFD0DAB1753AD3800DD098C /* NSArray+sortBy.m */; };
@@ -973,6 +974,8 @@
 		0FEBA02D174A480B0065336D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0FEBA02E174A480B0065336D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0FF0FEE6177D05E5000C10C7 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = "<group>"; };
+		0FF9A6D51796D60D002464BD /* UIPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPlaceHolderTextView.h; sourceTree = "<group>"; };
+		0FF9A6D61796D60D002464BD /* UIPlaceHolderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPlaceHolderTextView.m; sourceTree = "<group>"; };
 		0FFD0DA417538F1000DD098C /* bgLogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgLogin.png; sourceTree = "<group>"; };
 		0FFD0DA7175392F900DD098C /* bgSignUp1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgSignUp1.png; sourceTree = "<group>"; };
 		0FFD0DAA1753AD3800DD098C /* NSArray+sortBy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+sortBy.h"; sourceTree = "<group>"; };
@@ -1251,6 +1254,8 @@
 		0FEB9EAB174A48090065336D /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				0FF9A6D51796D60D002464BD /* UIPlaceHolderTextView.h */,
+				0FF9A6D61796D60D002464BD /* UIPlaceHolderTextView.m */,
 				0F34D2DC175E5C1A00E9B8E0 /* UIAlertView+error.h */,
 				0F34D2DD175E5C1A00E9B8E0 /* UIAlertView+error.m */,
 				0FFD0DAA1753AD3800DD098C /* NSArray+sortBy.h */,
@@ -2431,6 +2436,7 @@
 				0F85EF0A1770BE0E00259B54 /* BSKeyboardControls.m in Sources */,
 				0FCCFAE21771EDD200DF79D1 /* TBTextFieldHolder.m in Sources */,
 				0F958A731773324100DEE898 /* TBPasscodeLogin.m in Sources */,
+				0FF9A6D71796D60D002464BD /* UIPlaceHolderTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

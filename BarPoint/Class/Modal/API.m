@@ -89,6 +89,20 @@
     }];
     [operation start];
 }
+-(void)getEmpListWithDict:(NSDictionary*)dict WithCompleteBlock:(JSONResponseBlock)block{
+    NSMutableURLRequest *apiRequest = [self requestWithMethod:@"GET" path:@"/api2/return_employees.php" parameters:dict];
+    
+    AFJSONRequestOperation* operation = [[AFJSONRequestOperation alloc] initWithRequest: apiRequest];
+    [AFJSONRequestOperation addAcceptableContentTypes:[NSSet setWithObject:@"text/html"]];
+    [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+        //success!
+        block(responseObject,nil);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        //failure :(
+        block([NSDictionary dictionary],error);
+    }];
+    [operation start];
+}
 -(void)getScheduleOfuserWithDict:(NSDictionary*)dict WithCompleteBlock:(JSONResponseBlock)block{
     NSMutableURLRequest *apiRequest = [self requestWithMethod:@"GET" path:@"/api2/attendance/return_attendance.php" parameters:dict];
     

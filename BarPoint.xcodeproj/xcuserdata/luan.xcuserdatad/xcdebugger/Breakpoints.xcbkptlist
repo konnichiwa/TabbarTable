@@ -29,19 +29,6 @@
          landmarkName = "-preloadCountry"
          landmarkType = "5">
       </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "BarPoint/Class/Helper/ColorPickerViewController.m"
-         timestampString = "392139300.224773"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "100"
-         endingLineNumber = "100"
-         landmarkName = "-showPoppoWitharray:inRect:inView:withPopoverArrow:withDelegate:WithTag:"
-         landmarkType = "5">
-      </FileBreakpoint>
    </FileBreakpoints>
    <SymbolicBreakpoints>
       <SymbolicBreakpoint
